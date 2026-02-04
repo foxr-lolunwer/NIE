@@ -1,0 +1,42 @@
+scripted_gui = {
+	NIE_laws = {
+		context_type = player_context
+		window_name = "NIE_laws"
+		# parent_window_token = politics_tab
+		visible = {
+			always = no
+			# has_global_flag = NIE_laws_enabled
+		}
+		effects = {
+			NIE_laws_branch_1_btn_1_click = { FUN_NIE_laws_branch_1_btn_1_click = yes }
+			NIE_laws_branch_1_btn_2_click = { FUN_NIE_laws_branch_1_btn_2_click = yes }
+			NIE_laws_branch_1_btn_3_click = { FUN_NIE_laws_branch_1_btn_3_click = yes }
+			NIE_laws_branch_1_btn_4_click = { FUN_NIE_laws_branch_1_btn_4_click = yes }
+			NIE_laws_branch_1_btn_5_click = { FUN_NIE_laws_branch_1_btn_5_click = yes }
+			NIE_laws_branch_1_btn_6_click = { FUN_NIE_laws_branch_1_btn_6_click = yes }
+			NIE_laws_branch_1_btn_7_click = { FUN_NIE_laws_branch_1_btn_7_click = yes }
+			NIE_laws_branch_1_btn_8_click = { FUN_NIE_laws_branch_1_btn_8_click = yes }
+			# NIE_laws_branch_000_btn_000_click = { FUN_NIE_laws_branch_000_btn_000_click = yes }
+				# set_temp_variable = { NIE_VAR_GUI_select_law_id = 2 }
+				# set_temp_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+		}
+	}
+	NIE_laws_change_window = {
+		context_type = player_context
+		window_name = "NIE_laws_change_window"
+		# parent_window_token = politics_tab
+		visible = {
+			# always = no
+			has_country_flag = NIE_laws_change_window_open
+		}
+		dynamic_lists = {
+			NIE_laws_change_window_grid = {
+				array = NIE_ARRAY_GUI_laws_change_window_range
+				index = idx
+				value = NIE_VAR_GUI_laws_change_window_value
+				change_scope = no
+				entry_container = NIE_laws_change_entry
+			}
+		}
+	}
+}

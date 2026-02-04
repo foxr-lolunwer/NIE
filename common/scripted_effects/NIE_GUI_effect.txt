@@ -1,0 +1,164 @@
+@default_laws_range = 7
+
+FUN_NIE_laws_branch_init_array = {
+	clear_array = NIE_ARRAY_GUI_laws_change_window_range
+	for_loop_effect = { value = i start = 1 end = @default_laws_range
+		add_to_array = { array = NIE_ARRAY_GUI_laws_change_window_range value = i }
+	}
+}
+FUN_NIE_laws_branch_1_btn_1_click = {
+    # 逻辑：
+    # 1. 如果窗口开着 且 ID也是1 -> 关闭 (Toggle off)
+    # 2. 如果窗口开着 但 ID不是1 -> 更新数据为1 (Switch data)
+    # 3. 如果窗口没开 -> 设置数据为1 并 打开 (Open)
+    if = {
+        limit = {
+            has_country_flag = NIE_laws_change_window_open
+            check_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+            check_variable = { NIE_VAR_GUI_select_law_id = 1 }
+        }
+        clr_country_flag = NIE_laws_change_window_open
+    }
+    else = {
+        set_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+        set_variable = { NIE_VAR_GUI_select_law_id = 1 }
+        FUN_NIE_laws_branch_init_array = yes
+        if = {
+            limit = { NOT = { has_country_flag = NIE_laws_change_window_open } }
+            set_country_flag = NIE_laws_change_window_open
+        }
+    }
+}
+FUN_NIE_laws_branch_1_btn_2_click = {
+    if = {
+        limit = {
+            has_country_flag = NIE_laws_change_window_open
+            check_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+            check_variable = { NIE_VAR_GUI_select_law_id = 2 }
+        }
+        clr_country_flag = NIE_laws_change_window_open
+    }
+    else = {
+        set_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+        set_variable = { NIE_VAR_GUI_select_law_id = 2 }
+        FUN_NIE_laws_branch_init_array = yes
+        if = {
+            limit = { NOT = { has_country_flag = NIE_laws_change_window_open } }
+            set_country_flag = NIE_laws_change_window_open
+        }
+    }
+}
+FUN_NIE_laws_branch_1_btn_3_click = {
+    if = {
+        limit = {
+            has_country_flag = NIE_laws_change_window_open
+            check_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+            check_variable = { NIE_VAR_GUI_select_law_id = 3 }
+        }
+        clr_country_flag = NIE_laws_change_window_open
+    }
+    else = {
+        set_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+        set_variable = { NIE_VAR_GUI_select_law_id = 3 }
+        FUN_NIE_laws_branch_init_array = yes
+        if = {
+            limit = { NOT = { has_country_flag = NIE_laws_change_window_open } }
+            set_country_flag = NIE_laws_change_window_open
+        }
+    }
+}
+FUN_NIE_laws_branch_1_btn_4_click = {
+    if = {
+        limit = {
+            has_country_flag = NIE_laws_change_window_open
+            check_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+            check_variable = { NIE_VAR_GUI_select_law_id = 4 }
+        }
+        clr_country_flag = NIE_laws_change_window_open
+    }
+    else = {
+        set_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+        set_variable = { NIE_VAR_GUI_select_law_id = 4 }
+        FUN_NIE_laws_branch_init_array = yes
+        if = {
+            limit = { NOT = { has_country_flag = NIE_laws_change_window_open } }
+            set_country_flag = NIE_laws_change_window_open
+        }
+    }
+}
+FUN_NIE_laws_branch_1_btn_5_click = {
+    if = {
+        limit = {
+            has_country_flag = NIE_laws_change_window_open
+            check_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+            check_variable = { NIE_VAR_GUI_select_law_id = 5 }
+        }
+        clr_country_flag = NIE_laws_change_window_open
+    }
+    else = {
+        set_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+        set_variable = { NIE_VAR_GUI_select_law_id = 5 }
+        FUN_NIE_laws_branch_init_array = yes
+        if = {
+            limit = { NOT = { has_country_flag = NIE_laws_change_window_open } }
+            set_country_flag = NIE_laws_change_window_open
+        }
+    }
+}
+FUN_NIE_laws_branch_1_btn_6_click = {
+    if = {
+        limit = {
+            has_country_flag = NIE_laws_change_window_open
+            check_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+            check_variable = { NIE_VAR_GUI_select_law_id = 6 }
+        }
+        clr_country_flag = NIE_laws_change_window_open
+    }
+    else = {
+        set_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+        set_variable = { NIE_VAR_GUI_select_law_id = 6 }
+        FUN_NIE_laws_branch_init_array = yes
+        if = {
+            limit = { NOT = { has_country_flag = NIE_laws_change_window_open } }
+            set_country_flag = NIE_laws_change_window_open
+        }
+    }
+}
+FUN_NIE_laws_branch_1_btn_7_click = {
+    if = {
+        limit = {
+            has_country_flag = NIE_laws_change_window_open
+            check_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+            check_variable = { NIE_VAR_GUI_select_law_id = 7 }
+        }
+        clr_country_flag = NIE_laws_change_window_open
+    }
+    else = {
+        set_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+        set_variable = { NIE_VAR_GUI_select_law_id = 7 }
+        FUN_NIE_laws_branch_init_array = yes
+        if = {
+            limit = { NOT = { has_country_flag = NIE_laws_change_window_open } }
+            set_country_flag = NIE_laws_change_window_open
+        }
+    }
+}
+FUN_NIE_laws_branch_1_btn_8_click = {
+    if = {
+        limit = {
+            has_country_flag = NIE_laws_change_window_open
+            check_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+            check_variable = { NIE_VAR_GUI_select_law_id = 8 }
+        }
+        clr_country_flag = NIE_laws_change_window_open
+    }
+    else = {
+        set_variable = { NIE_VAR_GUI_select_law_branch = 1 }
+        set_variable = { NIE_VAR_GUI_select_law_id = 8 }
+        FUN_NIE_laws_branch_init_array = yes
+        if = {
+            limit = { NOT = { has_country_flag = NIE_laws_change_window_open } }
+            set_country_flag = NIE_laws_change_window_open
+        }
+    }
+}

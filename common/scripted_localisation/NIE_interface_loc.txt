@@ -1,0 +1,16 @@
+defined_text = {
+	name = NIE_laws_change_entry_name_text
+	text = { localization_key = "NIE_law_branch_[?NIE_VAR_GUI_select_law_branch]_id_[?NIE_VAR_GUI_select_law_id]_value_[?NIE_VAR_GUI_laws_change_window_value]_name" }
+}
+defined_text = {
+	name = NIE_laws_change_entry_desc_text
+	text = { localization_key = "NIE_law_branch_[?NIE_VAR_GUI_select_law_branch]_id_[?NIE_VAR_GUI_select_law_id]_value_[?NIE_VAR_GUI_laws_change_window_value]_desc" }
+}
+defined_text = {
+	name = NIE_laws_change_entry_adopt_cost_text
+	text = { localization_key = "NIE_law_branch_[?NIE_VAR_GUI_select_law_branch]_id_[?NIE_VAR_GUI_select_law_id]_value_[?NIE_VAR_GUI_laws_change_window_value]_adopt_cost" }
+}
+defined_text = {
+	name = NIE_laws_change_entry_impl_cost_text
+	text = { localization_key = "NIE_law_branch_[?NIE_VAR_GUI_select_law_branch]_id_[?NIE_VAR_GUI_select_law_id]_value_[?NIE_VAR_GUI_laws_change_window_value]_impl_cost" }
+}
