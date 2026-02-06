@@ -4,8 +4,8 @@ scripted_gui = {
 		window_name = "NIE_laws"
 		# parent_window_token = politics_tab
 		visible = {
-			always = no
-			# has_global_flag = NIE_laws_enabled
+			# always = no
+			has_global_flag = NIE_laws_enabled
 		}
 		effects = {
 			NIE_laws_branch_1_btn_1_click = { FUN_NIE_laws_branch_1_btn_1_click = yes }

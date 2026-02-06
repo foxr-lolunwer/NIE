@@ -1,0 +1,47 @@
+@default_min_political_power = 100
+# 征兵法案：升级花费100pp，降级不花费pp
+TRIGGER_NIE_law_branch_1_id_1_value_1_idea = {
+	always = no
+}
+TRIGGER_NIE_law_branch_1_id_1_value_2_idea = {
+	has_political_power > @default_min_political_power
+	has_idea = NIE_law_branch_1_id_1_value_3_idea
+}
+TRIGGER_NIE_law_branch_1_id_1_value_3_idea = {
+	OR = {
+		AND = {
+			has_idea = NIE_law_branch_1_id_1_value_2_idea
+			has_political_power > @default_min_political_power
+		}
+		AND = {
+			has_idea = NIE_law_branch_1_id_1_value_4_idea
+			has_idea = NIE_law_branch_1_id_1_value_5_idea
+			has_idea = NIE_law_branch_1_id_1_value_6_idea
+		}
+	}
+}
+TRIGGER_NIE_law_branch_1_id_1_value_4_idea = {
+	OR = {
+		AND = {
+			has_idea = NIE_law_branch_1_id_1_value_3_idea
+			has_political_power > @default_min_political_power
+		}
+		AND = {
+			has_idea = NIE_law_branch_1_id_1_value_5_idea
+			has_idea = NIE_law_branch_1_id_1_value_6_idea
+		}
+	}
+}
+TRIGGER_NIE_law_branch_1_id_1_value_5_idea = {
+	OR = {
+		AND = {
+			has_idea = NIE_law_branch_1_id_1_value_5_idea
+			has_political_power > @default_min_political_power
+		}
+		has_idea = NIE_law_branch_1_id_1_value_6_idea
+	}
+}
+TRIGGER_NIE_law_branch_1_id_1_value_6_idea = {
+	has_political_power > @default_min_political_power
+	has_idea = NIE_law_branch_1_id_1_value_5_idea
+}

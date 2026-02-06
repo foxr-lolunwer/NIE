@@ -172,7 +172,7 @@ guiTypes = {
 			name = "idea_entry_bg"
 			position = { x = 3 y = 0 }
 			spriteType = "GFX_idea_entry_bg_3"
-			pdx_tooltip_delayed = "[NIE_laws_change_entry_desc_text]"
+			pdx_tooltip = "get_NIE_laws_change_entry_desc_text"
 		}
 
 		iconType = {
@@ -201,7 +201,7 @@ guiTypes = {
 			font = "hoi_16mbs"
 			text = "[NIE_laws_change_entry_adopt_cost_text]"
 			# text = "Adopt Cost:xxx"
-			maxWidth = 142
+			maxWidth = 160
 			maxHeight = 30
 			alwaystransparent = yes
 		}
@@ -211,7 +211,7 @@ guiTypes = {
 			font = "hoi_16mbs"
 			text = "[NIE_laws_change_entry_impl_cost_text]"
 			# text = "Impl Cost:xxx"
-			maxWidth = 142
+			maxWidth = 200
 			maxHeight = 30
 			alwaystransparent = yes
 		}

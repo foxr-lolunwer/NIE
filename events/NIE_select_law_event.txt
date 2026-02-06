@@ -1,0 +1,34 @@
+# add_namespace = NIE_select_law_branch_1_event
+# ######################################################################
+# country_event = {
+# 	id = NIE_select_law_branch_1_event.100
+# 	title = NIE_select_law_branch_1_event.100.title
+# 	desc = NIE_select_law_branch_1_event.100.desc
+# 	is_triggered_only = yes
+# 	option = {
+# 		ai_chance = { base = 10 }
+# 		name = SCW_economic_crisis_events.101.a
+# 		FUN_NIE_change_laws = yes
+# 	}
+# 	option = {
+# 		ai_chance = { base = 1 }
+# 		name = SCW_economic_crisis_events.100.b
+
+# 	}
+# }
+# country_event = {
+# 	id = NIE_select_law_branch_1_event.101
+# 	title = NIE_select_law_branch_1_event.101.title
+# 	desc = NIE_select_law_branch_1_event.101.desc
+# 	is_triggered_only = yes
+# 	option = {
+# 		ai_chance = { base = 9 }
+# 		name = SCW_economic_crisis_events.101.a
+# 		FUN_NIE_change_laws = yes
+# 	}
+# 	option = {
+# 		ai_chance = { base = 1 }
+# 		name = SCW_economic_crisis_events.101.b
+
+# 	}
+# }

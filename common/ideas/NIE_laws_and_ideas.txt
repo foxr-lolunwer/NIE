@@ -1,17 +1,63 @@
 ideas = {
+  # hoi4不支持在自定义UI中使用原生效果提示
+  # 因此法案界面中的效果提示通过脚本生成loc文本
+  # 修改此处修正值并不会改变法案界面中的效果提示
+  # 但是修改后的效果依旧会生效
 	hidden_ideas = {
-		NIE_law_branch_1_id_1_value_1_idea = {
-			allowed_civil_war = { always = no }
-			allowed = {  }
+	# 军事分支
+	  # 动员法案
+		NIE_law_branch_1_id_1_value_1_idea = { # 去军事化国家
+			allowed_civil_war = { always = yes }
 			modifier = {
-				political_power_factor = 0.2
-				stability_weekly = 0.001
+				political_power_gain = -0.1
+				stability_weekly = -0.001
+				war_support_weekly = 0.001
+				training_time_factor = 0.5
+				recruitable_population_factor = -0.9
+			}
+		}
+		NIE_law_branch_1_id_1_value_2_idea = { # 非军事化国家
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_gain = 0.15
+				consumer_goods_expected_value = -0.05
+				training_time_factor = 0.5
+				recruitable_population_factor = -0.95
+			}
+		}
+		NIE_law_branch_1_id_1_value_3_idea = { # 志愿参军
+			allowed_civil_war = { always = yes }
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defense_factor = 0.05
+				recruitable_population_factor = -0.8
+			}
+		}
+		NIE_law_branch_1_id_1_value_4_idea = { # 有限征兵
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_cost = -0.1
+				stability_weekly = -0.001
 				war_support_weekly = -0.001
-				special_drift = 0.015
-				consumer_goods_expected_value = 0.1
-				production_speed_buildings_factor = 0.05
-				agency_upgrade_time = 1
-				research_speed_factor = 0.15
+				recruitable_population_factor = -0.7
+			}
+		}
+		NIE_law_branch_1_id_1_value_5_idea = { # 大范围征兵
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_cost = -0.2
+				stability_weekly = -0.002
+				war_support_weekly = -0.003
+				recruitable_population_factor = -0.6
+			}
+		}
+		NIE_law_branch_1_id_1_value_6_idea = { # 全面征兵
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_cost = -0.3
+				stability_weekly = -0.003
+				war_support_weekly = -0.005
+				recruitable_population_factor = -0.5
 			}
 		}
 	}
