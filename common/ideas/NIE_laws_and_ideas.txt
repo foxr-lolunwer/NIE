@@ -1,64 +1,509 @@
 ideas = {
-  # hoi4不支持在自定义UI中使用原生效果提示
-  # 因此法案界面中的效果提示通过脚本生成loc文本
-  # 修改此处修正值并不会改变法案界面中的效果提示
-  # 但是修改后的效果依旧会生效
-	hidden_ideas = {
-	# 军事分支
-	  # 动员法案
-		NIE_law_branch_1_id_1_value_1_idea = { # 去军事化国家
-			allowed_civil_war = { always = yes }
-			modifier = {
-				political_power_gain = -0.1
-				stability_weekly = -0.001
-				war_support_weekly = 0.001
-				training_time_factor = 0.5
-				recruitable_population_factor = -0.9
-			}
-		}
-		NIE_law_branch_1_id_1_value_2_idea = { # 非军事化国家
-			allowed_civil_war = { always = yes }
-			modifier = {
-				political_power_gain = 0.15
-				consumer_goods_expected_value = -0.05
-				training_time_factor = 0.5
-				recruitable_population_factor = -0.95
-			}
-		}
-		NIE_law_branch_1_id_1_value_3_idea = { # 志愿参军
-			allowed_civil_war = { always = yes }
-			modifier = {
-				army_core_attack_factor = 0.05
-				army_core_defense_factor = 0.05
-				recruitable_population_factor = -0.8
-			}
-		}
-		NIE_law_branch_1_id_1_value_4_idea = { # 有限征兵
-			allowed_civil_war = { always = yes }
-			modifier = {
-				political_power_cost = -0.1
-				stability_weekly = -0.001
-				war_support_weekly = -0.001
-				recruitable_population_factor = -0.7
-			}
-		}
-		NIE_law_branch_1_id_1_value_5_idea = { # 大范围征兵
-			allowed_civil_war = { always = yes }
-			modifier = {
-				political_power_cost = -0.2
-				stability_weekly = -0.002
-				war_support_weekly = -0.003
-				recruitable_population_factor = -0.6
-			}
-		}
-		NIE_law_branch_1_id_1_value_6_idea = { # 全面征兵
-			allowed_civil_war = { always = yes }
-			modifier = {
-				political_power_cost = -0.3
-				stability_weekly = -0.003
-				war_support_weekly = -0.005
-				recruitable_population_factor = -0.5
-			}
-		}
-	}
+	# 仅用来编写modifier和ai_will_do，实际定义由py脚本和法案数据文件生成
+#   # 军事分支
+# 	NIE_branch_1_id_1_laws = { # 动员法案
+# 		law = yes
+# 		use_list_view = yes
+
+# 		NIE_law_branch_1_id_1_value_1_idea = { # 去军事化国家
+# 			level = 1
+# 			available = { TRIGGER_NIE_law_branch_1_id_1_value_1_idea = yes }
+# 			allowed_civil_war = { always = yes }
+# 			modifier = {
+# 				political_power_gain = -0.1
+# 				stability_weekly = -0.001
+# 				war_support_weekly = 0.001
+# 				training_time_factor = 0.5
+# 				recruitable_population_factor = -0.9
+# 				custom_modifier_tooltip = NIE_law_branch_1_id_1_value_1_idea_tooltip
+# 			}
+# 			on_add = {  }
+# 			on_remove = {
+
+# 			}
+
+# 		}
+# 		NIE_law_branch_1_id_1_value_2_idea = { # 非军事化国家
+# 			allowed_civil_war = { always = yes }
+# 			allowed = { TRIGGER_NIE_law_branch_1_id_1_value_2_idea = yes }
+# 			modifier = {
+# 				political_power_gain = 0.15
+# 				consumer_goods_expected_value = -0.05
+# 				training_time_factor = 0.5
+# 				recruitable_population_factor = -0.95
+# 			}
+# 		}
+# 		NIE_law_branch_1_id_1_value_3_idea = { # 志愿参军
+# 			allowed_civil_war = { always = yes }
+# 			allowed = { TRIGGER_NIE_law_branch_1_id_1_value_3_idea = yes }
+# 			modifier = {
+# 				army_core_attack_factor = 0.05
+# 				army_core_defense_factor = 0.05
+# 				recruitable_population_factor = -0.8
+# 			}
+# 		}
+# 		NIE_law_branch_1_id_1_value_4_idea = { # 有限征兵
+# 			allowed_civil_war = { always = yes }
+# 			allowed = { TRIGGER_NIE_law_branch_1_id_1_value_4_idea = yes }
+# 			modifier = {
+# 				political_power_cost = -0.1
+# 				stability_weekly = -0.001
+# 				war_support_weekly = -0.001
+# 				recruitable_population_factor = -0.7
+# 			}
+# 		}
+# 		NIE_law_branch_1_id_1_value_5_idea = { # 大范围征兵
+# 			allowed_civil_war = { always = yes }
+# 			allowed = { TRIGGER_NIE_law_branch_1_id_1_value_5_idea = yes }
+# 			modifier = {
+# 				political_power_cost = -0.2
+# 				stability_weekly = -0.002
+# 				war_support_weekly = -0.003
+# 				recruitable_population_factor = -0.6
+# 			}
+# 		}
+# 		NIE_law_branch_1_id_1_value_6_idea = { # 全面征兵
+# 			allowed_civil_war = { always = yes }
+# 			allowed = { TRIGGER_NIE_law_branch_1_id_1_value_6_idea = yes }
+# 			modifier = {
+# 				political_power_cost = -0.3
+# 				stability_weekly = -0.003
+# 				war_support_weekly = -0.005
+# 				recruitable_population_factor = -0.5
+# 			}
+# 		}
+# 	}
+# 	NIE_branch_1_id_2_laws = {
+# 		law = yes
+# 		use_list_view = yes
+
+# 		NIE_law_branch_1_id_2_value_1_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_2_value_2_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_2_value_3_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_2_value_4_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_2_value_5_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_2_value_6_idea = { modifier = { } }
+# 	}
+# 	NIE_branch_1_id_3_laws = {
+# 		law = yes
+# 		use_list_view = yes
+
+# 		NIE_law_branch_1_id_3_value_1_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_3_value_2_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_3_value_3_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_3_value_4_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_3_value_5_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_3_value_6_idea = { modifier = { } }
+# 	}
+# 	NIE_branch_1_id_4_laws = {
+# 		law = yes
+# 		use_list_view = yes
+
+# 		NIE_law_branch_1_id_4_value_1_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_4_value_2_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_4_value_3_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_4_value_4_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_4_value_5_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_4_value_6_idea = { modifier = { } }
+# 	}
+# 	NIE_branch_1_id_5_laws = {
+# 		law = yes
+# 		use_list_view = yes
+
+# 		NIE_law_branch_1_id_5_value_1_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_5_value_2_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_5_value_3_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_5_value_4_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_5_value_5_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_5_value_6_idea = { modifier = { } }
+# 	}
+# 	NIE_branch_1_id_6_laws = {
+# 		law = yes
+# 		use_list_view = yes
+
+# 		NIE_law_branch_1_id_6_value_1_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_6_value_2_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_6_value_3_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_6_value_4_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_6_value_5_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_6_value_6_idea = { modifier = { } }
+# 	}
+# 	NIE_branch_1_id_7_laws = {
+# 		law = yes
+# 		use_list_view = yes
+
+# 		NIE_law_branch_1_id_7_value_1_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_7_value_2_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_7_value_3_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_7_value_4_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_7_value_5_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_7_value_6_idea = { modifier = { } }
+# 	}
+# 	NIE_branch_1_id_8_laws = {
+# 		law = yes
+# 		use_list_view = yes
+
+# 		NIE_law_branch_1_id_8_value_1_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_8_value_2_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_8_value_3_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_8_value_4_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_8_value_5_idea = { modifier = { } }
+# 		NIE_law_branch_1_id_8_value_6_idea = { modifier = { } }
+# 	}
+
+	# NIE_branch_2_id_1_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_2_id_1_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_1_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_1_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_1_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_1_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_1_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_2_id_2_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_2_id_2_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_2_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_2_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_2_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_2_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_2_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_2_id_3_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_2_id_3_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_3_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_3_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_3_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_3_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_3_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_2_id_4_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_2_id_4_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_4_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_4_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_4_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_4_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_4_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_2_id_5_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_2_id_5_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_5_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_5_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_5_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_5_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_5_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_2_id_6_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_2_id_6_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_6_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_6_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_6_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_6_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_6_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_2_id_7_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_2_id_7_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_7_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_7_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_7_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_7_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_7_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_2_id_8_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_2_id_8_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_8_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_8_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_8_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_8_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_2_id_8_value_6_idea = { modifier = { } }
+	# }
+
+	# NIE_branch_3_id_1_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_3_id_1_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_1_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_1_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_1_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_1_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_1_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_3_id_2_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_3_id_2_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_2_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_2_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_2_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_2_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_2_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_3_id_3_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_3_id_3_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_3_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_3_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_3_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_3_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_3_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_3_id_4_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_3_id_4_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_4_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_4_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_4_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_4_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_4_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_3_id_5_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_3_id_5_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_5_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_5_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_5_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_5_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_5_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_3_id_6_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_3_id_6_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_6_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_6_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_6_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_6_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_6_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_3_id_7_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_3_id_7_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_7_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_7_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_7_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_7_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_7_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_3_id_8_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_3_id_8_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_8_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_8_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_8_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_8_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_3_id_8_value_6_idea = { modifier = { } }
+	# }
+
+	# NIE_branch_4_id_1_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_4_id_1_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_1_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_1_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_1_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_1_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_1_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_4_id_2_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_4_id_2_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_2_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_2_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_2_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_2_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_2_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_4_id_3_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_4_id_3_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_3_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_3_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_3_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_3_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_3_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_4_id_4_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_4_id_4_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_4_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_4_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_4_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_4_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_4_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_4_id_5_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_4_id_5_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_5_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_5_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_5_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_5_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_5_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_4_id_6_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_4_id_6_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_6_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_6_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_6_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_6_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_6_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_4_id_7_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_4_id_7_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_7_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_7_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_7_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_7_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_7_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_4_id_8_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_4_id_8_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_8_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_8_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_8_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_8_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_4_id_8_value_6_idea = { modifier = { } }
+	# }
+
+	# NIE_branch_5_id_1_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_5_id_1_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_1_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_1_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_1_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_1_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_1_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_5_id_2_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_5_id_2_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_2_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_2_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_2_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_2_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_2_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_5_id_3_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_5_id_3_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_3_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_3_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_3_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_3_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_3_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_5_id_4_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_5_id_4_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_4_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_4_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_4_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_4_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_4_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_5_id_5_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_5_id_5_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_5_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_5_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_5_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_5_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_5_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_5_id_6_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_5_id_6_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_6_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_6_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_6_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_6_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_6_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_5_id_7_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_5_id_7_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_7_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_7_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_7_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_7_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_7_value_6_idea = { modifier = { } }
+	# }
+	# NIE_branch_5_id_8_laws = {
+	# 	law = yes
+	# 	use_list_view = yes
+
+	# 	NIE_law_branch_5_id_8_value_1_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_8_value_2_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_8_value_3_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_8_value_4_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_8_value_5_idea = { modifier = { } }
+	# 	NIE_law_branch_5_id_8_value_6_idea = { modifier = { } }
+	# }
 }

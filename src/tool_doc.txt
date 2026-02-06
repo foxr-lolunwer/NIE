@@ -1,0 +1,26 @@
+level:为非正数时不填
+default:为false时不填
+available:为false时不填，否则填写available = { TRIGGER_NIE_law_branch_?_id_?_value_?_idea_available = yes }
+cost:等于branch id cost不填
+removal_cost:等于branch id removal_cost不填
+allowed_civil_war_meta:大于0时填allowed_civil_war = { always = yes },为0时不填,小于0时填allowed_civil_war = { TRIGGER_NIE_law_branch_?_id_?_value_?_idea_allowed_cv = yes }
+modifier_meta:无论是否有内容，填入
+    modifier = {
+        xxx
+    }(保留换行)
+custom_modifier_tooltip:为false时不填，否则在上面modifier结尾添加一行custom_modifier_tooltip = NIE_law_branch_?_id_?_value_?_idea_tooltip
+other_meta:这个是对其他内容的补丁，不填other，其中的内容和available等同级
+on_add:为false或没有时不填，否则填写on_add = { FUN_NIE_law_branch_?_id_?_value_?_idea_on_add = yes }
+on_remove:为false或没有时不填，否则填写on_remove = { FUN_NIE_law_branch_?_id_?_value_?_idea_on_remove = yes }
+research_bonus:没有时不填，否则填写
+    research_bonus = {
+		(内容，要求同modifier)
+	}
+equipment_bonus:没有时不填，否则填写
+    equipment_bonus = {
+		(内容，要求同modifier)
+	}
+do_effect:为false或没有时不填，否则填写do_effect = { TRIGGER_NIE_law_branch_?_id_?_value_?_idea_do_effect = yes }
+allowed:为false或没有时不填，否则填写allowed = { TRIGGER_NIE_law_branch_?_id_?_value_?_idea_allowed = yes }
+allowed_to_remove:为false或没有时不填，否则填写allowed_to_remove = { TRIGGER_NIE_law_branch_?_id_?_value_?_idea_allowed_rm = yes }
+visible:为false或没有时不填，否则填写visible = { TRIGGER_NIE_law_branch_?_id_?_value_?_idea_visible = yes }

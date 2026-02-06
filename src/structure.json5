@@ -1,0 +1,883 @@
+{
+    branch_1: {
+        name: "国防事务与人力资源",  // str(yml_loc)
+        cost: 150,  // int
+        removal_cost: -1,  // int
+        id_1: {
+            name: "征兵法案",  // str(yml_loc)
+            value_1: {
+                use_id_name: true,  // bool(name="id_name:value_name"?)
+                name: "去军事化国家",  // str(yml_loc) 为空代表使用动态文本
+                desc: "依据现行法律框架，国防组织仅保留最低限度的维持编制，其职能界定为协助境内民事秩序维护。",  //str(yml_loc) 为空代表使用动态文本
+                level: 1,  // int(<=0:ban)
+                default: false,  // bool
+                available: true,  // bool(use scripted_trigger)
+                // cost: 150,  // int(if v_cost != b_cost and v_cost >= 0:use v_cost, null and else:use b_cost)
+                // removal_cost: -1,  // int(if v_rem != b_rem and v_rem >= 0:use v_rem, null and else:use b_rem)
+                allowed_civil_war_flag: 0,  // int(>0: always = yes, =0:  always = no, <0: use scripted_trigger)|str(all in one line)
+                modifier_meta: "\
+                    political_power_gain = -0.1\n\
+                    stability_weekly = -0.001\n\
+                    war_support_weekly = 0.001\n\
+                    training_time_factor = 0.5\n\
+                    recruitable_population_factor = -0.9\
+                ",  // str(meta)
+                custom_modifier_tooltip: false,  // bool(yml_loc)
+                other_meta: {
+                    on_add: true,  // 用于与女性服役联动
+                    on_remove: true  // 用于与女性服役联动
+                    // on_add: bool(use scripted_effect)
+                    // on_remove: bool(use scripted_effect)
+                    // research_bonus: str(meta)
+                    // equipment_bonus: str(meta)
+                    // do_effect: bool(use scripted_trigger)
+                    // allowed: bool(use scripted_trigger)
+                    // allowed_to_remove: bool(use scripted_trigger)
+                    // visible: bool(use scripted_trigger)
+                }
+            },
+            value_2: {
+                use_id_name: true,
+                name: "非军事化国家",
+                desc: "国家行政编制内不设立任何武装性质单位，国防相关职能由民事行政部门代理执行。",
+                level: 1,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 0,
+                modifier_meta: "\
+                    political_power_gain = 0.15\n\
+                    consumer_goods_expected_value = -0.05\n\
+                    training_time_factor = 0.5\n\
+                    recruitable_population_factor = -0.95\
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+            value_3: {
+                use_id_name: true,
+                name: "志愿参军",
+                desc: "武装力量的员额补充完全基于公民个人的意愿申请与劳务合同签署，法律不赋予行政机关强制征集的权限。",
+                level: 2,
+                default: true,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    army_core_attack_factor = 0.05\n\
+                    army_core_defense_factor = 0.05\n\
+                    recruitable_population_factor = -0.8\
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+            value_4: {
+                use_id_name: true,
+                name: "有限征兵",
+                desc: "国家实施有条件的强制性征集制度。政府根据年度国防预算与员额空缺，在特定年龄段的公民中进行随机或定向抽选服役。",
+                level: 3,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    political_power_cost = -0.1\n\
+                    stability_weekly = -0.001\n\
+                    war_support_weekly = -0.001\n\
+                    recruitable_population_factor = -0.7\
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+            value_5: {
+                use_id_name: true,
+                name: "大范围征兵",
+                desc: "依据国防动员法案，扩大强制征集覆盖范围。法律规定所有符合生理标准的适龄公民均被纳入现役部队或预备役编队。",
+                level: 4,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    political_power_cost = -0.2\n\
+                    stability_weekly = -0.002\n\
+                    war_support_weekly = -0.003\n\
+                    recruitable_population_factor = -0.6\
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+            value_6: {
+                use_id_name: true,
+                name: "全面征兵",
+                desc: "国家启动最高级别动员体制。征集范围覆盖所有具备基本劳动能力的公民，政府依法拥有对全国人力资源的强制调配权。",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    political_power_cost = -0.3\n\
+                    stability_weekly = -0.003\n\
+                    war_support_weekly = -0.005\n\
+                    recruitable_population_factor = -0.5\
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+        },
+        id_2: {
+            name: "最小服役年龄",
+            value_1: {
+                use_id_name: true,
+                name: "22岁",
+                desc: "",
+                level: 1,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_2: {
+                use_id_name: true,
+                name: "20岁",
+                desc: "",
+                level: 2,
+                default: true,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_3: {
+                use_id_name: true,
+                name: "18岁",
+                desc: "",
+                level: 3,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_4: {
+                use_id_name: true,
+                name: "16岁",
+                desc: "",
+                level: 4,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_5: {
+                use_id_name: true,
+                name: "14岁",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_6: {
+                use_id_name: true,
+                name: "12岁",
+                desc: "",
+                level: 6,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_7: {
+                use_id_name: true,
+                name: "8岁",
+                desc: "",
+                level: 7,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 0,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_8: {
+                use_id_name: true,
+                name: "4岁",
+                desc: "",
+                level: 8,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 0,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            }
+        },
+        id_3: {
+            name: "最大服役年龄",
+            value_1: {
+                use_id_name: true,
+                name: "35岁",
+                desc: "",
+                level: 1,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_2: {
+                use_id_name: true,
+                name: "40岁",
+                desc: "",
+                level: 2,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_3: {
+                use_id_name: true,
+                name: "45岁",
+                desc: "",
+                level: 3,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_4: {
+                use_id_name: true,
+                name: "50岁",
+                desc: "",
+                level: 4,
+                default: true,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_5: {
+                use_id_name: true,
+                name: "55岁",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_6: {
+                use_id_name: true,
+                name: "60岁",
+                desc: "",
+                level: 6,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_7: {
+                use_id_name: true,
+                name: "70岁",
+                desc: "",
+                level: 7,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 0,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_8: {
+                use_id_name: true,
+                name: "无限制",
+                desc: "",
+                level: 8,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 0,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            }
+        },
+        id_4: {
+            name: "女性服役政策",
+            value_1: {
+                use_id_name: true,
+                name: "同等服役",
+                desc: "",
+                level: 6,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: true,  // 检测征兵法案获取隐藏修正的值
+                other_meta: {
+                    on_add: true,  // 用于与征兵法案联动
+                    on_remove: true  // 用于与征兵法案联动
+                }
+            },
+            value_2: {
+                use_id_name: true,
+                name: "鼓励服役",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+            value_3: {
+                use_id_name: true,
+                name: "志愿服役",
+                desc: "",
+                level: 4,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+            value_4: {
+                use_id_name: true,
+                name: "仅医护服务",
+                desc: "",
+                level: 3,
+                default: true,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+            value_5: {
+                use_id_name: true,
+                name: "禁止服役",
+                desc: "",
+                level: 2,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+            value_6: {
+                use_id_name: true,
+                name: "歧视性禁止",
+                desc: "",
+                level: 1,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+        },
+        id_5: {
+            name: "非核心人力资源",
+            value_1: {
+                use_id_name: true,
+                name: "禁服兵役",
+                desc: "",
+                level: 1,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_2: {
+                use_id_name: true,
+                name: "征召兵役",
+                desc: "",
+                level: 2,
+                default: true,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_3: {
+                use_id_name: true,
+                name: "强制兵役",
+                desc: "",
+                level: 3,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_4: {
+                use_id_name: true,
+                name: "为独立而战",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_5: {
+                use_id_name: true,
+                name: "前线敢死队",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_6: {
+                use_id_name: true,
+                name: "前线炮灰",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            }
+        },
+        id_6: {
+            name: "参军福利",
+            value_1: {
+                use_id_name: true,
+                name: "义务参军",
+                desc: "",
+                level: 1,
+                default: true,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_2: {
+                use_id_name: true,
+                name: "少量津贴",
+                desc: "",
+                level: 2,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_3: {
+                use_id_name: true,
+                name: "服役津贴",
+                desc: "",
+                level: 3,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_4: {
+                use_id_name: true,
+                name: "高额抚恤",
+                desc: "",
+                level: 4,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_5: {
+                use_id_name: true,
+                name: "体面退休金",
+                desc: "",
+                level: 4,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_6: {
+                use_id_name: true,
+                name: "医疗与家属保障",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_7: {
+                use_id_name: true,
+                name: "优先安置政策",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_8: {
+                use_id_name: true,
+                name: "广泛社会福利",
+                desc: "",
+                level: 6,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            }
+        },
+        id_7: {
+            name: "兵役豁免",
+            value_1: {
+                use_id_name: true,
+                name: "无豁免",
+                desc: "",
+                level: 1,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_2: {
+                use_id_name: true,
+                name: "仅公职人员",
+                desc: "",
+                level: 2,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_3: {
+                use_id_name: true,
+                name: "公职和宗教人员",
+                desc: "",
+                level: 3,
+                default: true,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_4: {
+                use_id_name: true,
+                name: "公职，宗教和受教育人员",
+                desc: "",
+                level: 4,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_5: {
+                use_id_name: true,
+                name: "严格申报制度",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_6: {
+                use_id_name: true,
+                name: "宽松申报制度",
+                desc: "",
+                level: 6,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            }
+        },
+        id_8: {
+            name: "国家状态",
+            value_1: {
+                use_id_name: true,
+                name: "全力发展",
+                desc: "",
+                level: 1,
+                default: false,
+                available: false,  // 仅和平时期可用
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_2: {
+                use_id_name: true,
+                name: "正常发展",
+                desc: "",
+                level: 2,
+                default: false,
+                available: false,  // 仅和平时期可用
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_3: {
+                use_id_name: true,
+                name: "警惕状态",
+                desc: "",
+                level: 3,
+                default: false,
+                available: false,  // 仅和平时期可用
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_4: {
+                use_id_name: true,
+                name: "局部动员",
+                desc: "",
+                level: 4,
+                default: true,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_5: {
+                use_id_name: true,
+                name: "广泛动员",
+                desc: "",
+                level: 5,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: {
+                    on_add: true,  // 如果是主要国家，将引发全球紧张度，除非是从总动员降级
+                }
+            },
+            value_6: {
+                use_id_name: true,
+                name: "总动员",
+                desc: "",
+                level: 6,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: {
+                    on_add: true,  // 如果是主要国家，将引发全球紧张度
+                }
+            },
+            value_7: {
+                use_id_name: true,
+                name: "战时经济",
+                desc: "",
+                level: 7,
+                default: false,
+                available: false,  // 仅战争时期可用，只能由总动员升级或从总体战降级
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            },
+            value_8: {
+                use_id_name: true,
+                name: "总体战",
+                desc: "",
+                level: 8,
+                default: false,
+                available: false,  // 仅战争时期可用，只能由战时经济升级
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: false,
+                other_meta: { }
+            }
+        }
+    }
+}

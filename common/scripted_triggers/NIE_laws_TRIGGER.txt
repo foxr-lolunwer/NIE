@@ -1,0 +1,203 @@
+TRIGGER_NIE_law_branch_1_id_1_value_1_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_1_value_2_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_1_value_3_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_1_value_4_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_1_value_5_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_1_value_6_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_2_value_1_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_2_value_2_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_2_value_3_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_2_value_4_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_2_value_5_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_2_value_6_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_2_value_7_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_2_value_8_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_3_value_1_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_3_value_2_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_3_value_3_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_3_value_4_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_3_value_5_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_3_value_6_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_3_value_7_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_3_value_8_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_4_value_1_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_4_value_2_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_4_value_3_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_4_value_4_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_4_value_5_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_4_value_6_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_5_value_1_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_5_value_2_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_5_value_3_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_5_value_4_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_5_value_5_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_5_value_6_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_6_value_1_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_6_value_2_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_6_value_3_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_6_value_4_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_6_value_5_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_6_value_6_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_6_value_7_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_6_value_8_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_7_value_1_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_7_value_2_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_7_value_3_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_7_value_4_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_7_value_5_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_7_value_6_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_8_value_4_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_8_value_5_idea_available = {
+
+}
+
+TRIGGER_NIE_law_branch_1_id_8_value_6_idea_available = {
+
+}

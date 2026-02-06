@@ -1,3 +1,4 @@
-*.py
 *.psd
-src/
+src/.idea/
+src/.venv/
+src/dist_mod/
