@@ -1,4 +1,5 @@
 import os
+
 import json5
 
 # --- 核心路径配置 ---
@@ -13,6 +14,7 @@ class LawParser:
         self.json_path = json_path
         self.output_root = output_root
         self.data = self._load_json(json_path)
+        self.loc_data = {}
 
     @staticmethod
     def _load_json(path):
@@ -48,7 +50,8 @@ class LawParser:
         target_path = self._get_path("common", "idea_tags", f"{file_name}.txt")
         output = ["idea_categories = {"]
         for b_key, b_data in self.data.items():
-            if not b_key.startswith("branch_"): continue
+            if not b_key.startswith("branch_"):
+                continue
             output.append(f"    {MOD_ID}_{b_key} = {{")
             ids = sorted([k for k in b_data.keys() if k.startswith("id_")], key=lambda x: int(x.split('_')[1]))
             for id_key in ids:
@@ -59,8 +62,15 @@ class LawParser:
         self._write_file(target_path, output)
 
     @staticmethod
-    def _get_full_id(b_key, id_key, v_key, mod_id=MOD_ID):
-        return f"{mod_id}_law_{b_key}_{id_key}_{v_key}_idea"
+    def _get_full_id(b_key, id_key="", v_key="", mod_id=MOD_ID):
+        if b_key and id_key and v_key:
+            return f"{mod_id}_law_{b_key}_{id_key}_{v_key}_idea"
+        elif b_key and id_key:
+            return f"{mod_id}_law_{b_key}_{id_key}"
+        elif b_key:
+            return f"{mod_id}_law_{b_key}"
+        else:
+            return mod_id
 
     @staticmethod
     def _format_modifier_block(block_name, content, indent_level=1, custom_tooltip=""):
@@ -72,14 +82,14 @@ class LawParser:
         :param custom_tooltip: 自定义文本提示框
         :return: 格式化后的带换行和缩进的文本字符串
         """
+        if indent_level < 1:
+            indent_level = 1
         # 基础缩进字符串
         base_indent = "    " * indent_level
         # 内容行的缩进（比大括号深一层）
         content_indent = base_indent + "    "
         if not content or not content.strip():
             return f"{base_indent}{block_name} = {{}}"
-        if indent_level < 1:
-            indent_level = 1
         lines = content.split('\n')
         formatted_lines = [f"{base_indent}{block_name} = {{"]
 
@@ -96,7 +106,7 @@ class LawParser:
     def _create_scripted_file(self, id_map):
         """
         根据传入的字典自动生成对应的脚本文件
-        :param id_map: 字典，格式如 {"trigger": [...], "effect": [...], "loc": [...]}
+        :param id_map: 字典，格式如 {"trigger": [(scripted_full_id, v_full_id)...], "effect": [...], "loc": [...]}
         """
         # 定义不同模式的配置映射
         configs = {
@@ -115,28 +125,29 @@ class LawParser:
         }
 
         # 遍历字典中的每种模式进行处理
-        for mode, id_list in id_map.items():
-            if mode not in configs or not id_list:
+        for mode, tuple_list in id_map.items():
+            if mode not in configs or not tuple_list:
                 continue
 
             cfg = configs[mode]
+
             # 组合完整路径：common/xxx/NIE_laws_PREFIX_suffix.txt
             target_path = self._get_path("common", cfg['folder'], f"{cfg['file_prefix']}.txt")
 
             output = []
             # 按照传入列表的顺序生成内容
-            for full_id in id_list:
+            for scripted_full_id, v_full_id in tuple_list:
                 if mode == "loc":
                     # 脚本化本地化的特殊结构
-                    output.append("defined_text = {")
-                    output.append(f"    name = {full_id}")
+                    output.append(f"defined_text = {{ # {self.loc_data.get(v_full_id, 'LOC FIND ERROR')}")
+                    output.append(f"    name = {scripted_full_id}")
                     output.append("    text = {")
                     output.append("")
                     output.append("    }")
                     output.append("}")
                 else:
                     # Trigger 和 Effect 的标准结构
-                    output.append(f"{full_id} = {{")
+                    output.append(f"{scripted_full_id} = {{ # {self.loc_data.get(v_full_id, 'LOC FIND ERROR')}")
                     output.append("")
                     output.append("}")
                 output.append("")  # 条目间的空行
@@ -152,14 +163,11 @@ class LawParser:
         :param loc_map: 字典，格式为 { "key": "value", "key_desc": "value" }
         """
         # 路径处理：localisation/l_simp_chinese/filename_l_simp_chinese.yml
-        lang_folder = f"l_{lang}"
+        lang_folder = f"{lang}"
         full_filename = f"{filename}_l_{lang}.yml"
         target_path = self._get_path("localisation", lang_folder, full_filename)
 
-        # 本地化文件必须以 l_语言: 开头
-        # \ufeff 是为了确保 _write_file 在 utf-8-sig 下依然有正确的 BOM 引导（可选，主要靠编码参数）
         output = [f"l_{lang}:"]
-
         # 按照 key 排序可以使 yml 文件更有序，方便 Git 追踪对比
         sorted_keys = sorted(loc_map.keys())
 
@@ -177,6 +185,7 @@ class LawParser:
 
             # HOI4 标准格式：  key:0 "value"
             output.append(f'  {key}: "{clean_value}"')
+            self.loc_data.setdefault(key, clean_value)
 
         # 使用 utf-8-sig 编码写入文件
         self._write_file(target_path, output, encoding='utf-8-sig')
@@ -191,20 +200,21 @@ class LawParser:
         }
         scripted_full_id: str
         loc_map = {}
-        loc_key: str
-        loc_value: str
 
         for b_key, b_data in self.data.items():
-            if not b_key.startswith("branch_"): continue
+            if not b_key.startswith("branch_"):
+                continue
 
             b_cost = b_data.get("cost", 150)
             b_rem_cost = b_data.get("removal_cost", 0)
+            loc_map.setdefault(self._get_full_id(b_key), b_data.get("name", "Unknown Value"))
 
             ids = sorted([k for k in b_data.keys() if k.startswith("id_")], key=lambda x: int(x.split('_')[1]))
 
             for id_key in ids:
                 id_data = b_data[id_key]
                 id_name = id_data.get("name", "Unknown Value")
+                loc_map.setdefault(self._get_full_id(b_key, id_key), id_name)
                 # 槽位名，例如 NIE_branch_1_id_1_laws
                 output.append(f"    {MOD_ID}_{b_key}_{id_key}_laws = {{ # {id_name}")
                 output.append("        law = yes")
@@ -216,15 +226,15 @@ class LawParser:
                     v_data = id_data[v_key]
                     v_name = v_data.get("name", "")
                     use_id_name = v_data.get("use_id_name", True)
-                    v_full_id = self._get_full_id(b_key,id_key, v_key)
+                    v_full_id = self._get_full_id(b_key, id_key, v_key)
                     if v_name:
                         v_full_name = f"{id_name}{COLON_STYLE}{v_name}" if use_id_name else v_name
-                        loc_map.setdefault(v_full_id, v_name)
+                        loc_map.setdefault(v_full_id, v_full_name)
                         v_desc = v_data.get("desc", "")
                         loc_map.setdefault(f"{v_full_id}_desc", v_desc)
                     else:
                         scripted_full_id = f"get_{v_full_id}"
-                        scripted_id_map["loc"].append(scripted_full_id)
+                        scripted_id_map["loc"].append((scripted_full_id, v_full_id))
                         v_full_name = scripted_full_id
                         loc_map.setdefault(v_full_id, '"# DY_LOC"')
                         loc_map.setdefault(f"{v_full_id}_desc", '"# DY_LOC"')
@@ -244,13 +254,13 @@ class LawParser:
                         output.append("            allowed_civil_war = { always = yes }")
                     elif acw < 0:
                         scripted_full_id = f"TRIGGER_{v_full_id}_allowed_cv"
-                        scripted_id_map["trigger"].append(scripted_full_id)
+                        scripted_id_map["trigger"].append((scripted_full_id, v_full_id))
                         output.append(f"            allowed_civil_war = {{ {scripted_full_id} = yes }}")
 
                     # 3. Available
                     if v_data.get("available") and v_data["available"] is not False:
                         scripted_full_id = f"TRIGGER_{v_full_id}_available"
-                        scripted_id_map["trigger"].append(scripted_full_id)
+                        scripted_id_map["trigger"].append((scripted_full_id, v_full_id))
                         output.append(f"            available = {{ {scripted_full_id} = yes }}")
 
                     # 4. Cost 逻辑
@@ -296,7 +306,7 @@ class LawParser:
 
                             # 3. 保证正确添加到字典中
                             if cfg['mode'] in scripted_id_map:
-                                scripted_id_map[cfg['mode']].append(scripted_full_id)
+                                scripted_id_map[cfg['mode']].append((scripted_full_id, v_full_id))
 
                     # 8. Bonus Blocks (换行逻辑同 modifier)
                     for b_type in ["research_bonus", "equipment_bonus"]:
@@ -309,8 +319,9 @@ class LawParser:
 
         output.append("}")
         self._write_file(target_path, output)
-        self._create_scripted_file(scripted_id_map)
         self._create_loc_file(loc_map)
+        # _create_scripted_file必须在_create_loc_file后
+        self._create_scripted_file(scripted_id_map)
 
 
 if __name__ == "__main__":
