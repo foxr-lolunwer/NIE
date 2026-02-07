@@ -1,0 +1,349 @@
+MODIFIER_NIE_law_branch_1_id_1_value_1_idea_modifier = {
+    political_power_gain = -0.1
+    stability_weekly = -0.001
+    war_support_weekly = 0.001
+    training_time_factor = 0.5
+    conscription_factor = -0.45
+}
+
+MODIFIER_NIE_law_branch_1_id_1_value_2_idea_modifier = {
+    political_power_gain = 0.15
+    consumer_goods_expected_value = -0.05
+    training_time_factor = 0.5
+    conscription_factor = -0.48
+}
+
+MODIFIER_NIE_law_branch_1_id_1_value_3_idea_modifier = {
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+                conscription_factor = -0.4
+}
+
+MODIFIER_NIE_law_branch_1_id_1_value_4_idea_modifier = {
+                political_power_cost = -0.1
+                stability_weekly = -0.001
+                war_support_weekly = -0.001
+                monthly_population = -0.1
+                conscription_factor = -0.35
+}
+
+MODIFIER_NIE_law_branch_1_id_1_value_5_idea_modifier = {
+                political_power_cost = -0.2
+                stability_weekly = -0.002
+                war_support_weekly = -0.003
+                monthly_population = -0.2
+                conscription_factor = -0.3
+}
+
+MODIFIER_NIE_law_branch_1_id_1_value_6_idea_modifier = {
+                political_power_cost = -0.3
+                stability_weekly = -0.003
+                war_support_weekly = -0.005
+                monthly_population = -0.3
+                conscription_factor = -0.25
+}
+
+MODIFIER_NIE_law_branch_1_id_2_value_1_idea_modifier = {
+                army_attack_factor = 0.03
+                army_defence_factor = 0.03
+                conscription = 0.06
+}
+
+MODIFIER_NIE_law_branch_1_id_2_value_2_idea_modifier = {
+    conscription = 0.08
+}
+
+MODIFIER_NIE_law_branch_1_id_2_value_3_idea_modifier = {
+    army_attack_factor = -0.01
+    army_defence_factor = -0.01
+    war_support_weekly = -0.01
+    monthly_population = -0.2
+    conscription = 0.1
+}
+
+MODIFIER_NIE_law_branch_1_id_2_value_4_idea_modifier = {
+                army_attack_factor = -0.03
+                army_defence_factor = -0.03
+                political_power_gain = -0.1
+                stability_weekly = -0.01
+                war_support_weekly = -0.01
+                monthly_population = -0.3
+                conscription = 0.12
+}
+
+MODIFIER_NIE_law_branch_1_id_2_value_5_idea_modifier = {
+                army_attack_factor = -0.05
+                army_defence_factor = -0.05
+                political_power_gain = -0.2
+                stability_weekly = -0.02
+                war_support_weekly = -0.02
+                monthly_population = -0.5
+                conscription = 0.14
+}
+
+MODIFIER_NIE_law_branch_1_id_2_value_6_idea_modifier = {
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+                political_power_gain = -0.3
+                stability_weekly = -0.03
+                war_support_weekly = -0.03
+                monthly_population = -1
+                conscription = 0.16
+}
+MODIFIER_NIE_law_branch_1_id_2_value_7_idea_modifier = {
+                army_attack_factor = -0.2
+                army_defence_factor = -0.2
+                political_power_gain = -0.4
+                stability_weekly = -0.04
+                war_support_weekly = -0.04
+                monthly_population = -2
+                conscription = 0.18
+}
+MODIFIER_NIE_law_branch_1_id_2_value_8_idea_modifier = {
+                army_attack_factor = -0.3
+                army_defence_factor = -0.3
+                political_power_gain = -0.5
+                stability_weekly = -0.05
+                war_support_weekly = -0.05
+                monthly_population = -3
+                conscription = 0.2
+}
+
+MODIFIER_NIE_law_branch_1_id_3_value_1_idea_modifier = {
+                army_attack_factor = 0.08
+                army_defence_factor = 0.08
+                conscription = 0.06
+}
+
+MODIFIER_NIE_law_branch_1_id_3_value_2_idea_modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                conscription = 0.08
+}
+
+MODIFIER_NIE_law_branch_1_id_3_value_3_idea_modifier = {
+                army_attack_factor = 0.03
+                army_defence_factor = 0.03
+                conscription = 0.1
+}
+
+MODIFIER_NIE_law_branch_1_id_3_value_4_idea_modifier = {
+                political_power_gain = -0.1
+                conscription = 0.12
+}
+
+MODIFIER_NIE_law_branch_1_id_3_value_5_idea_modifier = {
+                political_power_gain = -0.2
+                stability_weekly = -0.001
+                war_support_weekly = -0.001
+                conscription = 0.14
+}
+
+MODIFIER_NIE_law_branch_1_id_3_value_6_idea_modifier = {
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+                political_power_gain = -0.2
+                stability_weekly = -0.003
+                war_support_weekly = -0.003
+                conscription = 0.16
+}
+
+MODIFIER_NIE_law_branch_1_id_3_value_7_idea_modifier = {
+                army_attack_factor = -0.2
+                army_defence_factor = -0.2
+                political_power_gain = -0.25
+                stability_weekly = -0.005
+                war_support_weekly = -0.005
+                conscription = 0.18
+}
+
+MODIFIER_NIE_law_branch_1_id_3_value_8_idea_modifier = {
+                army_attack_factor = -0.3
+                army_defence_factor = -0.3
+                political_power_gain = -0.3
+                stability_weekly = -0.01
+                war_support_weekly = -0.01
+                conscription = 0.2
+}
+
+MODIFIER_NIE_law_branch_1_id_4_value_1_idea_modifier = {
+                political_power_gain = -0.3
+                stability_weekly = -0.003
+                war_support_weekly = -0.003
+                monthly_population = -0.5
+}
+
+MODIFIER_NIE_law_branch_1_id_4_value_2_idea_modifier = {
+                political_power_gain = -0.1
+                stability_weekly = -0.001
+                war_support_weekly = -0.001
+                monthly_population = -0.3
+}
+
+MODIFIER_NIE_law_branch_1_id_4_value_3_idea_modifier = {
+                conscription_factor = -0.45
+                monthly_population = -0.2
+}
+
+MODIFIER_NIE_law_branch_1_id_4_value_4_idea_modifier = {
+                political_power_gain = 0.1
+                conscription_factor = -0.48
+}
+
+MODIFIER_NIE_law_branch_1_id_4_value_5_idea_modifier = {
+                conscription_factor = -0.5
+}
+
+MODIFIER_NIE_law_branch_1_id_4_value_6_idea_modifier = {
+                political_power_gain = -0.1
+                conscription_factor = -0.5
+}
+
+MODIFIER_NIE_law_branch_1_id_4_value_7_idea_modifier = {
+                # political_power_gain = -0.1
+                # conscription_factor = -0.5
+}
+
+MODIFIER_NIE_law_branch_1_id_5_value_1_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_5_value_2_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_5_value_3_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_5_value_4_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_5_value_5_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_5_value_6_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_6_value_1_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_6_value_2_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_6_value_3_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_6_value_4_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_6_value_5_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_6_value_6_idea_modifier = {
+
+}
+
+MODIFIER_NIE_law_branch_1_id_7_value_1_idea_modifier = {
+                political_power_gain = -0.3
+                stability_weekly = -0.002
+                war_support_weekly = -0.002
+}
+
+MODIFIER_NIE_law_branch_1_id_7_value_2_idea_modifier = {
+                political_power_gain = -0.1
+                stability_weekly = -0.001
+                war_support_weekly = -0.001
+}
+
+MODIFIER_NIE_law_branch_1_id_7_value_3_idea_modifier = {
+                stability_weekly = -0.001
+                war_support_weekly = -0.001
+}
+
+MODIFIER_NIE_law_branch_1_id_7_value_4_idea_modifier = {
+                political_power_gain = 0.1
+                stability_weekly = 0.001
+}
+
+MODIFIER_NIE_law_branch_1_id_7_value_5_idea_modifier = {
+                stability_weekly = 0.001
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+}
+
+MODIFIER_NIE_law_branch_1_id_7_value_6_idea_modifier = {
+                political_power_gain = -0.1
+                stability_weekly = 0.001
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+}
+
+MODIFIER_NIE_law_branch_1_id_8_value_1_idea_modifier = {
+                political_power_gain = 0.2
+                stability_weekly = 0.001
+                production_speed_buildings_factor = 0.2
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
+}
+
+MODIFIER_NIE_law_branch_1_id_8_value_2_idea_modifier = {
+                political_power_gain = 0.1
+                production_speed_buildings_factor = 0.1
+}
+
+MODIFIER_NIE_law_branch_1_id_8_value_3_idea_modifier = {
+                war_support_weekly = 0.001
+}
+
+MODIFIER_NIE_law_branch_1_id_8_value_4_idea_modifier = {
+                political_power_gain = 0.1
+                stability_weekly = -0.001
+                war_support_weekly = 0.002
+                industrial_capacity_factory = 0.03
+                industrial_capacity_dockyard = 0.03
+}
+
+MODIFIER_NIE_law_branch_1_id_8_value_5_idea_modifier = {
+                political_power_gain = 0.2
+                stability_weekly = -0.003
+                war_support_weekly = 0.005
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+}
+
+MODIFIER_NIE_law_branch_1_id_8_value_6_idea_modifier = {
+                political_power_gain = 0.3
+                stability_weekly = -0.005
+                war_support_weekly = 0.01
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+}
+
+MODIFIER_NIE_law_branch_1_id_8_value_7_idea_modifier = {
+                political_power_gain = 0.1
+                stability_weekly = -0.003
+                war_support_weekly = -0.003
+                industrial_capacity_factory = 0.2
+                industrial_capacity_dockyard = 0.2
+}
+
+MODIFIER_NIE_law_branch_1_id_8_value_8_idea_modifier = {
+                army_attack_factor = 0.01
+                army_defence_factor = 0.01
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+                political_power_gain = 0.2
+                stability_weekly = -0.005
+                war_support_weekly = -0.005
+                industrial_capacity_factory = 0.3
+                industrial_capacity_dockyard = 0.3
+}

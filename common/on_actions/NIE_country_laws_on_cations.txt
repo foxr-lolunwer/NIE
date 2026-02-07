@@ -3,6 +3,9 @@ on_actions = {
 		effect = {
 			if = { limit = { NOT = { has_global_flag = NIE_enabled } }
 				set_global_flag = NIE_enabled
+				every_country = {
+					FUN_NIE_law_init = yes
+				}
 			}
 		}
 	}

@@ -1,0 +1,5 @@
+# 此文件用于存放兼容性性触发器
+# 主要为意识形态
+TRIGGER_NIE_is_government_discriminate_against_women = {
+	always = no
+}

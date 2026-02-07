@@ -1,4 +1,3 @@
-@default_min_political_power = 100
 TRIGGER_NIE_law_branch_1_id_1_value_1_idea_available = { # 征兵法案：去军事化国家
 	# has_country_flag = NIE_non_militarized_country_flag
 	always = no

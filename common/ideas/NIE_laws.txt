@@ -1,5 +1,5 @@
 ideas = {
-    NIE_branch_1_id_1_laws = { # 征兵法案
+    NIE_law_branch_1_id_1_laws = { # 征兵法案
         law = yes
         use_list_view = yes
 
@@ -11,7 +11,7 @@ ideas = {
                 stability_weekly = -0.001
                 war_support_weekly = 0.001
                 training_time_factor = 0.5
-                recruitable_population_factor = -0.9
+                conscription_factor = -0.45
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_1_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_1_idea_on_remove = yes }
@@ -24,7 +24,7 @@ ideas = {
                 political_power_gain = 0.15
                 consumer_goods_expected_value = -0.05
                 training_time_factor = 0.5
-                recruitable_population_factor = -0.95
+                conscription_factor = -0.48
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_2_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_2_idea_on_remove = yes }
@@ -33,12 +33,13 @@ ideas = {
         NIE_law_branch_1_id_1_value_3_idea = { # 征兵法案：志愿参军
             level = 2
             default = yes
+            cancel_if_invalid = no
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_1_value_3_idea_available = yes }
             modifier = {
                 army_core_attack_factor = 0.05
-                army_core_defense_factor = 0.05
-                recruitable_population_factor = -0.8
+                army_core_defence_factor = 0.05
+                conscription_factor = -0.4
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_3_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_3_idea_on_remove = yes }
@@ -52,7 +53,8 @@ ideas = {
                 political_power_cost = -0.1
                 stability_weekly = -0.001
                 war_support_weekly = -0.001
-                recruitable_population_factor = -0.7
+                monthly_population = -0.1
+                conscription_factor = -0.35
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_4_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_4_idea_on_remove = yes }
@@ -66,7 +68,8 @@ ideas = {
                 political_power_cost = -0.2
                 stability_weekly = -0.002
                 war_support_weekly = -0.003
-                recruitable_population_factor = -0.6
+                monthly_population = -0.2
+                conscription_factor = -0.3
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_5_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_5_idea_on_remove = yes }
@@ -80,14 +83,15 @@ ideas = {
                 political_power_cost = -0.3
                 stability_weekly = -0.003
                 war_support_weekly = -0.005
-                recruitable_population_factor = -0.5
+                monthly_population = -0.3
+                conscription_factor = -0.25
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_6_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_6_idea_on_remove = yes }
         }
 
     }
-    NIE_branch_1_id_2_laws = { # 最小服役年龄
+    NIE_law_branch_1_id_2_laws = { # 最小服役年龄
         law = yes
         use_list_view = yes
 
@@ -95,59 +99,112 @@ ideas = {
             level = 1
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_2_value_1_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = 0.03
+                army_defence_factor = 0.03
+                conscription = 0.06
+            }
         }
 
         NIE_law_branch_1_id_2_value_2_idea = { # 最小服役年龄：20岁
             level = 2
             default = yes
+            cancel_if_invalid = no
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_2_value_2_idea_available = yes }
-            modifier = {}
+            modifier = {
+                conscription = 0.08
+            }
         }
 
         NIE_law_branch_1_id_2_value_3_idea = { # 最小服役年龄：18岁
             level = 3
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_2_value_3_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = -0.01
+                army_defence_factor = -0.01
+                war_support_weekly = -0.01
+                monthly_population = -0.2
+                conscription = 0.1
+            }
         }
 
         NIE_law_branch_1_id_2_value_4_idea = { # 最小服役年龄：16岁
             level = 4
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_2_value_4_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = -0.03
+                army_defence_factor = -0.03
+                political_power_gain = -0.1
+                stability_weekly = -0.01
+                war_support_weekly = -0.01
+                monthly_population = -0.3
+                conscription = 0.12
+            }
         }
 
         NIE_law_branch_1_id_2_value_5_idea = { # 最小服役年龄：14岁
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_2_value_5_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = -0.05
+                army_defence_factor = -0.05
+                political_power_gain = -0.2
+                stability_weekly = -0.02
+                war_support_weekly = -0.02
+                monthly_population = -0.5
+                conscription = 0.14
+            }
         }
 
         NIE_law_branch_1_id_2_value_6_idea = { # 最小服役年龄：12岁
             level = 6
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_2_value_6_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+                political_power_gain = -0.3
+                stability_weekly = -0.03
+                war_support_weekly = -0.03
+                monthly_population = -1
+                conscription = 0.16
+            }
         }
 
         NIE_law_branch_1_id_2_value_7_idea = { # 最小服役年龄：8岁
             level = 7
             available = { TRIGGER_NIE_law_branch_1_id_2_value_7_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = -0.2
+                army_defence_factor = -0.2
+                political_power_gain = -0.4
+                stability_weekly = -0.04
+                war_support_weekly = -0.04
+                monthly_population = -2
+                conscription = 0.18
+            }
         }
 
         NIE_law_branch_1_id_2_value_8_idea = { # 最小服役年龄：4岁
             level = 8
             available = { TRIGGER_NIE_law_branch_1_id_2_value_8_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = -0.3
+                army_defence_factor = -0.3
+                political_power_gain = -0.5
+                stability_weekly = -0.05
+                war_support_weekly = -0.05
+                monthly_population = -3
+                conscription = 0.2
+            }
         }
 
     }
-    NIE_branch_1_id_3_laws = { # 最大服役年龄
+    NIE_law_branch_1_id_3_laws = { # 最大服役年龄
         law = yes
         use_list_view = yes
 
@@ -155,59 +212,101 @@ ideas = {
             level = 1
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_3_value_1_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = 0.08
+                army_defence_factor = 0.08
+                conscription = 0.06
+            }
         }
 
         NIE_law_branch_1_id_3_value_2_idea = { # 最大服役年龄：40岁
             level = 2
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_3_value_2_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                conscription = 0.08
+            }
         }
 
         NIE_law_branch_1_id_3_value_3_idea = { # 最大服役年龄：45岁
             level = 3
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_3_value_3_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = 0.03
+                army_defence_factor = 0.03
+                conscription = 0.1
+            }
         }
 
         NIE_law_branch_1_id_3_value_4_idea = { # 最大服役年龄：50岁
             level = 4
             default = yes
+            cancel_if_invalid = no
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_3_value_4_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = -0.1
+                conscription = 0.12
+            }
         }
 
         NIE_law_branch_1_id_3_value_5_idea = { # 最大服役年龄：55岁
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_3_value_5_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = -0.2
+                stability_weekly = -0.001
+                war_support_weekly = -0.001
+                conscription = 0.14
+            }
         }
 
         NIE_law_branch_1_id_3_value_6_idea = { # 最大服役年龄：60岁
             level = 6
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_3_value_6_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+                political_power_gain = -0.2
+                stability_weekly = -0.003
+                war_support_weekly = -0.003
+                conscription = 0.16
+            }
         }
 
         NIE_law_branch_1_id_3_value_7_idea = { # 最大服役年龄：70岁
             level = 7
             available = { TRIGGER_NIE_law_branch_1_id_3_value_7_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = -0.2
+                army_defence_factor = -0.2
+                political_power_gain = -0.25
+                stability_weekly = -0.005
+                war_support_weekly = -0.005
+                conscription = 0.18
+            }
         }
 
         NIE_law_branch_1_id_3_value_8_idea = { # 最大服役年龄：无限制
             level = 8
             available = { TRIGGER_NIE_law_branch_1_id_3_value_8_idea_available = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = -0.3
+                army_defence_factor = -0.3
+                political_power_gain = -0.3
+                stability_weekly = -0.01
+                war_support_weekly = -0.01
+                conscription = 0.2
+            }
         }
 
     }
-    NIE_branch_1_id_4_laws = { # 女性服役政策
+    NIE_law_branch_1_id_4_laws = { # 女性服役政策
         law = yes
         use_list_view = yes
 
@@ -215,7 +314,12 @@ ideas = {
             level = 6
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_1_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = -0.3
+                stability_weekly = -0.003
+                war_support_weekly = -0.003
+                monthly_population = -0.5
+            }
             on_add = { FUN_NIE_law_branch_1_id_4_value_1_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_1_idea_on_remove = yes }
         }
@@ -224,7 +328,12 @@ ideas = {
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_2_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = -0.1
+                stability_weekly = -0.001
+                war_support_weekly = -0.001
+                monthly_population = -0.3
+            }
             on_add = { FUN_NIE_law_branch_1_id_4_value_2_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_2_idea_on_remove = yes }
         }
@@ -233,7 +342,10 @@ ideas = {
             level = 4
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_3_idea_available = yes }
-            modifier = {}
+            modifier = {
+                conscription_factor = -0.45
+                monthly_population = -0.2
+            }
             on_add = { FUN_NIE_law_branch_1_id_4_value_3_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_3_idea_on_remove = yes }
         }
@@ -241,9 +353,13 @@ ideas = {
         NIE_law_branch_1_id_4_value_4_idea = { # 女性服役政策：仅医护服务
             level = 3
             default = yes
+            cancel_if_invalid = no
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_4_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = 0.1
+                conscription_factor = -0.48
+            }
             on_add = { FUN_NIE_law_branch_1_id_4_value_4_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_4_idea_on_remove = yes }
         }
@@ -252,7 +368,9 @@ ideas = {
             level = 2
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_5_idea_available = yes }
-            modifier = {}
+            modifier = {
+                conscription_factor = -0.5
+            }
             on_add = { FUN_NIE_law_branch_1_id_4_value_5_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_5_idea_on_remove = yes }
         }
@@ -261,13 +379,16 @@ ideas = {
             level = 1
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_6_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = -0.1
+                conscription_factor = -0.5
+            }
             on_add = { FUN_NIE_law_branch_1_id_4_value_6_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_6_idea_on_remove = yes }
         }
 
     }
-    NIE_branch_1_id_5_laws = { # 非核心人力资源
+    NIE_law_branch_1_id_5_laws = { # 非核心人力资源
         law = yes
         use_list_view = yes
 
@@ -281,6 +402,7 @@ ideas = {
         NIE_law_branch_1_id_5_value_2_idea = { # 非核心人力资源：征召兵役
             level = 2
             default = yes
+            cancel_if_invalid = no
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_5_value_2_idea_available = yes }
             modifier = {}
@@ -315,13 +437,14 @@ ideas = {
         }
 
     }
-    NIE_branch_1_id_6_laws = { # 参军福利
+    NIE_law_branch_1_id_6_laws = { # 参军福利
         law = yes
         use_list_view = yes
 
         NIE_law_branch_1_id_6_value_1_idea = { # 参军福利：义务参军
             level = 1
             default = yes
+            cancel_if_invalid = no
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_6_value_1_idea_available = yes }
             modifier = {}
@@ -377,7 +500,7 @@ ideas = {
         }
 
     }
-    NIE_branch_1_id_7_laws = { # 兵役豁免
+    NIE_law_branch_1_id_7_laws = { # 兵役豁免
         law = yes
         use_list_view = yes
 
@@ -385,81 +508,129 @@ ideas = {
             level = 1
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_7_value_1_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = -0.3
+                stability_weekly = -0.002
+                war_support_weekly = -0.002
+            }
         }
 
         NIE_law_branch_1_id_7_value_2_idea = { # 兵役豁免：仅公职人员
             level = 2
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_7_value_2_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = -0.1
+                stability_weekly = -0.001
+                war_support_weekly = -0.001
+            }
         }
 
         NIE_law_branch_1_id_7_value_3_idea = { # 兵役豁免：公职和宗教人员
             level = 3
             default = yes
+            cancel_if_invalid = no
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_7_value_3_idea_available = yes }
-            modifier = {}
+            modifier = {
+                stability_weekly = -0.001
+                war_support_weekly = -0.001
+            }
         }
 
         NIE_law_branch_1_id_7_value_4_idea = { # 兵役豁免：公职，宗教和受教育人员
             level = 4
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_7_value_4_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = 0.1
+                stability_weekly = 0.001
+            }
         }
 
         NIE_law_branch_1_id_7_value_5_idea = { # 兵役豁免：严格申报制度
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_7_value_5_idea_available = yes }
-            modifier = {}
+            modifier = {
+                stability_weekly = 0.001
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
         }
 
         NIE_law_branch_1_id_7_value_6_idea = { # 兵役豁免：宽松申报制度
             level = 6
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_7_value_6_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = -0.1
+                stability_weekly = 0.001
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+            }
         }
 
     }
-    NIE_branch_1_id_8_laws = { # 国家状态
+    NIE_law_branch_1_id_8_laws = { # 国家状态
         law = yes
         use_list_view = yes
 
         NIE_law_branch_1_id_8_value_1_idea = { # 国家状态：全力发展
             level = 1
             allowed_civil_war = { always = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = 0.2
+                stability_weekly = 0.001
+                production_speed_buildings_factor = 0.2
+                industrial_capacity_factory = -0.05
+                industrial_capacity_dockyard = -0.05
+            }
         }
 
         NIE_law_branch_1_id_8_value_2_idea = { # 国家状态：正常发展
             level = 2
+            default = yes
+            cancel_if_invalid = no
             allowed_civil_war = { always = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = 0.1
+                production_speed_buildings_factor = 0.1
+            }
         }
 
         NIE_law_branch_1_id_8_value_3_idea = { # 国家状态：警惕状态
             level = 3
             allowed_civil_war = { always = yes }
-            modifier = {}
+            modifier = {
+                war_support_weekly = 0.001
+            }
         }
 
         NIE_law_branch_1_id_8_value_4_idea = { # 国家状态：局部动员
             level = 4
-            default = yes
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_8_value_4_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = 0.1
+                stability_weekly = -0.001
+                war_support_weekly = 0.002
+                industrial_capacity_factory = 0.03
+                industrial_capacity_dockyard = 0.03
+            }
         }
 
         NIE_law_branch_1_id_8_value_5_idea = { # 国家状态：广泛动员
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_8_value_5_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = 0.2
+                stability_weekly = -0.003
+                war_support_weekly = 0.005
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+            }
             on_add = { FUN_NIE_law_branch_1_id_8_value_5_idea_on_add = yes }
         }
 
@@ -467,20 +638,42 @@ ideas = {
             level = 6
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_8_value_6_idea_available = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = 0.3
+                stability_weekly = -0.005
+                war_support_weekly = 0.01
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+            }
             on_add = { FUN_NIE_law_branch_1_id_8_value_6_idea_on_add = yes }
         }
 
         NIE_law_branch_1_id_8_value_7_idea = { # 国家状态：战时经济
             level = 7
             allowed_civil_war = { always = yes }
-            modifier = {}
+            modifier = {
+                political_power_gain = 0.1
+                stability_weekly = -0.003
+                war_support_weekly = -0.003
+                industrial_capacity_factory = 0.2
+                industrial_capacity_dockyard = 0.2
+            }
         }
 
         NIE_law_branch_1_id_8_value_8_idea = { # 国家状态：总体战
             level = 8
             allowed_civil_war = { always = yes }
-            modifier = {}
+            modifier = {
+                army_attack_factor = 0.01
+                army_defence_factor = 0.01
+                army_core_attack_factor = 0.05
+                army_core_defence_factor = 0.05
+                political_power_gain = 0.2
+                stability_weekly = -0.005
+                war_support_weekly = -0.005
+                industrial_capacity_factory = 0.3
+                industrial_capacity_dockyard = 0.3
+            }
         }
 
     }

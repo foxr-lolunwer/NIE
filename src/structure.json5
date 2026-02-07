@@ -10,30 +10,25 @@
                 name: "去军事化国家",  // str(yml_loc) 为空代表使用动态文本
                 desc: "依据现行法律框架，国防组织仅保留最低限度的维持编制，其职能界定为协助境内民事秩序维护。",  //str(yml_loc) 为空代表使用动态文本
                 level: 1,  // int(<=0:ban)
-                default: false,  // bool
-                available: true,  // bool(use scripted_trigger)
+                default: false,  // bool(yes or no, default = no)
+                available: true,  // bool(trigger meta)
                 // cost: 150,  // int(if v_cost != b_cost and v_cost >= 0:use v_cost, null and else:use b_cost)
                 // removal_cost: -1,  // int(if v_rem != b_rem and v_rem >= 0:use v_rem, null and else:use b_rem)
                 allowed_civil_war_flag: 0,  // int(>0: always = yes, =0:  always = no, <0: use scripted_trigger)|str(all in one line)
-                modifier_meta: "\
-                    political_power_gain = -0.1\n\
-                    stability_weekly = -0.001\n\
-                    war_support_weekly = 0.001\n\
-                    training_time_factor = 0.5\n\
-                    recruitable_population_factor = -0.9\
-                ",  // str(meta)
+                modifier_meta: true,  // bool(modifier meta)
                 custom_modifier_tooltip: false,  // bool(yml_loc)
                 other_meta: {
                     on_add: true,  // 用于与女性服役联动
                     on_remove: true  // 用于与女性服役联动
-                    // on_add: bool(use scripted_effect)
-                    // on_remove: bool(use scripted_effect)
-                    // research_bonus: str(meta)
-                    // equipment_bonus: str(meta)
-                    // do_effect: bool(use scripted_trigger)
-                    // allowed: bool(use scripted_trigger)
-                    // allowed_to_remove: bool(use scripted_trigger)
-                    // visible: bool(use scripted_trigger)
+                    // on_add: bool(effect meta)
+                    // on_remove: bool(effect meta)
+                    // research_bonus:  // bool(modifier meta)
+                    // equipment_bonus:  // bool(modifier meta)
+                    // do_effect: bool(trigger meta)
+                    // allowed: bool(trigger meta)
+                    // allowed_to_remove: bool(trigger meta)
+                    // visible: bool(trigger meta)
+                    // cancel_if_invalid: bool(yes or no,default_value=!default)
                 }
             },
             value_2: {
@@ -66,7 +61,7 @@
                 allowed_civil_war_flag: 1,
                 modifier_meta: "\
                     army_core_attack_factor = 0.05\n\
-                    army_core_defense_factor = 0.05\n\
+                    army_core_defence_factor = 0.05\n\
                     recruitable_population_factor = -0.8\
                 ",
                 custom_modifier_tooltip: false,
@@ -372,7 +367,7 @@
                 use_id_name: true,
                 name: "同等服役",
                 desc: "",
-                level: 6,
+                level: 1,
                 default: false,
                 available: true,
                 allowed_civil_war_flag: 1,
@@ -389,7 +384,7 @@
                 use_id_name: true,
                 name: "鼓励服役",
                 desc: "",
-                level: 5,
+                level: 2,
                 default: false,
                 available: true,
                 allowed_civil_war_flag: 1,
@@ -406,7 +401,7 @@
                 use_id_name: true,
                 name: "志愿服役",
                 desc: "",
-                level: 4,
+                level: 3,
                 default: false,
                 available: true,
                 allowed_civil_war_flag: 1,
@@ -423,7 +418,7 @@
                 use_id_name: true,
                 name: "仅医护服务",
                 desc: "",
-                level: 3,
+                level: 4,
                 default: true,
                 available: true,
                 allowed_civil_war_flag: 1,
@@ -440,7 +435,7 @@
                 use_id_name: true,
                 name: "禁止服役",
                 desc: "",
-                level: 2,
+                level: 5,
                 default: false,
                 available: true,
                 allowed_civil_war_flag: 1,
@@ -457,7 +452,24 @@
                 use_id_name: true,
                 name: "歧视性禁止",
                 desc: "",
-                level: 1,
+                level: 6,
+                default: false,
+                available: true,
+                allowed_civil_war_flag: 1,
+                modifier_meta: "\
+                    \
+                ",
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
+            },
+            value_7: {
+                use_id_name: true,
+                name: "“慰安”妇",
+                desc: "",
+                level: 7,
                 default: false,
                 available: true,
                 allowed_civil_war_flag: 1,
@@ -686,8 +698,11 @@
                 modifier_meta: "\
                     \
                 ",
-                custom_modifier_tooltip: false,
-                other_meta: { }
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,  // 增强征兵法案强度
+                    on_remove: true  // 增强征兵法案强度
+                }
             },
             value_2: {
                 use_id_name: true,
@@ -700,8 +715,11 @@
                 modifier_meta: "\
                     \
                 ",
-                custom_modifier_tooltip: false,
-                other_meta: { }
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
             },
             value_3: {
                 use_id_name: true,
@@ -714,8 +732,11 @@
                 modifier_meta: "\
                     \
                 ",
-                custom_modifier_tooltip: false,
-                other_meta: { }
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
             },
             value_4: {
                 use_id_name: true,
@@ -728,8 +749,11 @@
                 modifier_meta: "\
                     \
                 ",
-                custom_modifier_tooltip: false,
-                other_meta: { }
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
             },
             value_5: {
                 use_id_name: true,
@@ -742,8 +766,11 @@
                 modifier_meta: "\
                     \
                 ",
-                custom_modifier_tooltip: false,
-                other_meta: { }
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
             },
             value_6: {
                 use_id_name: true,
@@ -756,8 +783,11 @@
                 modifier_meta: "\
                     \
                 ",
-                custom_modifier_tooltip: false,
-                other_meta: { }
+                custom_modifier_tooltip: true,
+                other_meta: {
+                    on_add: true,
+                    on_remove: true
+                }
             }
         },
         id_8: {
@@ -781,7 +811,7 @@
                 name: "正常发展",
                 desc: "",
                 level: 2,
-                default: false,
+                default: true,
                 available: false,  // 仅和平时期可用
                 allowed_civil_war_flag: 1,
                 modifier_meta: "\
@@ -809,7 +839,7 @@
                 name: "局部动员",
                 desc: "",
                 level: 4,
-                default: true,
+                default: false,
                 available: true,
                 allowed_civil_war_flag: 1,
                 modifier_meta: "\

@@ -1,103 +1,103 @@
-FUN_NIE_law_branch_1_id_1_value_1_idea_on_add = {
+FUN_NIE_law_branch_1_id_1_value_1_idea_on_add = { # 征兵法案：去军事化国家
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_1_idea_on_remove = {
+FUN_NIE_law_branch_1_id_1_value_1_idea_on_remove = { # 征兵法案：去军事化国家
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_2_idea_on_add = {
+FUN_NIE_law_branch_1_id_1_value_2_idea_on_add = { # 征兵法案：非军事化国家
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_2_idea_on_remove = {
+FUN_NIE_law_branch_1_id_1_value_2_idea_on_remove = { # 征兵法案：非军事化国家
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_3_idea_on_add = {
+FUN_NIE_law_branch_1_id_1_value_3_idea_on_add = { # 征兵法案：志愿参军
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_3_idea_on_remove = {
+FUN_NIE_law_branch_1_id_1_value_3_idea_on_remove = { # 征兵法案：志愿参军
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_4_idea_on_add = {
+FUN_NIE_law_branch_1_id_1_value_4_idea_on_add = { # 征兵法案：有限征兵
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_4_idea_on_remove = {
+FUN_NIE_law_branch_1_id_1_value_4_idea_on_remove = { # 征兵法案：有限征兵
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_5_idea_on_add = {
+FUN_NIE_law_branch_1_id_1_value_5_idea_on_add = { # 征兵法案：大范围征兵
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_5_idea_on_remove = {
+FUN_NIE_law_branch_1_id_1_value_5_idea_on_remove = { # 征兵法案：大范围征兵
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_6_idea_on_add = {
+FUN_NIE_law_branch_1_id_1_value_6_idea_on_add = { # 征兵法案：全面征兵
 
 }
 
-FUN_NIE_law_branch_1_id_1_value_6_idea_on_remove = {
+FUN_NIE_law_branch_1_id_1_value_6_idea_on_remove = { # 征兵法案：全面征兵
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_1_idea_on_add = {
+FUN_NIE_law_branch_1_id_4_value_1_idea_on_add = { # 女性服役政策：同等服役
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_1_idea_on_remove = {
+FUN_NIE_law_branch_1_id_4_value_1_idea_on_remove = { # 女性服役政策：同等服役
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_2_idea_on_add = {
+FUN_NIE_law_branch_1_id_4_value_2_idea_on_add = { # 女性服役政策：鼓励服役
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_2_idea_on_remove = {
+FUN_NIE_law_branch_1_id_4_value_2_idea_on_remove = { # 女性服役政策：鼓励服役
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_3_idea_on_add = {
+FUN_NIE_law_branch_1_id_4_value_3_idea_on_add = { # 女性服役政策：志愿服役
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_3_idea_on_remove = {
+FUN_NIE_law_branch_1_id_4_value_3_idea_on_remove = { # 女性服役政策：志愿服役
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_4_idea_on_add = {
+FUN_NIE_law_branch_1_id_4_value_4_idea_on_add = { # 女性服役政策：仅医护服务
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_4_idea_on_remove = {
+FUN_NIE_law_branch_1_id_4_value_4_idea_on_remove = { # 女性服役政策：仅医护服务
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_5_idea_on_add = {
+FUN_NIE_law_branch_1_id_4_value_5_idea_on_add = { # 女性服役政策：禁止服役
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_5_idea_on_remove = {
+FUN_NIE_law_branch_1_id_4_value_5_idea_on_remove = { # 女性服役政策：禁止服役
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_6_idea_on_add = {
+FUN_NIE_law_branch_1_id_4_value_6_idea_on_add = { # 女性服役政策：歧视性禁止
 
 }
 
-FUN_NIE_law_branch_1_id_4_value_6_idea_on_remove = {
+FUN_NIE_law_branch_1_id_4_value_6_idea_on_remove = { # 女性服役政策：歧视性禁止
 
 }
 
-FUN_NIE_law_branch_1_id_8_value_5_idea_on_add = {
+FUN_NIE_law_branch_1_id_8_value_5_idea_on_add = { # 国家状态：广泛动员
 
 }
 
-FUN_NIE_law_branch_1_id_8_value_6_idea_on_add = {
+FUN_NIE_law_branch_1_id_8_value_6_idea_on_add = { # 国家状态：总动员
 
 }

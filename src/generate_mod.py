@@ -1,12 +1,21 @@
+import logging
 import os
+import textwrap
+from collections import defaultdict
 
 import json5
+
+from log import log_manager
+from read_res_file import MetaImporter
 
 # --- 核心路径配置 ---
 JSON5_PATH = r"structure.json5"
 OUTPUT_ROOT = r"dist_mod"
 MOD_ID = "NIE"
 COLON_STYLE = "："
+META_IMPORTER_WORKSPACE = r"meta_files"
+
+logger = log_manager.init_logger(level=logging.DEBUG, log_folder="pdx_logs")
 
 
 class LawParser:
@@ -15,6 +24,14 @@ class LawParser:
         self.output_root = output_root
         self.data = self._load_json(json_path)
         self.loc_data = {}
+        self._meta_data = MetaImporter(META_IMPORTER_WORKSPACE).run_import()
+        self.meta_index = defaultdict(lambda: defaultdict(dict))
+        for category, items in self._meta_data.items():
+            for item in items:
+                v_id = item['v_full_id']
+                m_type = item['type']
+                # 直接赋值，defaultdict() 会处理中间层的自动创建
+                self.meta_index[category][v_id][m_type] = item['meta']
 
     @staticmethod
     def _load_json(path):
@@ -46,62 +63,89 @@ class LawParser:
         except Exception as e:
             print(f"写入失败 {path}: {e}")
 
+    @staticmethod
+    def _get_full_id(b_key, id_key="", v_key="", mod_id=MOD_ID):
+        if b_key and id_key and v_key:
+            return f"{mod_id}_law_{b_key}_{id_key}_{v_key}_idea"
+        elif b_key and id_key:
+            return f"{mod_id}_law_{b_key}_{id_key}_laws"
+        elif b_key:
+            return f"{mod_id}_law_{b_key}"
+        else:
+            return mod_id
+
     def create_idea_tags(self, file_name=f"{MOD_ID}_law_tags"):
         target_path = self._get_path("common", "idea_tags", f"{file_name}.txt")
         output = ["idea_categories = {"]
         for b_key, b_data in self.data.items():
             if not b_key.startswith("branch_"):
                 continue
-            output.append(f"    {MOD_ID}_{b_key} = {{")
+            output.append(f"    {self._get_full_id(b_key)} = {{")
             ids = sorted([k for k in b_data.keys() if k.startswith("id_")], key=lambda x: int(x.split('_')[1]))
             for id_key in ids:
-                output.append(f"        slot = {MOD_ID}_{b_key}_{id_key}_laws")
+                output.append(f"        slot = {self._get_full_id(b_key, id_key)}")
             output.append(
                 f"\n        ledger = civilian\n        cost = {b_data.get('cost', 150)}\n        removal_cost = {b_data.get('removal_cost', 0)}\n    }}")
         output.append("}")
         self._write_file(target_path, output)
 
     @staticmethod
-    def _get_full_id(b_key, id_key="", v_key="", mod_id=MOD_ID):
-        if b_key and id_key and v_key:
-            return f"{mod_id}_law_{b_key}_{id_key}_{v_key}_idea"
-        elif b_key and id_key:
-            return f"{mod_id}_law_{b_key}_{id_key}"
-        elif b_key:
-            return f"{mod_id}_law_{b_key}"
-        else:
-            return mod_id
-
-    @staticmethod
     def _format_modifier_block(block_name, content, indent_level=1, custom_tooltip=""):
         """
-        专门处理类似 modifier 的脚本块文本。
-        :param block_name: 修正名称
-        :param content: 原始字符串（可能包含多行或被反斜杠拼接的文本）
-        :param indent_level: 大于1,文本缩进层级（单位为4个空格）内容行的缩进深一层
-        :param custom_tooltip: 自定义文本提示框
-        :return: 格式化后的带换行和缩进的文本字符串
+        专门处理类似 modifier 或其它脚本块文本。
+        :param block_name: 修正名称 (如 modifier, available 等)
+        :param content: 原始字符串（内部已包含 PDX 缩进）
+        :param indent_level: 块本身的缩进层级
+        :param custom_tooltip: 自定义文本提示框 (custom_modifier_tooltip)
+        :return: 格式化后的字符串
         """
-        if indent_level < 1:
-            indent_level = 1
-        # 基础缩进字符串
-        base_indent = "    " * indent_level
-        # 内容行的缩进（比大括号深一层）
+        base_indent = "    " * max(0, indent_level)
         content_indent = base_indent + "    "
-        if not content or not content.strip():
+        # 处理空内容情况
+        if (not content or not content.strip()) and not custom_tooltip:
             return f"{base_indent}{block_name} = {{}}"
-        lines = content.split('\n')
-        formatted_lines = [f"{base_indent}{block_name} = {{"]
-
-        for line in lines:
-            stripped = line.strip()
-            if stripped:
-                formatted_lines.append(f"{content_indent}{stripped}")
+        # 1. 准备块头
+        output = [f"{base_indent}{block_name} = {{"]
+        # 2. 处理主体内容 (使用 textwrap.indent 整体平移)
+        if content and content.strip():
+            # 先对 content 做一次 dedent 确保它是左对齐起步的
+            clean_content = textwrap.dedent(content).strip()
+            shifted_content = textwrap.indent(
+                clean_content,
+                content_indent,
+                predicate=lambda line: line.strip() != ""
+            )
+            output.append(shifted_content)
+        # 3. 处理自定义提示
         if custom_tooltip:
-            formatted_lines.append(f"{content_indent}{custom_tooltip}")
-        formatted_lines.append(f"{content_indent[:-4]}}}")
-        # 返回处理后的文本，末尾不带多余换行，方便调用处组合
-        return "\n".join(formatted_lines)
+            output.append(f"{content_indent}custom_modifier_tooltip = {custom_tooltip}")
+        # 4. 闭合大括号
+        output.append(f"{base_indent}}}")
+        return "\n".join(output)
+
+    def apply_meta_to_structure(self, category, v_full_id, meta_type, indent_level=0):
+        """
+        从三层索引中精准提取 meta 内容并应用平移缩进
+        :param category: 分类 (effect/modifier/trigger)
+        :param v_full_id: 法案 ID
+        :param meta_type: 具体类型
+        :param indent_level: 缩进等级
+        """
+        # 安全地进行链式取值
+        try:
+            raw_meta = self.meta_index.get(category, {}).get(v_full_id, {}).get(meta_type, "")
+        except KeyError:
+            raw_meta = ""
+        if not raw_meta:
+            return ""
+
+        # 执行整体平移
+        prefix = " " * (indent_level * 4)
+        return textwrap.indent(
+            raw_meta,
+            prefix,
+            predicate=lambda line: line.strip() != ""
+        )
 
     def _create_scripted_file(self, id_map):
         """
@@ -216,7 +260,7 @@ class LawParser:
                 id_name = id_data.get("name", "Unknown Value")
                 loc_map.setdefault(self._get_full_id(b_key, id_key), id_name)
                 # 槽位名，例如 NIE_branch_1_id_1_laws
-                output.append(f"    {MOD_ID}_{b_key}_{id_key}_laws = {{ # {id_name}")
+                output.append(f"    {self._get_full_id(b_key, id_key)} = {{ # {id_name}")
                 output.append("        law = yes")
                 output.append("        use_list_view = yes\n")
 
@@ -325,6 +369,7 @@ class LawParser:
 
 
 if __name__ == "__main__":
+    a = 1/0
     parser = LawParser(JSON5_PATH, OUTPUT_ROOT)
     parser.create_idea_tags()
     parser.create_ideas()

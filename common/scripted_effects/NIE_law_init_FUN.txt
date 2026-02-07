@@ -1,0 +1,99 @@
+NIE_law_init = {
+	if = { limit = { has_idea = disarmed_nation }
+		if = { limit = { has_war = yes }
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_4_idea
+				NIE_law_branch_1_id_2_value_3_idea
+				NIE_law_branch_1_id_3_value_5_idea
+				NIE_law_branch_1_id_8_value_7_idea
+		} }
+		else = {
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_2_idea
+				NIE_law_branch_1_id_2_value_1_idea
+				NIE_law_branch_1_id_3_value_3_idea
+				NIE_law_branch_1_id_8_value_1_idea
+			}
+		}
+	} else_if = { limit = { has_idea = volunteer_only }
+		if = { limit = { has_war = yes }
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_5_idea
+				NIE_law_branch_1_id_2_value_4_idea
+				NIE_law_branch_1_id_3_value_6_idea
+				NIE_law_branch_1_id_8_value_7_idea
+		} }
+		else = {
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_4_idea
+				NIE_law_branch_1_id_2_value_4_idea
+				NIE_law_branch_1_id_3_value_5_idea
+				NIE_law_branch_1_id_8_value_3_idea
+			}
+		}
+	} else_if = { limit = { has_idea = extensive_conscription }
+		if = { limit = { has_war = yes }
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_5_idea
+				NIE_law_branch_1_id_2_value_5_idea
+				NIE_law_branch_1_id_3_value_6_idea
+				NIE_law_branch_1_id_8_value_7_idea
+		} }
+		else = {
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_4_idea
+				NIE_law_branch_1_id_2_value_4_idea
+				NIE_law_branch_1_id_3_value_6_idea
+				NIE_law_branch_1_id_8_value_4_idea
+			}
+		}
+	} else_if = { limit = { has_idea = service_by_requirement }
+		if = { limit = { has_war = yes }
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_5_idea
+				NIE_law_branch_1_id_2_value_6_idea
+				NIE_law_branch_1_id_3_value_7_idea
+				NIE_law_branch_1_id_8_value_7_idea
+		} }
+		else = {
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_4_idea
+				NIE_law_branch_1_id_2_value_4_idea
+				NIE_law_branch_1_id_3_value_6_idea
+				NIE_law_branch_1_id_8_value_5_idea
+			}
+		}
+	} else_if = { limit = { has_idea = all_adults_serve }
+		if = { limit = { has_war = yes }
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_6_idea
+				NIE_law_branch_1_id_2_value_7_idea
+				NIE_law_branch_1_id_3_value_8_idea
+				NIE_law_branch_1_id_8_value_8_idea
+		} }
+		else = {
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_4_idea
+				NIE_law_branch_1_id_2_value_4_idea
+				NIE_law_branch_1_id_3_value_6_idea
+				NIE_law_branch_1_id_8_value_6_idea
+			}
+		}
+	} else_if = { limit = { has_idea = scraping_the_barrel }
+		if = { limit = { has_war = yes }
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_6_idea
+				NIE_law_branch_1_id_2_value_8_idea
+				NIE_law_branch_1_id_3_value_8_idea
+				NIE_law_branch_1_id_8_value_8_idea
+		} }
+		else = {
+			add_ideas = {
+				NIE_law_branch_1_id_1_value_4_idea
+				NIE_law_branch_1_id_2_value_4_idea
+				NIE_law_branch_1_id_3_value_6_idea
+				NIE_law_branch_1_id_8_value_6_idea
+			}
+		}
+	}
+}

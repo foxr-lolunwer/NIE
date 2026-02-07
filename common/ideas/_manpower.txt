@@ -4,296 +4,66 @@ ideas = {
 		use_list_view = yes
 
 		disarmed_nation = {
-			on_add = {
-				log = "[GetLogRoot]: add idea disarmed_nation"
-			}
 			level = 7
 			removal_cost = -1
+			available = { always = no }
+			modifier = { }
+			ai_will_do = { base = 0 }
 			cancel_if_invalid = no
-
-			modifier = {
-				political_power_gain = 0.15
-				conscription = 0.001
-				unit_medal_effectiveness = 0.5
-			}
 		}
 
 		volunteer_only = {
-			on_add = {
-				log = "[GetLogRoot]: add idea volunteer_only"
-			}
 			level = 6
 			removal_cost = -1
+			available = { always = no }
+			modifier = { }
+			ai_will_do = { base = 0 }
 			cancel_if_invalid = no
-			default = yes
-
-			modifier = {
-				political_power_gain = 0.05
-				conscription = 0.01
-				unit_medal_effectiveness = 0.25
-			}
-
-			ai_will_do = { factor = 10 }
 		}
 
 		limited_conscription = {
-			on_add = {
-				log = "[GetLogRoot]: add idea limited_conscription"
-			}
 			level = 5
 			removal_cost = -1
-			cancel_if_invalid = yes
-
-			available = {
-				limited_conscription_available = yes
-			}
-
-			modifier = {
-				conscription = 0.03
-				industrial_capacity_dockyard = -0.03
-				industrial_capacity_factory = -0.03
-				production_factory_start_efficiency_factor = -0.03
-				production_factory_efficiency_gain_factor = -0.03
-				production_factory_max_efficiency_factor = -0.03
-				production_speed_buildings_factor = -0.03
-				training_time_factor = 0.03
-			}
-
-			ai_will_do = {
-				factor = 10
-				modifier = { #one step at a time
-					factor = 0
-					NOT = { has_idea = volunteer_only }
-				}
-				modifier = { # the economy is mobilised enough - conscript people!
-					factor = 50
-					OR = {
-						has_idea = partial_economic_mobilisation
-						has_idea = war_economy
-					}
-				}
-				modifier = { #prio if low on manpower
-					factor = 20
-					manpower_per_military_factory < 1500
-				}
-				modifier = { #Telling AI Canada to stop trying to raise conscription law even when they have this idea
-					factor = 0
-					has_idea = CAN_resistance_to_conscription
-				}
-			}
+			available = { always = no }
+			modifier = { }
+			ai_will_do = { base = 0 }
+			cancel_if_invalid = no
 		}
 
 		extensive_conscription = {
-			on_add = {
-				log = "[GetLogRoot]: add idea extensive_conscription"
-			}
 			level = 4
 			removal_cost = -1
-			cancel_if_invalid = yes
-
-			available = {
-				extensive_conscription_available = yes
-			}
-
-			modifier = {
-				conscription = 0.05
-				industrial_capacity_dockyard = -0.05
-				industrial_capacity_factory = -0.05
-				line_change_production_efficiency_factor = -0.03
-				production_factory_start_efficiency_factor = -0.05
-				production_factory_efficiency_gain_factor = -0.05
-				production_factory_max_efficiency_factor = -0.05
-				production_speed_buildings_factor = -0.05
-				stability_weekly = -0.001
-				training_time_factor = 0.05
-			}
-
-			ai_will_do = {
-				factor = 10
-				modifier = { #one step at a time
-					factor = 0
-					NOT = { has_idea = limited_conscription }
-				}
-				modifier = {
-					factor = 50  #The tag has enough equipment stockpiled but doesn't have manpower
-					amount_manpower_in_deployment_queue < 40000   # Less than 4 divs in training
-					has_equipment = { infantry_equipment > 5000 } # And has enough equipment in stockpile to train new divisions
-				}
-				modifier = { #prio if low on manpower
-					factor = 20
-					manpower_per_military_factory < 2000
-				}
-				modifier = { #Telling AI Canada to stop trying to raise conscription law even when they have this idea
-					factor = 0
-					has_idea = CAN_resistance_to_conscription
-				}
-			}
+			available = { always = no }
+			modifier = { }
+			ai_will_do = { base = 0 }
+			cancel_if_invalid = no
 		}
 
 		service_by_requirement = {
-			on_add = {
-				log = "[GetLogRoot]: add idea service_by_requirement"
-			}
 			level = 3
 			removal_cost = -1
-			cancel_if_invalid = yes
-
-			available = {
-				service_by_requirement_available = yes
-			}
-
-			modifier = {
-				conscription = 0.15
-				industrial_capacity_dockyard = -0.1
-				industrial_capacity_factory = -0.1
-				line_change_production_efficiency_factor = -0.05
-				production_factory_start_efficiency_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.1
-				production_factory_max_efficiency_factor = -0.1
-				production_speed_buildings_factor = -0.1
-				stability_weekly = -0.002
-				training_time_factor = 0.1
-				unit_medal_effectiveness = -0.25
-			}
-
-			ai_will_do = {
-				factor = 10
-				modifier = { #one step at a time
-					factor = 0
-					NOT = { has_idea = extensive_conscription }
-				}
-				modifier = { #already mobilising
-					factor = 0
-					NOT = { check_variable = { target_conscription_amount = current_conscription_amount } }
-				}
-				modifier = { #ignore if high on manpower
-					factor = 0
-					manpower_per_military_factory > 3000
-				}
-				modifier = { #lower if decent manpower
-					factor = 0.5
-					manpower_per_military_factory > 1000
-				}
-				modifier = { #prio if low on manpower
-					factor = 20
-					manpower_per_military_factory < 700
-				}
-				modifier = { #Telling AI Canada to stop trying to raise conscription law even when they have this idea
-					factor = 0
-					has_idea = CAN_resistance_to_conscription
-				}
-			}
+			available = { always = no }
+			modifier = { }
+			ai_will_do = { base = 0 }
+			cancel_if_invalid = no
 		}
 
 		all_adults_serve = {
-			on_add = {
-				log = "[GetLogRoot]: add idea all_adults_serve"
-			}
 			level = 2
 			removal_cost = -1
-			cancel_if_invalid = yes
-
-			available = {
-				all_adults_serve_available = yes
-			}
-
-			modifier = {
-				conscription = 0.25
-				industrial_capacity_dockyard = -0.4
-				industrial_capacity_factory = -0.4
-				line_change_production_efficiency_factor = -0.2
-				production_factory_start_efficiency_factor = -0.4
-				production_factory_efficiency_gain_factor = -0.4
-				production_factory_max_efficiency_factor = -0.4
-				production_speed_buildings_factor = -0.4
-				stability_weekly = -0.005
-				training_time_factor = 0.3
-				unit_medal_effectiveness = -0.5
-			}
-
-			ai_will_do = {
-				factor = 10
-				modifier = { #one step at a time
-					factor = 0
-					NOT = { has_idea = service_by_requirement }
-				}
-				modifier = { #already mobilising
-					factor = 0
-					NOT = { check_variable = { target_conscription_amount = current_conscription_amount } }
-				}
-				modifier = { #ignore if high on manpower
-					factor = 0
-					manpower_per_military_factory > 2800
-				}
-				modifier = { #lower if decent manpower
-					factor = 0.5
-					manpower_per_military_factory > 1000
-				}
-				modifier = { #prio if low on manpower
-					factor = 20
-					manpower_per_military_factory < 600
-				}
-				modifier = { #Telling AI Canada to stop trying to raise conscription law even when they have this idea
-					factor = 0
-					has_idea = CAN_resistance_to_conscription
-				}
-			}
+			available = { always = no }
+			modifier = { }
+			ai_will_do = { base = 0 }
+			cancel_if_invalid = no
 		}
 
 		scraping_the_barrel = {
-			on_add = {
-				log = "[GetLogRoot]: add idea scraping_the_barrel"
-			}
 			level = 1
 			removal_cost = -1
-			cancel_if_invalid = yes
-
-			available = {
-				scraping_the_barrel_available = yes
-			}
-
-			modifier = {
-				conscription = 0.35
-				industrial_capacity_dockyard = -1
-				industrial_capacity_factory = -1
-				line_change_production_efficiency_factor = -2
-				production_factory_start_efficiency_factor = -1
-				production_factory_efficiency_gain_factor = -1
-				production_factory_max_efficiency_factor = -1
-				production_speed_buildings_factor = -1
-				training_time_factor = 0.5
-				stability_weekly = -0.01
-				war_support_weekly = -0.05
-				unit_medal_effectiveness = -7.5
-			}
-
-			ai_will_do = {
-				factor = 10
-				modifier = { #one step at a time
-					factor = 0
-					NOT = { has_idea = all_adults_serve }
-				}
-				modifier = { #already mobilising
-					factor = 0
-					NOT = { check_variable = { target_conscription_amount = current_conscription_amount } }
-				}
-				modifier = { #ignore if high on manpower
-					factor = 0
-					manpower_per_military_factory > 5000
-				}
-				modifier = { #lower if decent manpower
-					factor = 0.5
-					manpower_per_military_factory > 1000
-				}
-				modifier = { #prio if low on manpower
-					factor = 20
-					manpower_per_military_factory < 500
-				}
-				modifier = { #Telling AI Canada to stop trying to raise conscription law even when they have this idea
-					factor = 0
-					has_idea = CAN_resistance_to_conscription
-				}
-			}
+			available = { always = no }
+			modifier = { }
+			ai_will_do = { base = 0 }
+			cancel_if_invalid = no
 		}
 	}
 }
