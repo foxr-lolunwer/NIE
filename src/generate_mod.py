@@ -18,13 +18,14 @@ META_IMPORTER_WORKSPACE = r"meta_files"
 logger = log_manager.init_logger(level=logging.DEBUG, log_folder="pdx_logs")
 
 
-class LawParser:
+class GenerateModFiles:
     def __init__(self, json_path, output_root):
         self.json_path = json_path
         self.output_root = output_root
         self.data = self._load_json(json_path)
         self.loc_data = {}
-        self._meta_data = MetaImporter(META_IMPORTER_WORKSPACE).run_import()
+        self.importer = MetaImporter(META_IMPORTER_WORKSPACE)
+        self._meta_data = self.importer.run_import()
         self.meta_index = defaultdict(lambda: defaultdict(dict))
         for category, items in self._meta_data.items():
             for item in items:
@@ -85,45 +86,11 @@ class LawParser:
             for id_key in ids:
                 output.append(f"        slot = {self._get_full_id(b_key, id_key)}")
             output.append(
-                f"\n        ledger = civilian\n        cost = {b_data.get('cost', 150)}\n        removal_cost = {b_data.get('removal_cost', 0)}\n    }}")
+                f"\n        ledger = civilian\n        cost = {b_data.get('cost', 150)}\n        removal_cost = {b_data.get('removal_cost', -1)}\n    }}")
         output.append("}")
         self._write_file(target_path, output)
 
-    @staticmethod
-    def _format_modifier_block(block_name, content, indent_level=1, custom_tooltip=""):
-        """
-        专门处理类似 modifier 或其它脚本块文本。
-        :param block_name: 修正名称 (如 modifier, available 等)
-        :param content: 原始字符串（内部已包含 PDX 缩进）
-        :param indent_level: 块本身的缩进层级
-        :param custom_tooltip: 自定义文本提示框 (custom_modifier_tooltip)
-        :return: 格式化后的字符串
-        """
-        base_indent = "    " * max(0, indent_level)
-        content_indent = base_indent + "    "
-        # 处理空内容情况
-        if (not content or not content.strip()) and not custom_tooltip:
-            return f"{base_indent}{block_name} = {{}}"
-        # 1. 准备块头
-        output = [f"{base_indent}{block_name} = {{"]
-        # 2. 处理主体内容 (使用 textwrap.indent 整体平移)
-        if content and content.strip():
-            # 先对 content 做一次 dedent 确保它是左对齐起步的
-            clean_content = textwrap.dedent(content).strip()
-            shifted_content = textwrap.indent(
-                clean_content,
-                content_indent,
-                predicate=lambda line: line.strip() != ""
-            )
-            output.append(shifted_content)
-        # 3. 处理自定义提示
-        if custom_tooltip:
-            output.append(f"{content_indent}custom_modifier_tooltip = {custom_tooltip}")
-        # 4. 闭合大括号
-        output.append(f"{base_indent}}}")
-        return "\n".join(output)
-
-    def apply_meta_to_structure(self, category, v_full_id, meta_type, indent_level=0):
+    def _apply_meta_to_structure(self, category, v_full_id, meta_type, indent_level=0, custom_tooltip=""):
         """
         从三层索引中精准提取 meta 内容并应用平移缩进
         :param category: 分类 (effect/modifier/trigger)
@@ -138,7 +105,17 @@ class LawParser:
             raw_meta = ""
         if not raw_meta:
             return ""
-
+        if custom_tooltip:
+            match category:
+                case "modifier":
+                    if meta_type == "modifier":
+                        raw_meta += f"\ncustom_modifier_tooltip = {custom_tooltip}"
+                    else:
+                        logger.warning(f"LawParser._apply_meta_to_structure: {category}: {meta_type} 没有 custom_tooltip 属性")
+                case "effect":
+                    raw_meta += f"\ncustom_effect_tooltip = {custom_tooltip}"
+                case _:
+                    logger.warning(f"LawParser._apply_meta_to_structure: {category} 没有 custom_tooltip 属性")
         # 执行整体平移
         prefix = " " * (indent_level * 4)
         return textwrap.indent(
@@ -201,38 +178,107 @@ class LawParser:
 
     def _create_loc_file(self, loc_map, lang="simp_chinese", filename=f"{MOD_ID}_laws"):
         """
-        根据传入的字典生成本地化文件
-        :param filename: 文件名（不含后缀和语言后缀）
-        :param lang: 语言代码，如 "simp_chinese"
-        :param loc_map: 字典，格式为 { "key": "value", "key_desc": "value" }
+        根据传入的字典生成本地化文件，支持注释提取和状态标记
         """
-        # 路径处理：localisation/l_simp_chinese/filename_l_simp_chinese.yml
         lang_folder = f"{lang}"
         full_filename = f"{filename}_l_{lang}.yml"
         target_path = self._get_path("localisation", lang_folder, full_filename)
 
         output = [f"l_{lang}:"]
-        # 按照 key 排序可以使 yml 文件更有序，方便 Git 追踪对比
         sorted_keys = sorted(loc_map.keys())
 
         for key in sorted_keys:
-            value = loc_map[key]
-            if value.startswith('"# ') and value.endswith('"') and value.count('"') == 2:
-                # 提取注释内容：去掉前三个字符 '"# ' 和最后一个字符 '"'
+            value = str(loc_map.get(key, ""))
+
+            # --- 1. 处理纯注释逻辑 (例如 value 为 '"# 某种注释"') ---
+            if value.startswith('"# ') and value.endswith('"'):
                 comment_text = value[3:-1]
-                # 生成只含键的注释行
-                output.append(f'  # {key} {comment_text}')
+                output.append(f'  # {key}: {comment_text}')
                 continue
-            # 处理字符串中的换行，确保输出到 yml 是文本形式的 \n
-            # 同时处理可能的双引号嵌套
-            clean_value = str(value).replace('"', '\\"').replace('\n', '\\n')
 
-            # HOI4 标准格式：  key:0 "value"
-            output.append(f'  {key}: "{clean_value}"')
-            self.loc_data.setdefault(key, clean_value)
+            # --- 2. 状态识别 ---
+            # 检查是否为动态文本标记
+            is_dy_loc = "DY_LOC" in value
+            # 检查是否为待编写标记
+            is_to_be_written = "TO_BE_WRITTEN" in value or not value.strip()
 
-        # 使用 utf-8-sig 编码写入文件
+            # --- 3. 文本清洗与格式化 ---
+            # 如果是待编写，给一个空值或保留原始占位符，否则清理转义符
+            if is_to_be_written:
+                clean_value = ""
+                note = " # TODO: To be written"
+            elif is_dy_loc:
+                output.append(f' # {key} DY_LOC')
+                continue
+            else:
+                # 正常文本处理：转义双引号，转换换行符
+                clean_value = value.replace('"', '\\"').replace('\n', '\\n')
+                note = ""
+
+            # --- 4. 生成 YML 行 ---
+            # 格式示例: key:0 "value" # note
+            output.append(f'  {key}:0 "{clean_value}"{note}')
+
+            # 更新内存中的 loc_data 供自检使用
+            # 如果是待编写，内存中存入空或 key 本身以防报错
+            self.loc_data[key] = clean_value if not is_to_be_written else f"MISSING_{key}"
+
+        # 使用 utf-8-sig 写入
         self._write_file(target_path, output, encoding='utf-8-sig')
+        # logger.info(f"本地化文件已生成: {full_filename}")
+
+    def validate_and_sync_localization(self):
+        """
+        自检方法：追踪 Meta 与本地化数据的一致性
+        1. 当 Meta 名称为空但 Loc 中有值时，自动填充 Meta 索引。
+        2. 当两者名称不匹配时，输出警告（条目可能被修改或移动）。
+        3. 当 Meta 中的 ID 在 Loc 中不存在时，输出警告（条目可能被删除）。
+        """
+        logger.info("--- 开始元数据一致性自检 ---")
+
+        sync_count = 0  # 自动填充计数
+        mismatch_count = 0  # 名字不匹配计数
+        missing_count = 0  # ID 缺失计数
+
+        # 遍历 MetaImporter 导入的原始列表
+        # 结构: {"category": [{"v_full_id": "...", "v_name": "...", ...}, ...]}
+        for category, items in self._meta_data.items():
+            for item in items:
+                v_id = item['v_full_id']
+                # 脚本中的注释名
+                script_name = item.get('v_name', "").strip()
+                if script_name == "None":
+                    script_name = ""
+                # 内存中现有的本地化文本（由 create_loc_file 或加载过程更新）
+                loc_name = self.loc_data.get(v_id, "").strip()
+
+                # 1. 检查 ID 是否存在于本地化字典中
+                if v_id not in self.loc_data:
+                    logger.warning(f"[{category}] 潜在删除: ID '{v_id}' 在本地化数据中未找到。")
+                    missing_count += 1
+                    continue
+
+                # 2. 自动填充逻辑：Meta 为空，Loc 有值
+                if not script_name and loc_name:
+                    item['v_name'] = loc_name
+                    # 同时更新索引中的数据，确保写入脚本时带上注释
+                    if v_id in self.meta_index.get(category, {}):
+                        # 这里假设你索引里也存了 v_name，或者你之后会根据 item 重新构建索引
+                        pass
+                    logger.info(f"[{category}] 自动填充: ID '{v_id}' 已同步本地化名称 '{loc_name}'。")
+                    sync_count += 1
+                    continue
+
+                # 3. 比较名称是否一致
+                # 只要 script_name 有值且与 loc_name 不同，就触发警告
+                if script_name and script_name != loc_name:
+                    logger.warning(f"[{category}] 内容不一致: ID '{v_id}'")
+                    logger.warning(f"  -> 脚本注释: '{script_name}'")
+                    logger.warning(f"  -> 本地化文本: '{loc_name}'")
+                    logger.info(f"  提示：该条目可能已被修改、移动或设置为动态文本。")
+                    mismatch_count += 1
+
+        logger.info(f"自检报告: 同步 {sync_count} 条, 冲突 {mismatch_count} 条, 缺失 {missing_count} 条。")
 
     def create_ideas(self, file_name=f"{MOD_ID}_laws"):
         target_path = self._get_path("common", "ideas", f"{file_name}.txt")
@@ -268,33 +314,38 @@ class LawParser:
                                 key=lambda x: int(x.split('_')[1]))
                 for v_key in values:
                     v_data = id_data[v_key]
-                    v_name = v_data.get("name", "")
+                    v_name = v_data.get("name", '"# TO_BE_WRITTEN"')
+                    v_desc = v_data.get("desc", '"# TO_BE_WRITTEN"')
                     use_id_name = v_data.get("use_id_name", True)
                     v_full_id = self._get_full_id(b_key, id_key, v_key)
                     if v_name:
                         v_full_name = f"{id_name}{COLON_STYLE}{v_name}" if use_id_name else v_name
                         loc_map.setdefault(v_full_id, v_full_name)
-                        v_desc = v_data.get("desc", "")
-                        loc_map.setdefault(f"{v_full_id}_desc", v_desc)
+                        output.append(f"        {v_full_id} = {{ # {v_full_name}")
                     else:
                         scripted_full_id = f"get_{v_full_id}"
                         scripted_id_map["loc"].append((scripted_full_id, v_full_id))
-                        v_full_name = scripted_full_id
                         loc_map.setdefault(v_full_id, '"# DY_LOC"')
+                        output.append(f"        {v_full_id} = {{ # DY_LOC")
+                    if v_desc:
+                        loc_map.setdefault(f"{v_full_id}_desc", v_desc)
+                    else:
+                        scripted_full_id = f"get_{v_full_id}_desc"
+                        scripted_id_map["loc"].append((scripted_full_id, v_full_id))
                         loc_map.setdefault(f"{v_full_id}_desc", '"# DY_LOC"')
-                    output.append(f"        {v_full_id} = {{ # {v_full_name}")
 
-                    # 1. Level & Default
+                    # 1. Level & Default & cancel_if_invalid
                     if v_data.get("level", 0) > 0:
                         output.append(f"            level = {v_data['level']}")
-                    if v_data.get("default"):
+                    if v_data.get("default", False):
                         output.append("            default = yes")
+                        output.append("            cancel_if_invalid = yes")
+                    elif v_data.get("cancel_if_invalid", False):
+                        output.append("            cancel_if_invalid = yes")
 
                     # 2. Allowed Civil War
-                    acw = v_data.get("allowed_civil_war_flag", 0)
-                    if isinstance(acw, str):
-                        output.append(f"            allowed_civil_war = {{ {acw} }}")
-                    elif acw > 0:
+                    acw = v_data.get("allowed_civil_war_flag", 1)
+                    if acw > 0:
                         output.append("            allowed_civil_war = { always = yes }")
                     elif acw < 0:
                         scripted_full_id = f"TRIGGER_{v_full_id}_allowed_cv"
@@ -302,7 +353,7 @@ class LawParser:
                         output.append(f"            allowed_civil_war = {{ {scripted_full_id} = yes }}")
 
                     # 3. Available
-                    if v_data.get("available") and v_data["available"] is not False:
+                    if v_data.get("available", True):
                         scripted_full_id = f"TRIGGER_{v_full_id}_available"
                         scripted_id_map["trigger"].append((scripted_full_id, v_full_id))
                         output.append(f"            available = {{ {scripted_full_id} = yes }}")
@@ -316,12 +367,17 @@ class LawParser:
                         output.append(f"            removal_cost = {v_rem}")
 
                     # 5.6. Modifier,Tooltip
-                    mod_meta = v_data.get("modifier_meta", "").strip()
                     custom_modifier_tooltip = f"custom_modifier_tooltip = {v_full_id}_tooltip" if v_data.get("custom_modifier_tooltip") else ""
-                    output.append(self._format_modifier_block("modifier", mod_meta, 3, custom_modifier_tooltip))
+                    if custom_modifier_tooltip:
+                        loc_map.setdefault(f"{v_full_id}_modifier_tooltip", "")
+                    output.append("            modifier = {")
+                    output.append(
+                        self._apply_meta_to_structure("modifier", v_full_id, "modifier", 4, custom_modifier_tooltip)
+                    )
+                    output.append("            }")
 
                     # 7. Other Meta (同级脚本块)
-                    other = v_data.get("other_meta", {})
+                    other_meta = v_data.get("other_meta", {})
                     # 假设在调用此段代码前，你已经初始化了：
                     # scripted_id_map = {"trigger": [], "effect": [], "loc": []}
 
@@ -337,7 +393,7 @@ class LawParser:
                     }
 
                     for key, cfg in mapping.items():
-                        val = other.get(key)
+                        val = other_meta.get(key)
                         if val and val is not False:
                             # 1. 生成用于 ideas 文件的脚本行
                             formatted_line = f"            {key} = {{ {cfg['template'].format(id=v_full_id)} }}"
@@ -345,18 +401,38 @@ class LawParser:
 
                             # 2. 提取并记录对应的 scripted_full_id
                             # 根据前缀判定前缀名（FUN_ 或 TRIGGER_）
-                            id_prefix = "FUN" if cfg['mode'] == "effect" else "TRIGGER"
+                            id_prefix = "EFFECT" if cfg['mode'] == "effect" else "TRIGGER"
                             scripted_full_id = f"{id_prefix}_{v_full_id}{cfg['suffix']}"
 
                             # 3. 保证正确添加到字典中
                             if cfg['mode'] in scripted_id_map:
                                 scripted_id_map[cfg['mode']].append((scripted_full_id, v_full_id))
 
-                    # 8. Bonus Blocks (换行逻辑同 modifier)
-                    for b_type in ["research_bonus", "equipment_bonus"]:
-                        b_meta = other.get(b_type, "").strip()
-                        if b_meta:
-                            self._format_modifier_block(b_type, b_meta, 3)
+                    # 8. Bonus Blocks
+                    for bonus_type in ["research_bonus", "equipment_bonus"]:
+                        bonus_meta = other_meta.get(bonus_type, "").strip()
+                        if bonus_meta:
+                            output.append(f"            {bonus_type} = {{")
+                            output.append(
+                                self._apply_meta_to_structure("preferences", v_full_id, bonus_type, 4)
+                            )
+                            output.append("            }")
+
+                    # 9. Ai will do
+                    ai_will_do = v_data.get("ai_will_do", {"base": 1.0, "preferences": True})
+                    ai_preferences_base = ai_will_do.get("base", -1.0)
+                    ai_preferences_factor = ai_will_do.get("factor", -1.0)
+                    ai_preferences_meta = ai_will_do.get("preferences", False)
+                    if (ai_preferences_base >= 0) ^ (ai_preferences_factor >= 0):
+                        ai_preferences_value = f"base = {ai_preferences_base}" if ai_preferences_base >= 0 else f"factor = {ai_preferences_factor}"
+                    else:
+                        ai_preferences_value = "base = 1"
+                        logging.warning(f"GenerateModFiles: {v_full_id}: Ai will do base属性和factor属性同时出现，已重置为base = 1")
+                    output.append("            ai_will_do = {")
+                    output.append(f"                {ai_preferences_value}")
+                    if ai_preferences_meta:
+                        output.append(self._apply_meta_to_structure("preferences", v_full_id, "preferences", 5))
+                    output.append("            }")
 
                     output.append("        }\n")
                 output.append("    }")
@@ -369,7 +445,7 @@ class LawParser:
 
 
 if __name__ == "__main__":
-    a = 1/0
-    parser = LawParser(JSON5_PATH, OUTPUT_ROOT)
+    parser = GenerateModFiles(JSON5_PATH, OUTPUT_ROOT)
     parser.create_idea_tags()
     parser.create_ideas()
+    parser.validate_and_sync_localization()
