@@ -1,4 +1,4 @@
-MODIFIER_NIE_law_branch_1_id_1_value_1_idea_modifier = {
+﻿MODIFIER_NIE_law_branch_1_id_1_value_1_idea_modifier = { # 征兵法案：§R去军事化国家§!
     political_power_gain = -0.1
     stability_weekly = -0.001
     war_support_weekly = 0.001
@@ -6,20 +6,20 @@ MODIFIER_NIE_law_branch_1_id_1_value_1_idea_modifier = {
     conscription_factor = -0.45
 }
 
-MODIFIER_NIE_law_branch_1_id_1_value_2_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_1_value_2_idea_modifier = { # 征兵法案：非军事化国家
     political_power_gain = 0.15
     consumer_goods_expected_value = -0.05
     training_time_factor = 0.5
     conscription_factor = -0.48
 }
 
-MODIFIER_NIE_law_branch_1_id_1_value_3_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_1_value_3_idea_modifier = { # 征兵法案：志愿参军
                 army_core_attack_factor = 0.05
                 army_core_defence_factor = 0.05
                 conscription_factor = -0.4
 }
 
-MODIFIER_NIE_law_branch_1_id_1_value_4_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_1_value_4_idea_modifier = { # 征兵法案：有限征兵
                 political_power_cost = -0.1
                 stability_weekly = -0.001
                 war_support_weekly = -0.001
@@ -27,7 +27,7 @@ MODIFIER_NIE_law_branch_1_id_1_value_4_idea_modifier = {
                 conscription_factor = -0.35
 }
 
-MODIFIER_NIE_law_branch_1_id_1_value_5_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_1_value_5_idea_modifier = { # 征兵法案：大范围征兵
                 political_power_cost = -0.2
                 stability_weekly = -0.002
                 war_support_weekly = -0.003
@@ -35,7 +35,7 @@ MODIFIER_NIE_law_branch_1_id_1_value_5_idea_modifier = {
                 conscription_factor = -0.3
 }
 
-MODIFIER_NIE_law_branch_1_id_1_value_6_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_1_value_6_idea_modifier = { # 征兵法案：全面征兵
                 political_power_cost = -0.3
                 stability_weekly = -0.003
                 war_support_weekly = -0.005
@@ -43,17 +43,17 @@ MODIFIER_NIE_law_branch_1_id_1_value_6_idea_modifier = {
                 conscription_factor = -0.25
 }
 
-MODIFIER_NIE_law_branch_1_id_2_value_1_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_2_value_1_idea_modifier = { # 最小服役年龄：22岁
                 army_attack_factor = 0.03
                 army_defence_factor = 0.03
                 conscription = 0.06
 }
 
-MODIFIER_NIE_law_branch_1_id_2_value_2_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_2_value_2_idea_modifier = { # 最小服役年龄：20岁
     conscription = 0.08
 }
 
-MODIFIER_NIE_law_branch_1_id_2_value_3_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_2_value_3_idea_modifier = { # 最小服役年龄：18岁
     army_attack_factor = -0.01
     army_defence_factor = -0.01
     war_support_weekly = -0.01
@@ -61,7 +61,7 @@ MODIFIER_NIE_law_branch_1_id_2_value_3_idea_modifier = {
     conscription = 0.1
 }
 
-MODIFIER_NIE_law_branch_1_id_2_value_4_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_2_value_4_idea_modifier = { # 最小服役年龄：16岁
                 army_attack_factor = -0.03
                 army_defence_factor = -0.03
                 political_power_gain = -0.1
@@ -71,7 +71,7 @@ MODIFIER_NIE_law_branch_1_id_2_value_4_idea_modifier = {
                 conscription = 0.12
 }
 
-MODIFIER_NIE_law_branch_1_id_2_value_5_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_2_value_5_idea_modifier = { # 最小服役年龄：14岁
                 army_attack_factor = -0.05
                 army_defence_factor = -0.05
                 political_power_gain = -0.2
@@ -81,7 +81,7 @@ MODIFIER_NIE_law_branch_1_id_2_value_5_idea_modifier = {
                 conscription = 0.14
 }
 
-MODIFIER_NIE_law_branch_1_id_2_value_6_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_2_value_6_idea_modifier = { # 最小服役年龄：12岁
                 army_attack_factor = -0.1
                 army_defence_factor = -0.1
                 political_power_gain = -0.3
@@ -90,7 +90,7 @@ MODIFIER_NIE_law_branch_1_id_2_value_6_idea_modifier = {
                 monthly_population = -1
                 conscription = 0.16
 }
-MODIFIER_NIE_law_branch_1_id_2_value_7_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_2_value_7_idea_modifier = { # 最小服役年龄：§R8岁§!
                 army_attack_factor = -0.2
                 army_defence_factor = -0.2
                 political_power_gain = -0.4
@@ -99,7 +99,7 @@ MODIFIER_NIE_law_branch_1_id_2_value_7_idea_modifier = {
                 monthly_population = -2
                 conscription = 0.18
 }
-MODIFIER_NIE_law_branch_1_id_2_value_8_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_2_value_8_idea_modifier = { # 最小服役年龄：§R4岁§!
                 army_attack_factor = -0.3
                 army_defence_factor = -0.3
                 political_power_gain = -0.5
@@ -109,37 +109,37 @@ MODIFIER_NIE_law_branch_1_id_2_value_8_idea_modifier = {
                 conscription = 0.2
 }
 
-MODIFIER_NIE_law_branch_1_id_3_value_1_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_3_value_1_idea_modifier = { # 最大服役年龄：35岁
                 army_attack_factor = 0.08
                 army_defence_factor = 0.08
                 conscription = 0.06
 }
 
-MODIFIER_NIE_law_branch_1_id_3_value_2_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_3_value_2_idea_modifier = { # 最大服役年龄：40岁
                 army_attack_factor = 0.05
                 army_defence_factor = 0.05
                 conscription = 0.08
 }
 
-MODIFIER_NIE_law_branch_1_id_3_value_3_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_3_value_3_idea_modifier = { # 最大服役年龄：45岁
                 army_attack_factor = 0.03
                 army_defence_factor = 0.03
                 conscription = 0.1
 }
 
-MODIFIER_NIE_law_branch_1_id_3_value_4_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_3_value_4_idea_modifier = { # 最大服役年龄：50岁
                 political_power_gain = -0.1
                 conscription = 0.12
 }
 
-MODIFIER_NIE_law_branch_1_id_3_value_5_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_3_value_5_idea_modifier = { # 最大服役年龄：55岁
                 political_power_gain = -0.2
                 stability_weekly = -0.001
                 war_support_weekly = -0.001
                 conscription = 0.14
 }
 
-MODIFIER_NIE_law_branch_1_id_3_value_6_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_3_value_6_idea_modifier = { # 最大服役年龄：60岁
                 army_attack_factor = -0.1
                 army_defence_factor = -0.1
                 political_power_gain = -0.2
@@ -148,7 +148,7 @@ MODIFIER_NIE_law_branch_1_id_3_value_6_idea_modifier = {
                 conscription = 0.16
 }
 
-MODIFIER_NIE_law_branch_1_id_3_value_7_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_3_value_7_idea_modifier = { # 最大服役年龄：70岁
                 army_attack_factor = -0.2
                 army_defence_factor = -0.2
                 political_power_gain = -0.25
@@ -157,7 +157,7 @@ MODIFIER_NIE_law_branch_1_id_3_value_7_idea_modifier = {
                 conscription = 0.18
 }
 
-MODIFIER_NIE_law_branch_1_id_3_value_8_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_3_value_8_idea_modifier = { # 最大服役年龄：§R无限制§!
                 army_attack_factor = -0.3
                 army_defence_factor = -0.3
                 political_power_gain = -0.3
@@ -166,128 +166,132 @@ MODIFIER_NIE_law_branch_1_id_3_value_8_idea_modifier = {
                 conscription = 0.2
 }
 
-MODIFIER_NIE_law_branch_1_id_4_value_1_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_4_value_1_idea_modifier = { # 女性服役政策：同等服役
                 political_power_gain = -0.3
                 stability_weekly = -0.003
                 war_support_weekly = -0.003
                 monthly_population = -0.5
 }
 
-MODIFIER_NIE_law_branch_1_id_4_value_2_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_4_value_2_idea_modifier = { # 女性服役政策：鼓励服役
                 political_power_gain = -0.1
                 stability_weekly = -0.001
                 war_support_weekly = -0.001
                 monthly_population = -0.3
 }
 
-MODIFIER_NIE_law_branch_1_id_4_value_3_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_4_value_3_idea_modifier = { # 女性服役政策：志愿服役
                 conscription_factor = -0.45
                 monthly_population = -0.2
 }
 
-MODIFIER_NIE_law_branch_1_id_4_value_4_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_4_value_4_idea_modifier = { # 女性服役政策：仅医护服务
                 political_power_gain = 0.1
                 conscription_factor = -0.48
 }
 
-MODIFIER_NIE_law_branch_1_id_4_value_5_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_4_value_5_idea_modifier = { # 女性服役政策：禁止服役
                 conscription_factor = -0.5
 }
 
-MODIFIER_NIE_law_branch_1_id_4_value_6_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_4_value_6_idea_modifier = { # 女性服役政策：歧视性禁止
                 political_power_gain = -0.1
                 conscription_factor = -0.5
 }
 
-MODIFIER_NIE_law_branch_1_id_4_value_7_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_4_value_7_idea_modifier = { # 女性服役政策：§R“慰安”妇§!
                 # political_power_gain = -0.1
                 # conscription_factor = -0.5
 }
 
-MODIFIER_NIE_law_branch_1_id_5_value_1_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_5_value_1_idea_modifier = { # 非核心人力资源：禁服兵役
 
 }
 
-MODIFIER_NIE_law_branch_1_id_5_value_2_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_5_value_2_idea_modifier = { # 非核心人力资源：征召兵役
 
 }
 
-MODIFIER_NIE_law_branch_1_id_5_value_3_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_5_value_3_idea_modifier = { # 非核心人力资源：强制兵役
 
 }
 
-MODIFIER_NIE_law_branch_1_id_5_value_4_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_5_value_4_idea_modifier = { # 非核心人力资源：为独立而战
 
 }
 
-MODIFIER_NIE_law_branch_1_id_5_value_5_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_5_value_5_idea_modifier = { # 非核心人力资源：前线敢死队
 
 }
 
-MODIFIER_NIE_law_branch_1_id_5_value_6_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_5_value_6_idea_modifier = { # 非核心人力资源：前线炮灰
 
 }
 
-MODIFIER_NIE_law_branch_1_id_6_value_1_idea_modifier = {
-
+MODIFIER_NIE_law_branch_1_id_6_value_1_idea_modifier = { # 参军福利：义务参军
+mobilization_speed = -0.6
 }
 
-MODIFIER_NIE_law_branch_1_id_6_value_2_idea_modifier = {
-
+MODIFIER_NIE_law_branch_1_id_6_value_2_idea_modifier = { # 参军福利：少量津贴
+consumer_goods_factor = 0.02
+mobilization_speed = -0.4
 }
 
-MODIFIER_NIE_law_branch_1_id_6_value_3_idea_modifier = {
-
+MODIFIER_NIE_law_branch_1_id_6_value_3_idea_modifier = { # 参军福利：服役津贴
+consumer_goods_factor = 0.05
+mobilization_speed = -0.3
 }
 
-MODIFIER_NIE_law_branch_1_id_6_value_4_idea_modifier = {
-
+MODIFIER_NIE_law_branch_1_id_6_value_4_idea_modifier = { # 参军福利：高额抚恤
+consumer_goods_factor = 0.05
+mobilization_speed = -0.2
 }
 
-MODIFIER_NIE_law_branch_1_id_6_value_5_idea_modifier = {
-
+MODIFIER_NIE_law_branch_1_id_6_value_5_idea_modifier = { # 参军福利：体面退休金
+consumer_goods_factor = 0.1
+mobilization_speed = -0.2
 }
 
-MODIFIER_NIE_law_branch_1_id_6_value_6_idea_modifier = {
-
+MODIFIER_NIE_law_branch_1_id_6_value_6_idea_modifier = { # 参军福利：医疗与家属保障
+consumer_goods_factor = 0.15
 }
 
-MODIFIER_NIE_law_branch_1_id_7_value_1_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_7_value_1_idea_modifier = { # 兵役豁免：无豁免
                 political_power_gain = -0.3
                 stability_weekly = -0.002
                 war_support_weekly = -0.002
 }
 
-MODIFIER_NIE_law_branch_1_id_7_value_2_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_7_value_2_idea_modifier = { # 兵役豁免：仅公职人员
                 political_power_gain = -0.1
                 stability_weekly = -0.001
                 war_support_weekly = -0.001
 }
 
-MODIFIER_NIE_law_branch_1_id_7_value_3_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_7_value_3_idea_modifier = { # 兵役豁免：公职和宗教人员
                 stability_weekly = -0.001
                 war_support_weekly = -0.001
 }
 
-MODIFIER_NIE_law_branch_1_id_7_value_4_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_7_value_4_idea_modifier = { # 兵役豁免：公职，宗教和受教育人员
                 political_power_gain = 0.1
                 stability_weekly = 0.001
 }
 
-MODIFIER_NIE_law_branch_1_id_7_value_5_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_7_value_5_idea_modifier = { # 兵役豁免：严格申报制度
                 stability_weekly = 0.001
                 industrial_capacity_factory = 0.05
                 industrial_capacity_dockyard = 0.05
 }
 
-MODIFIER_NIE_law_branch_1_id_7_value_6_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_7_value_6_idea_modifier = { # 兵役豁免：宽松申报制度
                 political_power_gain = -0.1
                 stability_weekly = 0.001
                 industrial_capacity_factory = 0.1
                 industrial_capacity_dockyard = 0.1
 }
 
-MODIFIER_NIE_law_branch_1_id_8_value_1_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_8_value_1_idea_modifier = { # 国家状态：全力发展
                 political_power_gain = 0.2
                 stability_weekly = 0.001
                 production_speed_buildings_factor = 0.2
@@ -295,16 +299,16 @@ MODIFIER_NIE_law_branch_1_id_8_value_1_idea_modifier = {
                 industrial_capacity_dockyard = -0.05
 }
 
-MODIFIER_NIE_law_branch_1_id_8_value_2_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_8_value_2_idea_modifier = { # 国家状态：正常发展
                 political_power_gain = 0.1
                 production_speed_buildings_factor = 0.1
 }
 
-MODIFIER_NIE_law_branch_1_id_8_value_3_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_8_value_3_idea_modifier = { # 国家状态：警惕状态
                 war_support_weekly = 0.001
 }
 
-MODIFIER_NIE_law_branch_1_id_8_value_4_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_8_value_4_idea_modifier = { # 国家状态：局部动员
                 political_power_gain = 0.1
                 stability_weekly = -0.001
                 war_support_weekly = 0.002
@@ -312,7 +316,7 @@ MODIFIER_NIE_law_branch_1_id_8_value_4_idea_modifier = {
                 industrial_capacity_dockyard = 0.03
 }
 
-MODIFIER_NIE_law_branch_1_id_8_value_5_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_8_value_5_idea_modifier = { # 国家状态：广泛动员
                 political_power_gain = 0.2
                 stability_weekly = -0.003
                 war_support_weekly = 0.005
@@ -320,7 +324,7 @@ MODIFIER_NIE_law_branch_1_id_8_value_5_idea_modifier = {
                 industrial_capacity_dockyard = 0.05
 }
 
-MODIFIER_NIE_law_branch_1_id_8_value_6_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_8_value_6_idea_modifier = { # 国家状态：总动员
                 political_power_gain = 0.3
                 stability_weekly = -0.005
                 war_support_weekly = 0.01
@@ -328,7 +332,7 @@ MODIFIER_NIE_law_branch_1_id_8_value_6_idea_modifier = {
                 industrial_capacity_dockyard = 0.1
 }
 
-MODIFIER_NIE_law_branch_1_id_8_value_7_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_8_value_7_idea_modifier = { # 国家状态：战时经济
                 political_power_gain = 0.1
                 stability_weekly = -0.003
                 war_support_weekly = -0.003
@@ -336,7 +340,7 @@ MODIFIER_NIE_law_branch_1_id_8_value_7_idea_modifier = {
                 industrial_capacity_dockyard = 0.2
 }
 
-MODIFIER_NIE_law_branch_1_id_8_value_8_idea_modifier = {
+MODIFIER_NIE_law_branch_1_id_8_value_8_idea_modifier = { # 国家状态：总体战
                 army_attack_factor = 0.01
                 army_defence_factor = 0.01
                 army_core_attack_factor = 0.05

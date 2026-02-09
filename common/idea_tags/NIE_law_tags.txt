@@ -13,4 +13,88 @@ idea_categories = {
         cost = 150
         removal_cost = -1
     }
+    NIE_law_branch_2 = {
+        slot = NIE_law_branch_2_id_1_laws
+        slot = NIE_law_branch_2_id_2_laws
+        slot = NIE_law_branch_2_id_3_laws
+        slot = NIE_law_branch_2_id_4_laws
+        slot = NIE_law_branch_2_id_5_laws
+        slot = NIE_law_branch_2_id_6_laws
+        slot = NIE_law_branch_2_id_7_laws
+        slot = NIE_law_branch_2_id_8_laws
+
+        ledger = civilian
+        cost = 150
+        removal_cost = -1
+    }
+    NIE_law_branch_3 = {
+        slot = NIE_law_branch_3_id_1_laws
+        slot = NIE_law_branch_3_id_2_laws
+        slot = NIE_law_branch_3_id_3_laws
+        slot = NIE_law_branch_3_id_4_laws
+        slot = NIE_law_branch_3_id_5_laws
+        slot = NIE_law_branch_3_id_6_laws
+        slot = NIE_law_branch_3_id_7_laws
+        slot = NIE_law_branch_3_id_8_laws
+
+        ledger = civilian
+        cost = 150
+        removal_cost = -1
+    }
+    NIE_law_branch_4 = {
+        slot = NIE_law_branch_4_id_1_laws
+        slot = NIE_law_branch_4_id_2_laws
+        slot = NIE_law_branch_4_id_3_laws
+        slot = NIE_law_branch_4_id_4_laws
+        slot = NIE_law_branch_4_id_5_laws
+        slot = NIE_law_branch_4_id_6_laws
+        slot = NIE_law_branch_4_id_7_laws
+        slot = NIE_law_branch_4_id_8_laws
+
+        ledger = civilian
+        cost = 150
+        removal_cost = -1
+    }
+    NIE_law_branch_5 = {
+        slot = NIE_law_branch_5_id_1_laws
+        slot = NIE_law_branch_5_id_2_laws
+        slot = NIE_law_branch_5_id_3_laws
+        slot = NIE_law_branch_5_id_4_laws
+        slot = NIE_law_branch_5_id_5_laws
+        slot = NIE_law_branch_5_id_6_laws
+        slot = NIE_law_branch_5_id_7_laws
+        slot = NIE_law_branch_5_id_8_laws
+
+        ledger = civilian
+        cost = 150
+        removal_cost = -1
+    }
+    NIE_law_branch_6 = {
+        slot = NIE_law_branch_6_id_1_laws
+        slot = NIE_law_branch_6_id_2_laws
+        slot = NIE_law_branch_6_id_3_laws
+        slot = NIE_law_branch_6_id_4_laws
+        slot = NIE_law_branch_6_id_5_laws
+        slot = NIE_law_branch_6_id_6_laws
+        slot = NIE_law_branch_6_id_7_laws
+        slot = NIE_law_branch_6_id_8_laws
+
+        ledger = civilian
+        cost = 150
+        removal_cost = -1
+    }
+    NIE_law_branch_7 = {
+        slot = NIE_law_branch_7_id_1_laws
+        slot = NIE_law_branch_7_id_2_laws
+        slot = NIE_law_branch_7_id_3_laws
+        slot = NIE_law_branch_7_id_4_laws
+        slot = NIE_law_branch_7_id_5_laws
+        slot = NIE_law_branch_7_id_6_laws
+        slot = NIE_law_branch_7_id_7_laws
+        slot = NIE_law_branch_7_id_8_laws
+
+        ledger = civilian
+        cost = 150
+        removal_cost = -1
+    }
 }

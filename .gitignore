@@ -3,3 +3,4 @@ src/.idea/
 src/.venv/
 src/dist_mod/
 src/pdx_logs/
+src/__pycache__/

@@ -3,7 +3,7 @@ ideas = {
         law = yes
         use_list_view = yes
 
-        NIE_law_branch_1_id_1_value_1_idea = { # 征兵法案：去军事化国家
+        NIE_law_branch_1_id_1_value_1_idea = { # 征兵法案：§R去军事化国家§!
             level = 1
             available = { TRIGGER_NIE_law_branch_1_id_1_value_1_idea_available = yes }
             modifier = {
@@ -15,6 +15,10 @@ ideas = {
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_1_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_1_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_1_value_2_idea = { # 征兵法案：非军事化国家
@@ -28,12 +32,16 @@ ideas = {
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_2_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_2_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_1_value_3_idea = { # 征兵法案：志愿参军
             level = 2
             default = yes
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_1_value_3_idea_available = yes }
             modifier = {
@@ -43,6 +51,10 @@ ideas = {
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_3_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_3_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_1_value_4_idea = { # 征兵法案：有限征兵
@@ -58,6 +70,10 @@ ideas = {
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_4_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_4_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_1_value_5_idea = { # 征兵法案：大范围征兵
@@ -73,6 +89,10 @@ ideas = {
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_5_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_5_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_1_value_6_idea = { # 征兵法案：全面征兵
@@ -88,6 +108,10 @@ ideas = {
             }
             on_add = { FUN_NIE_law_branch_1_id_1_value_6_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_1_value_6_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
     }
@@ -104,16 +128,24 @@ ideas = {
                 army_defence_factor = 0.03
                 conscription = 0.06
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_2_value_2_idea = { # 最小服役年龄：20岁
             level = 2
             default = yes
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_2_value_2_idea_available = yes }
             modifier = {
                 conscription = 0.08
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -127,6 +159,10 @@ ideas = {
                 war_support_weekly = -0.01
                 monthly_population = -0.2
                 conscription = 0.1
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -143,6 +179,10 @@ ideas = {
                 monthly_population = -0.3
                 conscription = 0.12
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_2_value_5_idea = { # 最小服役年龄：14岁
@@ -157,6 +197,10 @@ ideas = {
                 war_support_weekly = -0.02
                 monthly_population = -0.5
                 conscription = 0.14
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -173,10 +217,15 @@ ideas = {
                 monthly_population = -1
                 conscription = 0.16
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
-        NIE_law_branch_1_id_2_value_7_idea = { # 最小服役年龄：8岁
+        NIE_law_branch_1_id_2_value_7_idea = { # 最小服役年龄：§R8岁§!
             level = 7
+            allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_2_value_7_idea_available = yes }
             modifier = {
                 army_attack_factor = -0.2
@@ -187,10 +236,15 @@ ideas = {
                 monthly_population = -2
                 conscription = 0.18
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
-        NIE_law_branch_1_id_2_value_8_idea = { # 最小服役年龄：4岁
+        NIE_law_branch_1_id_2_value_8_idea = { # 最小服役年龄：§R4岁§!
             level = 8
+            allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_2_value_8_idea_available = yes }
             modifier = {
                 army_attack_factor = -0.3
@@ -200,6 +254,10 @@ ideas = {
                 war_support_weekly = -0.05
                 monthly_population = -3
                 conscription = 0.2
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -217,6 +275,10 @@ ideas = {
                 army_defence_factor = 0.08
                 conscription = 0.06
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_3_value_2_idea = { # 最大服役年龄：40岁
@@ -227,6 +289,10 @@ ideas = {
                 army_attack_factor = 0.05
                 army_defence_factor = 0.05
                 conscription = 0.08
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -239,17 +305,25 @@ ideas = {
                 army_defence_factor = 0.03
                 conscription = 0.1
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_3_value_4_idea = { # 最大服役年龄：50岁
             level = 4
             default = yes
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_3_value_4_idea_available = yes }
             modifier = {
                 political_power_gain = -0.1
                 conscription = 0.12
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -262,6 +336,10 @@ ideas = {
                 stability_weekly = -0.001
                 war_support_weekly = -0.001
                 conscription = 0.14
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -277,10 +355,15 @@ ideas = {
                 war_support_weekly = -0.003
                 conscription = 0.16
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_3_value_7_idea = { # 最大服役年龄：70岁
             level = 7
+            allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_3_value_7_idea_available = yes }
             modifier = {
                 army_attack_factor = -0.2
@@ -290,10 +373,15 @@ ideas = {
                 war_support_weekly = -0.005
                 conscription = 0.18
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
-        NIE_law_branch_1_id_3_value_8_idea = { # 最大服役年龄：无限制
+        NIE_law_branch_1_id_3_value_8_idea = { # 最大服役年龄：§R无限制§!
             level = 8
+            allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_3_value_8_idea_available = yes }
             modifier = {
                 army_attack_factor = -0.3
@@ -303,6 +391,10 @@ ideas = {
                 war_support_weekly = -0.01
                 conscription = 0.2
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
     }
@@ -311,7 +403,7 @@ ideas = {
         use_list_view = yes
 
         NIE_law_branch_1_id_4_value_1_idea = { # 女性服役政策：同等服役
-            level = 6
+            level = 1
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_1_idea_available = yes }
             modifier = {
@@ -319,13 +411,18 @@ ideas = {
                 stability_weekly = -0.003
                 war_support_weekly = -0.003
                 monthly_population = -0.5
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_4_value_1_idea_tooltip
             }
             on_add = { FUN_NIE_law_branch_1_id_4_value_1_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_1_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_4_value_2_idea = { # 女性服役政策：鼓励服役
-            level = 5
+            level = 2
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_2_idea_available = yes }
             modifier = {
@@ -333,58 +430,100 @@ ideas = {
                 stability_weekly = -0.001
                 war_support_weekly = -0.001
                 monthly_population = -0.3
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_4_value_2_idea_tooltip
             }
             on_add = { FUN_NIE_law_branch_1_id_4_value_2_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_2_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_4_value_3_idea = { # 女性服役政策：志愿服役
-            level = 4
+            level = 3
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_3_idea_available = yes }
             modifier = {
                 conscription_factor = -0.45
                 monthly_population = -0.2
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_4_value_3_idea_tooltip
             }
             on_add = { FUN_NIE_law_branch_1_id_4_value_3_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_3_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_4_value_4_idea = { # 女性服役政策：仅医护服务
-            level = 3
+            level = 4
             default = yes
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_4_idea_available = yes }
             modifier = {
                 political_power_gain = 0.1
                 conscription_factor = -0.48
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_4_value_4_idea_tooltip
             }
             on_add = { FUN_NIE_law_branch_1_id_4_value_4_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_4_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_4_value_5_idea = { # 女性服役政策：禁止服役
-            level = 2
+            level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_5_idea_available = yes }
             modifier = {
                 conscription_factor = -0.5
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_4_value_5_idea_tooltip
             }
             on_add = { FUN_NIE_law_branch_1_id_4_value_5_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_5_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_4_value_6_idea = { # 女性服役政策：歧视性禁止
-            level = 1
+            level = 6
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_4_value_6_idea_available = yes }
             modifier = {
                 political_power_gain = -0.1
                 conscription_factor = -0.5
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_4_value_6_idea_tooltip
             }
             on_add = { FUN_NIE_law_branch_1_id_4_value_6_idea_on_add = yes }
             on_remove = { FUN_NIE_law_branch_1_id_4_value_6_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_1_id_4_value_7_idea = { # 女性服役政策：§R“慰安”妇§!
+            level = 7
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_1_id_4_value_7_idea_available = yes }
+            modifier = {
+                # political_power_gain = -0.1
+                # conscription_factor = -0.5
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_4_value_7_idea_tooltip
+            }
+            on_add = { FUN_NIE_law_branch_1_id_4_value_7_idea_on_add = yes }
+            on_remove = { FUN_NIE_law_branch_1_id_4_value_7_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
     }
@@ -396,44 +535,80 @@ ideas = {
             level = 1
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_5_value_1_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_5_value_2_idea = { # 非核心人力资源：征召兵役
             level = 2
             default = yes
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_5_value_2_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_5_value_3_idea = { # 非核心人力资源：强制兵役
             level = 3
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_5_value_3_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_5_value_4_idea = { # 非核心人力资源：为独立而战
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_5_value_4_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_5_value_5_idea = { # 非核心人力资源：前线敢死队
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_5_value_5_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_5_value_6_idea = { # 非核心人力资源：前线炮灰
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_5_value_6_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
     }
@@ -444,59 +619,107 @@ ideas = {
         NIE_law_branch_1_id_6_value_1_idea = { # 参军福利：义务参军
             level = 1
             default = yes
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_6_value_1_idea_available = yes }
-            modifier = {}
+            modifier = {
+                mobilization_speed = -0.5
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_6_value_2_idea = { # 参军福利：少量津贴
             level = 2
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_6_value_2_idea_available = yes }
-            modifier = {}
+            modifier = {
+                mobilization_speed = -0.5
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_6_value_3_idea = { # 参军福利：服役津贴
             level = 3
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_6_value_3_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_6_value_4_idea = { # 参军福利：高额抚恤
             level = 4
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_6_value_4_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_6_value_5_idea = { # 参军福利：体面退休金
             level = 4
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_6_value_5_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_6_value_6_idea = { # 参军福利：医疗与家属保障
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_6_value_6_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_6_value_7_idea = { # 参军福利：优先安置政策
             level = 5
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_6_value_7_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_6_value_8_idea = { # 参军福利：广泛社会福利
             level = 6
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_6_value_8_idea_available = yes }
-            modifier = {}
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
     }
@@ -512,6 +735,13 @@ ideas = {
                 political_power_gain = -0.3
                 stability_weekly = -0.002
                 war_support_weekly = -0.002
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_7_value_1_idea_tooltip
+            }
+            on_add = { FUN_NIE_law_branch_1_id_7_value_1_idea_on_add = yes }
+            on_remove = { FUN_NIE_law_branch_1_id_7_value_1_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -521,20 +751,30 @@ ideas = {
             available = { TRIGGER_NIE_law_branch_1_id_7_value_2_idea_available = yes }
             modifier = {
                 political_power_gain = -0.1
-                stability_weekly = -0.001
-                war_support_weekly = -0.001
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_7_value_2_idea_tooltip
+            }
+            on_add = { FUN_NIE_law_branch_1_id_7_value_2_idea_on_add = yes }
+            on_remove = { FUN_NIE_law_branch_1_id_7_value_2_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
         NIE_law_branch_1_id_7_value_3_idea = { # 兵役豁免：公职和宗教人员
             level = 3
             default = yes
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
             allowed_civil_war = { always = yes }
             available = { TRIGGER_NIE_law_branch_1_id_7_value_3_idea_available = yes }
             modifier = {
-                stability_weekly = -0.001
-                war_support_weekly = -0.001
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_7_value_3_idea_tooltip
+            }
+            on_add = { FUN_NIE_law_branch_1_id_7_value_3_idea_on_add = yes }
+            on_remove = { FUN_NIE_law_branch_1_id_7_value_3_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -545,6 +785,13 @@ ideas = {
             modifier = {
                 political_power_gain = 0.1
                 stability_weekly = 0.001
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_7_value_4_idea_tooltip
+            }
+            on_add = { FUN_NIE_law_branch_1_id_7_value_4_idea_on_add = yes }
+            on_remove = { FUN_NIE_law_branch_1_id_7_value_4_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -556,6 +803,13 @@ ideas = {
                 stability_weekly = 0.001
                 industrial_capacity_factory = 0.05
                 industrial_capacity_dockyard = 0.05
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_7_value_5_idea_tooltip
+            }
+            on_add = { FUN_NIE_law_branch_1_id_7_value_5_idea_on_add = yes }
+            on_remove = { FUN_NIE_law_branch_1_id_7_value_5_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -568,6 +822,13 @@ ideas = {
                 stability_weekly = 0.001
                 industrial_capacity_factory = 0.1
                 industrial_capacity_dockyard = 0.1
+                custom_modifier_tooltip = custom_modifier_tooltip = NIE_law_branch_1_id_7_value_6_idea_tooltip
+            }
+            on_add = { FUN_NIE_law_branch_1_id_7_value_6_idea_on_add = yes }
+            on_remove = { FUN_NIE_law_branch_1_id_7_value_6_idea_on_remove = yes }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -579,6 +840,7 @@ ideas = {
         NIE_law_branch_1_id_8_value_1_idea = { # 国家状态：全力发展
             level = 1
             allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_1_id_8_value_1_idea_available = yes }
             modifier = {
                 political_power_gain = 0.2
                 stability_weekly = 0.001
@@ -586,24 +848,38 @@ ideas = {
                 industrial_capacity_factory = -0.05
                 industrial_capacity_dockyard = -0.05
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_8_value_2_idea = { # 国家状态：正常发展
             level = 2
             default = yes
-            cancel_if_invalid = no
+            cancel_if_invalid = yes
             allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_1_id_8_value_2_idea_available = yes }
             modifier = {
                 political_power_gain = 0.1
                 production_speed_buildings_factor = 0.1
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
         NIE_law_branch_1_id_8_value_3_idea = { # 国家状态：警惕状态
             level = 3
             allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_1_id_8_value_3_idea_available = yes }
             modifier = {
                 war_support_weekly = 0.001
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -617,6 +893,10 @@ ideas = {
                 war_support_weekly = 0.002
                 industrial_capacity_factory = 0.03
                 industrial_capacity_dockyard = 0.03
+            }
+            ai_will_do = {
+                base = 1.0
+
             }
         }
 
@@ -632,6 +912,10 @@ ideas = {
                 industrial_capacity_dockyard = 0.05
             }
             on_add = { FUN_NIE_law_branch_1_id_8_value_5_idea_on_add = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_8_value_6_idea = { # 国家状态：总动员
@@ -646,11 +930,16 @@ ideas = {
                 industrial_capacity_dockyard = 0.1
             }
             on_add = { FUN_NIE_law_branch_1_id_8_value_6_idea_on_add = yes }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_8_value_7_idea = { # 国家状态：战时经济
             level = 7
             allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_1_id_8_value_7_idea_available = yes }
             modifier = {
                 political_power_gain = 0.1
                 stability_weekly = -0.003
@@ -658,11 +947,16 @@ ideas = {
                 industrial_capacity_factory = 0.2
                 industrial_capacity_dockyard = 0.2
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
 
         NIE_law_branch_1_id_8_value_8_idea = { # 国家状态：总体战
             level = 8
             allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_1_id_8_value_8_idea_available = yes }
             modifier = {
                 army_attack_factor = 0.01
                 army_defence_factor = 0.01
@@ -674,7 +968,2428 @@ ideas = {
                 industrial_capacity_factory = 0.3
                 industrial_capacity_dockyard = 0.3
             }
+            ai_will_do = {
+                base = 1.0
+
+            }
         }
+
+    }
+    NIE_law_branch_2_id_1_laws = { # 劳动保障
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_2_id_1_value_1_idea = { # 劳动保障：§R人形耗材§!
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_1_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_1_value_2_idea = { # 劳动保障：实物工资制
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_1_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_1_value_3_idea = { # 劳动保障：无工时限制
+            level = 3
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_1_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_1_value_4_idea = { # 劳动保障：十二小时工作制
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_1_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_1_value_5_idea = { # 劳动保障：十小时工作制
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_1_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_1_value_6_idea = { # 劳动保障：八小时工作制
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_1_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_2_id_2_laws = { # 公共医疗
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_2_id_2_value_1_idea = { # 公共医疗：无公共医疗
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_2_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_2_value_2_idea = { # 公共医疗：§R全面瘫痪§!
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_2_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_2_value_3_idea = { # 公共医疗：无医疗补贴
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_2_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_2_value_4_idea = { # 公共医疗：最低医疗补贴
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_2_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_2_value_5_idea = { # 公共医疗：医疗补贴
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_2_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_2_value_6_idea = { # 公共医疗：可观医疗补贴
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_2_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_2_value_7_idea = { # 公共医疗：免费基础医疗
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_2_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_2_value_8_idea = { # 公共医疗：全民免费医疗
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_2_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_2_id_3_laws = { # 公共教育
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_2_id_3_value_1_idea = { # 公共教育：无公共教育
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_3_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_3_value_2_idea = { # 公共教育：§R全面瘫痪§!
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_3_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_3_value_3_idea = { # 公共教育：无义务教育
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_3_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_3_value_4_idea = { # 公共教育：三年义务教育
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_3_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_3_value_5_idea = { # 公共教育：六年义务教育
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_3_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_3_value_6_idea = { # 公共教育：九年义务教育
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_3_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_3_value_7_idea = { # 公共教育：十二年义务教育
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_3_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_3_value_8_idea = { # 公共教育：十五年义务教育
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_3_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_2_id_4_laws = { # 创业激励政策
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_2_id_4_value_1_idea = { # 创业激励政策：财团收割
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_4_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_4_value_2_idea = { # 创业激励政策：外资主导
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_4_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_4_value_3_idea = { # 创业激励政策：无补贴
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_4_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_4_value_4_idea = { # 创业激励政策：优先贷款
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_4_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_4_value_5_idea = { # 创业激励政策：政策帮扶
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_4_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_4_value_6_idea = { # 创业激励政策：全力支持
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_4_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_2_id_5_laws = { # 老年福利
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_2_id_5_value_1_idea = { # 老年福利：§R优胜劣汰§!
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_5_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_5_value_2_idea = { # 老年福利：无福利
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_5_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_5_value_3_idea = { # 老年福利：少量补助
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_5_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_5_value_4_idea = { # 老年福利：可观补助
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_5_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_5_value_5_idea = { # 老年福利：基础社区保障服务
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_5_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_5_value_6_idea = { # 老年福利：发达社区保障服务
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_5_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_2_id_6_laws = { # 社会救济
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_2_id_6_value_1_idea = { # 社会救济：§R优胜劣汰§!
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_6_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_6_value_2_idea = { # 社会救济：无救济
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_6_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_6_value_3_idea = { # 社会救济：少量补助
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_6_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_6_value_4_idea = { # 社会救济：廉价兵源
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_6_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_6_value_5_idea = { # 社会救济：基本生活补助
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_6_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_6_value_6_idea = { # 社会救济：基本生活保障
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_6_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_6_value_7_idea = { # 社会救济：就业保障
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_6_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_6_value_8_idea = { # 社会救济：可观生活保障
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_6_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_2_id_7_laws = { # 生育政策
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_2_id_7_value_1_idea = { # 生育政策：§R达尔文主义§!
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_7_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_7_value_2_idea = { # 生育政策：避免生育
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_7_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_7_value_3_idea = { # 生育政策：独生子女政策
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_7_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_7_value_4_idea = { # 生育政策：二胎政策
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_7_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_7_value_5_idea = { # 生育政策：无引导
+            level = 4
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_7_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_7_value_6_idea = { # 生育政策：鼓励生育
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_7_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_7_value_7_idea = { # 生育政策：强制生育
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_7_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_7_value_8_idea = { # 生育政策：§R榨干女性§!
+            level = 7
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_7_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_2_id_8_laws = { # 工业化
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_2_id_8_value_1_idea = { # 工业化：§R失败国家§!
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_8_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_8_value_2_idea = { # 工业化：前工业化国家
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_8_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_8_value_3_idea = { # 工业化：初步工业化国家
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_8_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_8_value_4_idea = { # 工业化：工业化国家
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_8_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_8_value_5_idea = { # 工业化：后工业化国家
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_8_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_2_id_8_value_6_idea = { # 工业化：超工业化国家
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_2_id_8_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_3_id_1_laws = { # 军队主要问题
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_3_id_1_value_1_idea = { # 军队主要问题：论资排辈
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_1_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_1_value_2_idea = { # 军队主要问题：长官至上
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_1_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_1_value_3_idea = { # 军队主要问题：狂热信徒
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_1_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_1_value_4_idea = { # 军队主要问题：民族狂热
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_1_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_1_value_5_idea = { # 军队主要问题：强盗军队
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_1_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_1_value_6_idea = { # 军队主要问题：质疑长官
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_1_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_1_value_7_idea = { # 军队主要问题：强者至上
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_1_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_1_value_8_idea = { # 军队主要问题：政委督军
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_1_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_3_id_2_laws = { # 军队思想宣传
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_3_id_2_value_1_idea = { # 军队思想宣传：为了家国
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_2_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_2_value_2_idea = { # 军队思想宣传：为了民族
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_2_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_2_value_3_idea = { # 军队思想宣传：为了正义
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_2_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_2_value_4_idea = { # 军队思想宣传：为了信仰
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_2_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_2_value_5_idea = { # 军队思想宣传：为了领袖
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_2_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_2_value_6_idea = { # 军队思想宣传：为了国王/皇帝
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_2_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_2_value_7_idea = { # 军队思想宣传：为了赏赐
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_2_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_3_id_3_laws = { # 军官选拔
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_3_id_3_value_1_idea = { # 军官选拔：战场晋升
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_3_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_3_value_2_idea = { # 军官选拔：贵族主导
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_3_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_3_value_3_idea = { # 军官选拔：系统性腐败
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_3_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_3_value_4_idea = { # 军官选拔：快速培养
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_3_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_3_value_5_idea = { # 军官选拔：职业军校
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_3_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_3_value_6_idea = { # 军官选拔：领袖裙带
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_3_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_3_value_7_idea = { # 军官选拔：政委领军
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_3_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_3_value_8_idea = { # 军官选拔：§R禁止军官§!
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_3_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_3_id_4_laws = { # 士兵训练
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_3_id_4_value_1_idea = { # 士兵训练：无训练
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_4_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_4_value_2_idea = { # 士兵训练：快速训练
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_4_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_4_value_3_idea = { # 士兵训练：标准训练
+            level = 3
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_4_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_4_value_4_idea = { # 士兵训练：先进训练
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_4_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_4_value_5_idea = { # 士兵训练：严苛训练
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_4_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_4_value_6_idea = { # 士兵训练：老兵教导
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_4_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_4_value_7_idea = { # 士兵训练：士官训练
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_4_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_4_value_8_idea = { # 士兵训练：仪式训练
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_4_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_3_id_5_laws = { # 预备役体制
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_3_id_5_value_1_idea = { # 预备役体制：无预备役
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_5_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_5_value_2_idea = { # 预备役体制：登记退伍军官
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_5_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_5_value_3_idea = { # 预备役体制：社区民兵
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_5_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_5_value_4_idea = { # 预备役体制：国家民兵
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_5_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_5_value_5_idea = { # 预备役体制：公民预备役义务
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_5_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_5_value_6_idea = { # 预备役体制：国民警备队
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_5_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_3_id_6_laws = { # 军队归属
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_3_id_6_value_1_idea = { # 军队归属：国家
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_6_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_6_value_2_idea = { # 军队归属：组成国家的实体
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_6_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_6_value_3_idea = { # 军队归属：国王/皇帝
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_6_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_6_value_4_idea = { # 军队归属：党派
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_6_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_6_value_5_idea = { # 军队归属：执政家族
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_6_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_6_value_6_idea = { # 军队归属：独立军部
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_6_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_3_id_7_laws = { # 军队监管
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_3_id_7_value_1_idea = { # 军队监管：无监管
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_7_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_7_value_2_idea = { # 军队监管：有限监管
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_7_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_7_value_3_idea = { # 军队监管：内部监管
+            level = 3
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_7_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_7_value_4_idea = { # 军队监管：独立监管
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_7_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_7_value_5_idea = { # 军队监管：严格监管
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_7_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_7_value_6_idea = { # 军队监管：大清洗
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_7_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_3_id_8_laws = { # 军队偏好
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_3_id_8_value_1_idea = { # 军队偏好：陆军部队
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_8_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_8_value_2_idea = { # 军队偏好：海军部队
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_8_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_8_value_3_idea = { # 军队偏好：航空力量
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_8_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_8_value_4_idea = { # 军队偏好：导弹与战略打击部队
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_8_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_8_value_5_idea = { # 军队偏好：后勤保障部队
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_8_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_8_value_6_idea = { # 军队偏好：情报作战部门
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_8_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_3_id_8_value_7_idea = { # 军队偏好：占领区维持部队
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_3_id_8_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_4_id_1_laws = { # 经济体制
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_4_id_1_value_1_idea = { # 经济体制：以物换物
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_1_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_1_value_2_idea = { # 经济体制：自由放任
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_1_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_1_value_3_idea = { # 经济体制：有限监管
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_1_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_1_value_4_idea = { # 经济体制：强力监管
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_1_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_1_value_5_idea = { # 经济体制：完全计划经济
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_1_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_1_value_6_idea = { # 经济体制：§R去经济化§!
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_1_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_4_id_2_laws = { # 企业税率
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_4_id_2_value_1_idea = { # 企业税率：极高税率
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_2_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_2_value_2_idea = { # 企业税率：高税率
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_2_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_2_value_3_idea = { # 企业税率：中等税率
+            level = 3
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_2_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_2_value_4_idea = { # 企业税率：低税率
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_2_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_2_value_5_idea = { # 企业税率：极低税率
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_2_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_2_value_6_idea = { # 企业税率：免税
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_2_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_4_id_3_laws = { # 公民税率
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_4_id_3_value_1_idea = { # 公民税率：极高税率
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_3_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_3_value_2_idea = { # 公民税率：高税率
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_3_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_3_value_3_idea = { # 公民税率：中等税率
+            level = 3
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_3_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_3_value_4_idea = { # 公民税率：低税率
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_3_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_3_value_5_idea = { # 公民税率：极低税率
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_3_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_3_value_6_idea = { # 公民税率：免税
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_3_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_4_id_4_laws = { # 国有化
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_4_id_4_value_1_idea = { # 国有化：禁止国有化
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_4_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_4_value_2_idea = { # 国有化：仅战略资源
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_4_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_4_value_3_idea = { # 国有化：公共服务机构
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_4_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_4_value_4_idea = { # 国有化：军工企业
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_4_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_4_value_5_idea = { # 国有化：公共服务机构及军工企业
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_4_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_4_value_6_idea = { # 国有化：普遍国有化
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_4_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_4_value_7_idea = { # 国有化：全部国有化
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_4_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_4_id_5_laws = { # 国家调控经济
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_4_id_5_value_1_idea = { # 国家调控经济：禁止调控
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_5_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_5_value_2_idea = { # 国家调控经济：无计划
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_5_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_5_value_3_idea = { # 国家调控经济：发展基建
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_5_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_5_value_4_idea = { # 国家调控经济：发展民生工业
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_5_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_5_value_5_idea = { # 国家调控经济：发展军工企业
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_5_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_5_value_6_idea = { # 国家调控经济：发展造船业
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_5_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_5_value_7_idea = { # 国家调控经济：发展矿业
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_5_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_5_value_8_idea = { # 国家调控经济：发展高新科技
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_5_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_4_id_6_laws = { # 外资态度
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_4_id_6_value_1_idea = { # 外资态度：完全依赖外资
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_6_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_6_value_2_idea = { # 外资态度：依赖外资
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_6_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_6_value_3_idea = { # 外资态度：鼓励外资
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_6_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_6_value_4_idea = { # 外资态度：一视同仁
+            level = 4
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_6_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_6_value_5_idea = { # 外资态度：额外条款
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_6_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_6_value_6_idea = { # 外资态度：打压外资
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_6_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_6_value_7_idea = { # 外资态度：禁止外资
+            level = 7
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_6_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_6_value_8_idea = { # 外资态度：收割外资
+            level = 8
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_6_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_4_id_7_laws = { # 军工补贴
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_4_id_7_value_1_idea = { # 军工补贴：难以为继
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_7_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_7_value_2_idea = { # 军工补贴：无补贴
+            level = 2
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_7_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_7_value_3_idea = { # 军工补贴：少量补贴
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_7_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_7_value_4_idea = { # 军工补贴：可观补贴
+            level = 4
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_7_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_7_value_5_idea = { # 军工补贴：大量补贴
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_7_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_7_value_6_idea = { # 军工补贴：无条件支持
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_7_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_4_id_8_laws = { # 出口政策
+        law = yes
+        use_list_view = yes
+
+        NIE_law_branch_4_id_8_value_1_idea = { # 出口政策：外国控制
+            level = 1
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_8_value_1_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_8_value_2_idea = { # 出口政策：全面出口
+            level = 2
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_8_value_2_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_8_value_3_idea = { # 出口政策：大规模出口
+            level = 3
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_8_value_3_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_8_value_4_idea = { # 出口政策：正常出口
+            level = 4
+            default = yes
+            cancel_if_invalid = yes
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_8_value_4_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_8_value_5_idea = { # 出口政策：出口管制
+            level = 5
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_8_value_5_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_8_value_6_idea = { # 出口政策：有限出口
+            level = 6
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_8_value_6_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_8_value_7_idea = { # 出口政策：微量出口
+            level = 7
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_8_value_7_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+        NIE_law_branch_4_id_8_value_8_idea = { # 出口政策：禁止出口
+            level = 8
+            allowed_civil_war = { always = yes }
+            available = { TRIGGER_NIE_law_branch_4_id_8_value_8_idea_available = yes }
+            modifier = {
+
+            }
+            ai_will_do = {
+                base = 1.0
+
+            }
+        }
+
+    }
+    NIE_law_branch_5_id_1_laws = { # 国家体制
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_5_id_2_laws = { # 投票权
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_5_id_3_laws = { # 社会监管程度
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_5_id_4_laws = { # 激进公民诉求
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_5_id_5_laws = { # 国家宣传项目
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_5_id_6_laws = { # 主要社会矛盾
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_5_id_7_laws = { # 移民政策
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_5_id_8_laws = { # 国家工程
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_6_id_1_laws = { # 殖民地事务
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_6_id_2_laws = { # 占领区政策
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_6_id_3_laws = { # 少数族裔政策
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_6_id_4_laws = { # 刑罚偏好
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_6_id_5_laws = { # 外交姿态
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_6_id_6_laws = { # 女性地位
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_6_id_7_laws = { # 科研预算
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_6_id_8_laws = { # 国防预算
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_7_id_1_laws = { # 生活状态
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_7_id_2_laws = { # 军队约束
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_7_id_3_laws = { # 盟国协调
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_7_id_4_laws = { # 军队激励
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_7_id_5_laws = { # 战争宣传
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_7_id_6_laws = { # 志愿军支持
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_7_id_7_laws = { # 战俘政策
+        law = yes
+        use_list_view = yes
+
+    }
+    NIE_law_branch_7_id_8_laws = { # 战争进程
+        law = yes
+        use_list_view = yes
 
     }
 }

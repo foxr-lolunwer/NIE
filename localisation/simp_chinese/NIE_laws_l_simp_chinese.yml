@@ -1,122 +1,525 @@
 ﻿l_simp_chinese:
-  NIE_law_branch_1: "国防事务与人力资源"
-  NIE_law_branch_1_id_1_laws: "征兵法案"
-  NIE_law_branch_1_id_1_value_1_idea: "征兵法案：去军事化国家"
-  NIE_law_branch_1_id_1_value_1_idea_desc: "依据现行法律框架，国防组织仅保留最低限度的维持编制，其职能界定为协助境内民事秩序维护。"
-  NIE_law_branch_1_id_1_value_2_idea: "征兵法案：非军事化国家"
-  NIE_law_branch_1_id_1_value_2_idea_desc: "国家行政编制内不设立任何武装性质单位，国防相关职能由民事行政部门代理执行。"
-  NIE_law_branch_1_id_1_value_3_idea: "征兵法案：志愿参军"
-  NIE_law_branch_1_id_1_value_3_idea_desc: "武装力量的员额补充完全基于公民个人的意愿申请与劳务合同签署，法律不赋予行政机关强制征集的权限。"
-  NIE_law_branch_1_id_1_value_4_idea: "征兵法案：有限征兵"
-  NIE_law_branch_1_id_1_value_4_idea_desc: "国家实施有条件的强制性征集制度。政府根据年度国防预算与员额空缺，在特定年龄段的公民中进行随机或定向抽选服役。"
-  NIE_law_branch_1_id_1_value_5_idea: "征兵法案：大范围征兵"
-  NIE_law_branch_1_id_1_value_5_idea_desc: "依据国防动员法案，扩大强制征集覆盖范围。法律规定所有符合生理标准的适龄公民均被纳入现役部队或预备役编队。"
-  NIE_law_branch_1_id_1_value_6_idea: "征兵法案：全面征兵"
-  NIE_law_branch_1_id_1_value_6_idea_desc: "国家启动最高级别动员体制。征集范围覆盖所有具备基本劳动能力的公民，政府依法拥有对全国人力资源的强制调配权。"
-  NIE_law_branch_1_id_2_laws: "最小服役年龄"
-  NIE_law_branch_1_id_2_value_1_idea: "最小服役年龄：22岁"
-  NIE_law_branch_1_id_2_value_1_idea_desc: ""
-  NIE_law_branch_1_id_2_value_2_idea: "最小服役年龄：20岁"
-  NIE_law_branch_1_id_2_value_2_idea_desc: ""
-  NIE_law_branch_1_id_2_value_3_idea: "最小服役年龄：18岁"
-  NIE_law_branch_1_id_2_value_3_idea_desc: ""
-  NIE_law_branch_1_id_2_value_4_idea: "最小服役年龄：16岁"
-  NIE_law_branch_1_id_2_value_4_idea_desc: ""
-  NIE_law_branch_1_id_2_value_5_idea: "最小服役年龄：14岁"
-  NIE_law_branch_1_id_2_value_5_idea_desc: ""
-  NIE_law_branch_1_id_2_value_6_idea: "最小服役年龄：12岁"
-  NIE_law_branch_1_id_2_value_6_idea_desc: ""
-  NIE_law_branch_1_id_2_value_7_idea: "最小服役年龄：8岁"
-  NIE_law_branch_1_id_2_value_7_idea_desc: ""
-  NIE_law_branch_1_id_2_value_8_idea: "最小服役年龄：4岁"
-  NIE_law_branch_1_id_2_value_8_idea_desc: ""
-  NIE_law_branch_1_id_3_laws: "最大服役年龄"
-  NIE_law_branch_1_id_3_value_1_idea: "最大服役年龄：35岁"
-  NIE_law_branch_1_id_3_value_1_idea_desc: ""
-  NIE_law_branch_1_id_3_value_2_idea: "最大服役年龄：40岁"
-  NIE_law_branch_1_id_3_value_2_idea_desc: ""
-  NIE_law_branch_1_id_3_value_3_idea: "最大服役年龄：45岁"
-  NIE_law_branch_1_id_3_value_3_idea_desc: ""
-  NIE_law_branch_1_id_3_value_4_idea: "最大服役年龄：50岁"
-  NIE_law_branch_1_id_3_value_4_idea_desc: ""
-  NIE_law_branch_1_id_3_value_5_idea: "最大服役年龄：55岁"
-  NIE_law_branch_1_id_3_value_5_idea_desc: ""
-  NIE_law_branch_1_id_3_value_6_idea: "最大服役年龄：60岁"
-  NIE_law_branch_1_id_3_value_6_idea_desc: ""
-  NIE_law_branch_1_id_3_value_7_idea: "最大服役年龄：70岁"
-  NIE_law_branch_1_id_3_value_7_idea_desc: ""
-  NIE_law_branch_1_id_3_value_8_idea: "最大服役年龄：无限制"
-  NIE_law_branch_1_id_3_value_8_idea_desc: ""
-  NIE_law_branch_1_id_4_laws: "女性服役政策"
-  NIE_law_branch_1_id_4_value_1_idea: "女性服役政策：同等服役"
-  NIE_law_branch_1_id_4_value_1_idea_desc: ""
-  NIE_law_branch_1_id_4_value_2_idea: "女性服役政策：鼓励服役"
-  NIE_law_branch_1_id_4_value_2_idea_desc: ""
-  NIE_law_branch_1_id_4_value_3_idea: "女性服役政策：志愿服役"
-  NIE_law_branch_1_id_4_value_3_idea_desc: ""
-  NIE_law_branch_1_id_4_value_4_idea: "女性服役政策：仅医护服务"
-  NIE_law_branch_1_id_4_value_4_idea_desc: ""
-  NIE_law_branch_1_id_4_value_5_idea: "女性服役政策：禁止服役"
-  NIE_law_branch_1_id_4_value_5_idea_desc: ""
-  NIE_law_branch_1_id_4_value_6_idea: "女性服役政策：歧视性禁止"
-  NIE_law_branch_1_id_4_value_6_idea_desc: ""
-  NIE_law_branch_1_id_5_laws: "非核心人力资源"
-  NIE_law_branch_1_id_5_value_1_idea: "非核心人力资源：禁服兵役"
-  NIE_law_branch_1_id_5_value_1_idea_desc: ""
-  NIE_law_branch_1_id_5_value_2_idea: "非核心人力资源：征召兵役"
-  NIE_law_branch_1_id_5_value_2_idea_desc: ""
-  NIE_law_branch_1_id_5_value_3_idea: "非核心人力资源：强制兵役"
-  NIE_law_branch_1_id_5_value_3_idea_desc: ""
-  NIE_law_branch_1_id_5_value_4_idea: "非核心人力资源：为独立而战"
-  NIE_law_branch_1_id_5_value_4_idea_desc: ""
-  NIE_law_branch_1_id_5_value_5_idea: "非核心人力资源：前线敢死队"
-  NIE_law_branch_1_id_5_value_5_idea_desc: ""
-  NIE_law_branch_1_id_5_value_6_idea: "非核心人力资源：前线炮灰"
-  NIE_law_branch_1_id_5_value_6_idea_desc: ""
-  NIE_law_branch_1_id_6_laws: "参军福利"
-  NIE_law_branch_1_id_6_value_1_idea: "参军福利：义务参军"
-  NIE_law_branch_1_id_6_value_1_idea_desc: ""
-  NIE_law_branch_1_id_6_value_2_idea: "参军福利：少量津贴"
-  NIE_law_branch_1_id_6_value_2_idea_desc: ""
-  NIE_law_branch_1_id_6_value_3_idea: "参军福利：服役津贴"
-  NIE_law_branch_1_id_6_value_3_idea_desc: ""
-  NIE_law_branch_1_id_6_value_4_idea: "参军福利：高额抚恤"
-  NIE_law_branch_1_id_6_value_4_idea_desc: ""
-  NIE_law_branch_1_id_6_value_5_idea: "参军福利：体面退休金"
-  NIE_law_branch_1_id_6_value_5_idea_desc: ""
-  NIE_law_branch_1_id_6_value_6_idea: "参军福利：医疗与家属保障"
-  NIE_law_branch_1_id_6_value_6_idea_desc: ""
-  NIE_law_branch_1_id_6_value_7_idea: "参军福利：优先安置政策"
-  NIE_law_branch_1_id_6_value_7_idea_desc: ""
-  NIE_law_branch_1_id_6_value_8_idea: "参军福利：广泛社会福利"
-  NIE_law_branch_1_id_6_value_8_idea_desc: ""
-  NIE_law_branch_1_id_7_laws: "兵役豁免"
-  NIE_law_branch_1_id_7_value_1_idea: "兵役豁免：无豁免"
-  NIE_law_branch_1_id_7_value_1_idea_desc: ""
-  NIE_law_branch_1_id_7_value_2_idea: "兵役豁免：仅公职人员"
-  NIE_law_branch_1_id_7_value_2_idea_desc: ""
-  NIE_law_branch_1_id_7_value_3_idea: "兵役豁免：公职和宗教人员"
-  NIE_law_branch_1_id_7_value_3_idea_desc: ""
-  NIE_law_branch_1_id_7_value_4_idea: "兵役豁免：公职，宗教和受教育人员"
-  NIE_law_branch_1_id_7_value_4_idea_desc: ""
-  NIE_law_branch_1_id_7_value_5_idea: "兵役豁免：严格申报制度"
-  NIE_law_branch_1_id_7_value_5_idea_desc: ""
-  NIE_law_branch_1_id_7_value_6_idea: "兵役豁免：宽松申报制度"
-  NIE_law_branch_1_id_7_value_6_idea_desc: ""
-  NIE_law_branch_1_id_8_laws: "国家状态"
-  NIE_law_branch_1_id_8_value_1_idea: "国家状态：全力发展"
-  NIE_law_branch_1_id_8_value_1_idea_desc: ""
-  NIE_law_branch_1_id_8_value_2_idea: "国家状态：正常发展"
-  NIE_law_branch_1_id_8_value_2_idea_desc: ""
-  NIE_law_branch_1_id_8_value_3_idea: "国家状态：警惕状态"
-  NIE_law_branch_1_id_8_value_3_idea_desc: ""
-  NIE_law_branch_1_id_8_value_4_idea: "国家状态：局部动员"
-  NIE_law_branch_1_id_8_value_4_idea_desc: ""
-  NIE_law_branch_1_id_8_value_5_idea: "国家状态：广泛动员"
-  NIE_law_branch_1_id_8_value_5_idea_desc: ""
-  NIE_law_branch_1_id_8_value_6_idea: "国家状态：总动员"
-  NIE_law_branch_1_id_8_value_6_idea_desc: ""
-  NIE_law_branch_1_id_8_value_7_idea: "国家状态：战时经济"
-  NIE_law_branch_1_id_8_value_7_idea_desc: ""
-  NIE_law_branch_1_id_8_value_8_idea: "国家状态：总体战"
-  NIE_law_branch_1_id_8_value_8_idea_desc: ""
+  NIE_law_branch_1:0 "国防事务与人力资源"
+  NIE_law_branch_1_id_1_laws:0 "征兵法案"
+  NIE_law_branch_1_id_1_value_1_idea:0 "征兵法案：§R去军事化国家§!"
+  NIE_law_branch_1_id_1_value_1_idea_desc:0 "依据现行法律框架，国防组织仅保留最低限度的维持编制，其职能界定为协助境内民事秩序维护。"
+  NIE_law_branch_1_id_1_value_2_idea:0 "征兵法案：非军事化国家"
+  NIE_law_branch_1_id_1_value_2_idea_desc:0 "国家行政编制内不设立任何武装性质单位，国防相关职能由民事行政部门代理执行。"
+  NIE_law_branch_1_id_1_value_3_idea:0 "征兵法案：志愿参军"
+  NIE_law_branch_1_id_1_value_3_idea_desc:0 "武装力量的员额补充完全基于公民个人的意愿申请与劳务合同签署，法律不赋予行政机关强制征集的权限。"
+  NIE_law_branch_1_id_1_value_4_idea:0 "征兵法案：有限征兵"
+  NIE_law_branch_1_id_1_value_4_idea_desc:0 "国家实施有条件的强制性征集制度。政府根据年度国防预算与员额空缺，在特定年龄段的公民中进行随机或定向抽选服役。"
+  NIE_law_branch_1_id_1_value_5_idea:0 "征兵法案：大范围征兵"
+  NIE_law_branch_1_id_1_value_5_idea_desc:0 "依据国防动员法案，扩大强制征集覆盖范围。法律规定所有符合生理标准的适龄公民均被纳入现役部队或预备役编队。"
+  NIE_law_branch_1_id_1_value_6_idea:0 "征兵法案：全面征兵"
+  NIE_law_branch_1_id_1_value_6_idea_desc:0 "国家启动最高级别动员体制。征集范围覆盖所有具备基本劳动能力的公民，政府依法拥有对全国人力资源的强制调配权。"
+  NIE_law_branch_1_id_2_laws:0 "最小服役年龄"
+  NIE_law_branch_1_id_2_value_1_idea:0 "最小服役年龄：22岁"
+  NIE_law_branch_1_id_2_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_2_value_2_idea:0 "最小服役年龄：20岁"
+  NIE_law_branch_1_id_2_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_2_value_3_idea:0 "最小服役年龄：18岁"
+  NIE_law_branch_1_id_2_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_2_value_4_idea:0 "最小服役年龄：16岁"
+  NIE_law_branch_1_id_2_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_2_value_5_idea:0 "最小服役年龄：14岁"
+  NIE_law_branch_1_id_2_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_2_value_6_idea:0 "最小服役年龄：12岁"
+  NIE_law_branch_1_id_2_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_2_value_7_idea:0 "最小服役年龄：§R8岁§!"
+  NIE_law_branch_1_id_2_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_2_value_8_idea:0 "最小服役年龄：§R4岁§!"
+  NIE_law_branch_1_id_2_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_3_laws:0 "最大服役年龄"
+  NIE_law_branch_1_id_3_value_1_idea:0 "最大服役年龄：35岁"
+  NIE_law_branch_1_id_3_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_3_value_2_idea:0 "最大服役年龄：40岁"
+  NIE_law_branch_1_id_3_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_3_value_3_idea:0 "最大服役年龄：45岁"
+  NIE_law_branch_1_id_3_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_3_value_4_idea:0 "最大服役年龄：50岁"
+  NIE_law_branch_1_id_3_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_3_value_5_idea:0 "最大服役年龄：55岁"
+  NIE_law_branch_1_id_3_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_3_value_6_idea:0 "最大服役年龄：60岁"
+  NIE_law_branch_1_id_3_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_3_value_7_idea:0 "最大服役年龄：70岁"
+  NIE_law_branch_1_id_3_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_3_value_8_idea:0 "最大服役年龄：§R无限制§!"
+  NIE_law_branch_1_id_3_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_4_laws:0 "女性服役政策"
+  NIE_law_branch_1_id_4_value_1_idea:0 "女性服役政策：同等服役"
+  NIE_law_branch_1_id_4_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_4_value_1_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_4_value_2_idea:0 "女性服役政策：鼓励服役"
+  NIE_law_branch_1_id_4_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_4_value_2_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_4_value_3_idea:0 "女性服役政策：志愿服役"
+  NIE_law_branch_1_id_4_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_4_value_3_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_4_value_4_idea:0 "女性服役政策：仅医护服务"
+  NIE_law_branch_1_id_4_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_4_value_4_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_4_value_5_idea:0 "女性服役政策：禁止服役"
+  NIE_law_branch_1_id_4_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_4_value_5_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_4_value_6_idea:0 "女性服役政策：歧视性禁止"
+  NIE_law_branch_1_id_4_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_4_value_6_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_4_value_7_idea:0 "女性服役政策：§R“慰安”妇§!"
+  NIE_law_branch_1_id_4_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_4_value_7_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_5_laws:0 "非核心人力资源"
+  NIE_law_branch_1_id_5_value_1_idea:0 "非核心人力资源：禁服兵役"
+  NIE_law_branch_1_id_5_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_5_value_2_idea:0 "非核心人力资源：征召兵役"
+  NIE_law_branch_1_id_5_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_5_value_3_idea:0 "非核心人力资源：强制兵役"
+  NIE_law_branch_1_id_5_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_5_value_4_idea:0 "非核心人力资源：为独立而战"
+  NIE_law_branch_1_id_5_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_5_value_5_idea:0 "非核心人力资源：前线敢死队"
+  NIE_law_branch_1_id_5_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_5_value_6_idea:0 "非核心人力资源：前线炮灰"
+  NIE_law_branch_1_id_5_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_6_laws:0 "参军福利"
+  NIE_law_branch_1_id_6_value_1_idea:0 "参军福利：义务参军"
+  NIE_law_branch_1_id_6_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_6_value_2_idea:0 "参军福利：少量津贴"
+  NIE_law_branch_1_id_6_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_6_value_3_idea:0 "参军福利：服役津贴"
+  NIE_law_branch_1_id_6_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_6_value_4_idea:0 "参军福利：高额抚恤"
+  NIE_law_branch_1_id_6_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_6_value_5_idea:0 "参军福利：体面退休金"
+  NIE_law_branch_1_id_6_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_6_value_6_idea:0 "参军福利：医疗与家属保障"
+  NIE_law_branch_1_id_6_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_6_value_7_idea:0 "参军福利：优先安置政策"
+  NIE_law_branch_1_id_6_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_6_value_8_idea:0 "参军福利：广泛社会福利"
+  NIE_law_branch_1_id_6_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_7_laws:0 "兵役豁免"
+  NIE_law_branch_1_id_7_value_1_idea:0 "兵役豁免：无豁免"
+  NIE_law_branch_1_id_7_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_7_value_1_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_7_value_2_idea:0 "兵役豁免：仅公职人员"
+  NIE_law_branch_1_id_7_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_7_value_2_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_7_value_3_idea:0 "兵役豁免：公职和宗教人员"
+  NIE_law_branch_1_id_7_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_7_value_3_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_7_value_4_idea:0 "兵役豁免：公职，宗教和受教育人员"
+  NIE_law_branch_1_id_7_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_7_value_4_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_7_value_5_idea:0 "兵役豁免：严格申报制度"
+  NIE_law_branch_1_id_7_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_7_value_5_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_7_value_6_idea:0 "兵役豁免：宽松申报制度"
+  NIE_law_branch_1_id_7_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_7_value_6_idea_modifier_tooltip:0 ""
+  NIE_law_branch_1_id_8_laws:0 "国家状态"
+  NIE_law_branch_1_id_8_value_1_idea:0 "国家状态：全力发展"
+  NIE_law_branch_1_id_8_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_8_value_2_idea:0 "国家状态：正常发展"
+  NIE_law_branch_1_id_8_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_8_value_3_idea:0 "国家状态：警惕状态"
+  NIE_law_branch_1_id_8_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_8_value_4_idea:0 "国家状态：局部动员"
+  NIE_law_branch_1_id_8_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_8_value_5_idea:0 "国家状态：广泛动员"
+  NIE_law_branch_1_id_8_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_8_value_6_idea:0 "国家状态：总动员"
+  NIE_law_branch_1_id_8_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_8_value_7_idea:0 "国家状态：战时经济"
+  NIE_law_branch_1_id_8_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_1_id_8_value_8_idea:0 "国家状态：总体战"
+  NIE_law_branch_1_id_8_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2:0 "国家与社会发展"
+  NIE_law_branch_2_id_1_laws:0 "劳动保障"
+  NIE_law_branch_2_id_1_value_1_idea:0 "劳动保障：§R人形耗材§!"
+  NIE_law_branch_2_id_1_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_1_value_2_idea:0 "劳动保障：实物工资制"
+  NIE_law_branch_2_id_1_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_1_value_3_idea:0 "劳动保障：无工时限制"
+  NIE_law_branch_2_id_1_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_1_value_4_idea:0 "劳动保障：十二小时工作制"
+  NIE_law_branch_2_id_1_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_1_value_5_idea:0 "劳动保障：十小时工作制"
+  NIE_law_branch_2_id_1_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_1_value_6_idea:0 "劳动保障：八小时工作制"
+  NIE_law_branch_2_id_1_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_2_laws:0 "公共医疗"
+  NIE_law_branch_2_id_2_value_1_idea:0 "公共医疗：无公共医疗"
+  NIE_law_branch_2_id_2_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_2_value_2_idea:0 "公共医疗：§R全面瘫痪§!"
+  NIE_law_branch_2_id_2_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_2_value_3_idea:0 "公共医疗：无医疗补贴"
+  NIE_law_branch_2_id_2_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_2_value_4_idea:0 "公共医疗：最低医疗补贴"
+  NIE_law_branch_2_id_2_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_2_value_5_idea:0 "公共医疗：医疗补贴"
+  NIE_law_branch_2_id_2_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_2_value_6_idea:0 "公共医疗：可观医疗补贴"
+  NIE_law_branch_2_id_2_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_2_value_7_idea:0 "公共医疗：免费基础医疗"
+  NIE_law_branch_2_id_2_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_2_value_8_idea:0 "公共医疗：全民免费医疗"
+  NIE_law_branch_2_id_2_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_3_laws:0 "公共教育"
+  NIE_law_branch_2_id_3_value_1_idea:0 "公共教育：无公共教育"
+  NIE_law_branch_2_id_3_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_3_value_2_idea:0 "公共教育：§R全面瘫痪§!"
+  NIE_law_branch_2_id_3_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_3_value_3_idea:0 "公共教育：无义务教育"
+  NIE_law_branch_2_id_3_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_3_value_4_idea:0 "公共教育：三年义务教育"
+  NIE_law_branch_2_id_3_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_3_value_5_idea:0 "公共教育：六年义务教育"
+  NIE_law_branch_2_id_3_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_3_value_6_idea:0 "公共教育：九年义务教育"
+  NIE_law_branch_2_id_3_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_3_value_7_idea:0 "公共教育：十二年义务教育"
+  NIE_law_branch_2_id_3_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_3_value_8_idea:0 "公共教育：十五年义务教育"
+  NIE_law_branch_2_id_3_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_4_laws:0 "创业激励政策"
+  NIE_law_branch_2_id_4_value_1_idea:0 "创业激励政策：财团收割"
+  NIE_law_branch_2_id_4_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_4_value_2_idea:0 "创业激励政策：外资主导"
+  NIE_law_branch_2_id_4_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_4_value_3_idea:0 "创业激励政策：无补贴"
+  NIE_law_branch_2_id_4_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_4_value_4_idea:0 "创业激励政策：优先贷款"
+  NIE_law_branch_2_id_4_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_4_value_5_idea:0 "创业激励政策：政策帮扶"
+  NIE_law_branch_2_id_4_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_4_value_6_idea:0 "创业激励政策：全力支持"
+  NIE_law_branch_2_id_4_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_5_laws:0 "老年福利"
+  NIE_law_branch_2_id_5_value_1_idea:0 "老年福利：§R优胜劣汰§!"
+  NIE_law_branch_2_id_5_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_5_value_2_idea:0 "老年福利：无福利"
+  NIE_law_branch_2_id_5_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_5_value_3_idea:0 "老年福利：少量补助"
+  NIE_law_branch_2_id_5_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_5_value_4_idea:0 "老年福利：可观补助"
+  NIE_law_branch_2_id_5_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_5_value_5_idea:0 "老年福利：基础社区保障服务"
+  NIE_law_branch_2_id_5_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_5_value_6_idea:0 "老年福利：发达社区保障服务"
+  NIE_law_branch_2_id_5_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_6_laws:0 "社会救济"
+  NIE_law_branch_2_id_6_value_1_idea:0 "社会救济：§R优胜劣汰§!"
+  NIE_law_branch_2_id_6_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_6_value_2_idea:0 "社会救济：无救济"
+  NIE_law_branch_2_id_6_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_6_value_3_idea:0 "社会救济：少量补助"
+  NIE_law_branch_2_id_6_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_6_value_4_idea:0 "社会救济：廉价兵源"
+  NIE_law_branch_2_id_6_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_6_value_5_idea:0 "社会救济：基本生活补助"
+  NIE_law_branch_2_id_6_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_6_value_6_idea:0 "社会救济：基本生活保障"
+  NIE_law_branch_2_id_6_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_6_value_7_idea:0 "社会救济：就业保障"
+  NIE_law_branch_2_id_6_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_6_value_8_idea:0 "社会救济：可观生活保障"
+  NIE_law_branch_2_id_6_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_7_laws:0 "生育政策"
+  NIE_law_branch_2_id_7_value_1_idea:0 "生育政策：§R达尔文主义§!"
+  NIE_law_branch_2_id_7_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_7_value_2_idea:0 "生育政策：避免生育"
+  NIE_law_branch_2_id_7_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_7_value_3_idea:0 "生育政策：独生子女政策"
+  NIE_law_branch_2_id_7_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_7_value_4_idea:0 "生育政策：二胎政策"
+  NIE_law_branch_2_id_7_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_7_value_5_idea:0 "生育政策：无引导"
+  NIE_law_branch_2_id_7_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_7_value_6_idea:0 "生育政策：鼓励生育"
+  NIE_law_branch_2_id_7_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_7_value_7_idea:0 "生育政策：强制生育"
+  NIE_law_branch_2_id_7_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_7_value_8_idea:0 "生育政策：§R榨干女性§!"
+  NIE_law_branch_2_id_7_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_8_laws:0 "工业化"
+  NIE_law_branch_2_id_8_value_1_idea:0 "工业化：§R失败国家§!"
+  NIE_law_branch_2_id_8_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_8_value_2_idea:0 "工业化：前工业化国家"
+  NIE_law_branch_2_id_8_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_8_value_3_idea:0 "工业化：初步工业化国家"
+  NIE_law_branch_2_id_8_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_8_value_4_idea:0 "工业化：工业化国家"
+  NIE_law_branch_2_id_8_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_8_value_5_idea:0 "工业化：后工业化国家"
+  NIE_law_branch_2_id_8_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_2_id_8_value_6_idea:0 "工业化：超工业化国家"
+  NIE_law_branch_2_id_8_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3:0 "军队组织"
+  NIE_law_branch_3_id_1_laws:0 "军队主要问题"
+  NIE_law_branch_3_id_1_value_1_idea:0 "军队主要问题：论资排辈"
+  NIE_law_branch_3_id_1_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_1_value_2_idea:0 "军队主要问题：长官至上"
+  NIE_law_branch_3_id_1_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_1_value_3_idea:0 "军队主要问题：狂热信徒"
+  NIE_law_branch_3_id_1_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_1_value_4_idea:0 "军队主要问题：民族狂热"
+  NIE_law_branch_3_id_1_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_1_value_5_idea:0 "军队主要问题：强盗军队"
+  NIE_law_branch_3_id_1_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_1_value_6_idea:0 "军队主要问题：质疑长官"
+  NIE_law_branch_3_id_1_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_1_value_7_idea:0 "军队主要问题：强者至上"
+  NIE_law_branch_3_id_1_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_1_value_8_idea:0 "军队主要问题：政委督军"
+  NIE_law_branch_3_id_1_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_2_laws:0 "军队思想宣传"
+  NIE_law_branch_3_id_2_value_1_idea:0 "军队思想宣传：为了家国"
+  NIE_law_branch_3_id_2_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_2_value_2_idea:0 "军队思想宣传：为了民族"
+  NIE_law_branch_3_id_2_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_2_value_3_idea:0 "军队思想宣传：为了正义"
+  NIE_law_branch_3_id_2_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_2_value_4_idea:0 "军队思想宣传：为了信仰"
+  NIE_law_branch_3_id_2_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_2_value_5_idea:0 "军队思想宣传：为了领袖"
+  NIE_law_branch_3_id_2_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_2_value_6_idea:0 "军队思想宣传：为了国王/皇帝"
+  NIE_law_branch_3_id_2_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_2_value_7_idea:0 "军队思想宣传：为了赏赐"
+  NIE_law_branch_3_id_2_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_3_laws:0 "军官选拔"
+  NIE_law_branch_3_id_3_value_1_idea:0 "军官选拔：战场晋升"
+  NIE_law_branch_3_id_3_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_3_value_2_idea:0 "军官选拔：贵族主导"
+  NIE_law_branch_3_id_3_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_3_value_3_idea:0 "军官选拔：系统性腐败"
+  NIE_law_branch_3_id_3_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_3_value_4_idea:0 "军官选拔：快速培养"
+  NIE_law_branch_3_id_3_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_3_value_5_idea:0 "军官选拔：职业军校"
+  NIE_law_branch_3_id_3_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_3_value_6_idea:0 "军官选拔：领袖裙带"
+  NIE_law_branch_3_id_3_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_3_value_7_idea:0 "军官选拔：政委领军"
+  NIE_law_branch_3_id_3_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_3_value_8_idea:0 "军官选拔：§R禁止军官§!"
+  NIE_law_branch_3_id_3_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_4_laws:0 "士兵训练"
+  NIE_law_branch_3_id_4_value_1_idea:0 "士兵训练：无训练"
+  NIE_law_branch_3_id_4_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_4_value_2_idea:0 "士兵训练：快速训练"
+  NIE_law_branch_3_id_4_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_4_value_3_idea:0 "士兵训练：标准训练"
+  NIE_law_branch_3_id_4_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_4_value_4_idea:0 "士兵训练：先进训练"
+  NIE_law_branch_3_id_4_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_4_value_5_idea:0 "士兵训练：严苛训练"
+  NIE_law_branch_3_id_4_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_4_value_6_idea:0 "士兵训练：老兵教导"
+  NIE_law_branch_3_id_4_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_4_value_7_idea:0 "士兵训练：士官训练"
+  NIE_law_branch_3_id_4_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_4_value_8_idea:0 "士兵训练：仪式训练"
+  NIE_law_branch_3_id_4_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_5_laws:0 "预备役体制"
+  NIE_law_branch_3_id_5_value_1_idea:0 "预备役体制：无预备役"
+  NIE_law_branch_3_id_5_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_5_value_2_idea:0 "预备役体制：登记退伍军官"
+  NIE_law_branch_3_id_5_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_5_value_3_idea:0 "预备役体制：社区民兵"
+  NIE_law_branch_3_id_5_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_5_value_4_idea:0 "预备役体制：国家民兵"
+  NIE_law_branch_3_id_5_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_5_value_5_idea:0 "预备役体制：公民预备役义务"
+  NIE_law_branch_3_id_5_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_5_value_6_idea:0 "预备役体制：国民警备队"
+  NIE_law_branch_3_id_5_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_6_laws:0 "军队归属"
+  NIE_law_branch_3_id_6_value_1_idea:0 "军队归属：国家"
+  NIE_law_branch_3_id_6_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_6_value_2_idea:0 "军队归属：组成国家的实体"
+  NIE_law_branch_3_id_6_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_6_value_3_idea:0 "军队归属：国王/皇帝"
+  NIE_law_branch_3_id_6_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_6_value_4_idea:0 "军队归属：党派"
+  NIE_law_branch_3_id_6_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_6_value_5_idea:0 "军队归属：执政家族"
+  NIE_law_branch_3_id_6_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_6_value_6_idea:0 "军队归属：独立军部"
+  NIE_law_branch_3_id_6_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_7_laws:0 "军队监管"
+  NIE_law_branch_3_id_7_value_1_idea:0 "军队监管：无监管"
+  NIE_law_branch_3_id_7_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_7_value_2_idea:0 "军队监管：有限监管"
+  NIE_law_branch_3_id_7_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_7_value_3_idea:0 "军队监管：内部监管"
+  NIE_law_branch_3_id_7_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_7_value_4_idea:0 "军队监管：独立监管"
+  NIE_law_branch_3_id_7_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_7_value_5_idea:0 "军队监管：严格监管"
+  NIE_law_branch_3_id_7_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_7_value_6_idea:0 "军队监管：大清洗"
+  NIE_law_branch_3_id_7_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_8_laws:0 "军队偏好"
+  NIE_law_branch_3_id_8_value_1_idea:0 "军队偏好：陆军部队"
+  NIE_law_branch_3_id_8_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_8_value_2_idea:0 "军队偏好：海军部队"
+  NIE_law_branch_3_id_8_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_8_value_3_idea:0 "军队偏好：航空力量"
+  NIE_law_branch_3_id_8_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_8_value_4_idea:0 "军队偏好：导弹与战略打击部队"
+  NIE_law_branch_3_id_8_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_8_value_5_idea:0 "军队偏好：后勤保障部队"
+  NIE_law_branch_3_id_8_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_8_value_6_idea:0 "军队偏好：情报作战部门"
+  NIE_law_branch_3_id_8_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_3_id_8_value_7_idea:0 "军队偏好：占领区维持部队"
+  NIE_law_branch_3_id_8_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4:0 "经济政策"
+  NIE_law_branch_4_id_1_laws:0 "经济体制"
+  NIE_law_branch_4_id_1_value_1_idea:0 "经济体制：以物换物"
+  NIE_law_branch_4_id_1_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_1_value_2_idea:0 "经济体制：自由放任"
+  NIE_law_branch_4_id_1_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_1_value_3_idea:0 "经济体制：有限监管"
+  NIE_law_branch_4_id_1_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_1_value_4_idea:0 "经济体制：强力监管"
+  NIE_law_branch_4_id_1_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_1_value_5_idea:0 "经济体制：完全计划经济"
+  NIE_law_branch_4_id_1_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_1_value_6_idea:0 "经济体制：§R去经济化§!"
+  NIE_law_branch_4_id_1_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_2_laws:0 "企业税率"
+  NIE_law_branch_4_id_2_value_1_idea:0 "企业税率：极高税率"
+  NIE_law_branch_4_id_2_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_2_value_2_idea:0 "企业税率：高税率"
+  NIE_law_branch_4_id_2_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_2_value_3_idea:0 "企业税率：中等税率"
+  NIE_law_branch_4_id_2_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_2_value_4_idea:0 "企业税率：低税率"
+  NIE_law_branch_4_id_2_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_2_value_5_idea:0 "企业税率：极低税率"
+  NIE_law_branch_4_id_2_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_2_value_6_idea:0 "企业税率：免税"
+  NIE_law_branch_4_id_2_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_3_laws:0 "公民税率"
+  NIE_law_branch_4_id_3_value_1_idea:0 "公民税率：极高税率"
+  NIE_law_branch_4_id_3_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_3_value_2_idea:0 "公民税率：高税率"
+  NIE_law_branch_4_id_3_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_3_value_3_idea:0 "公民税率：中等税率"
+  NIE_law_branch_4_id_3_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_3_value_4_idea:0 "公民税率：低税率"
+  NIE_law_branch_4_id_3_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_3_value_5_idea:0 "公民税率：极低税率"
+  NIE_law_branch_4_id_3_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_3_value_6_idea:0 "公民税率：免税"
+  NIE_law_branch_4_id_3_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_4_laws:0 "国有化"
+  NIE_law_branch_4_id_4_value_1_idea:0 "国有化：禁止国有化"
+  NIE_law_branch_4_id_4_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_4_value_2_idea:0 "国有化：仅战略资源"
+  NIE_law_branch_4_id_4_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_4_value_3_idea:0 "国有化：公共服务机构"
+  NIE_law_branch_4_id_4_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_4_value_4_idea:0 "国有化：军工企业"
+  NIE_law_branch_4_id_4_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_4_value_5_idea:0 "国有化：公共服务机构及军工企业"
+  NIE_law_branch_4_id_4_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_4_value_6_idea:0 "国有化：普遍国有化"
+  NIE_law_branch_4_id_4_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_4_value_7_idea:0 "国有化：全部国有化"
+  NIE_law_branch_4_id_4_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_5_laws:0 "国家调控经济"
+  NIE_law_branch_4_id_5_value_1_idea:0 "国家调控经济：禁止调控"
+  NIE_law_branch_4_id_5_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_5_value_2_idea:0 "国家调控经济：无计划"
+  NIE_law_branch_4_id_5_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_5_value_3_idea:0 "国家调控经济：发展基建"
+  NIE_law_branch_4_id_5_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_5_value_4_idea:0 "国家调控经济：发展民生工业"
+  NIE_law_branch_4_id_5_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_5_value_5_idea:0 "国家调控经济：发展军工企业"
+  NIE_law_branch_4_id_5_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_5_value_6_idea:0 "国家调控经济：发展造船业"
+  NIE_law_branch_4_id_5_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_5_value_7_idea:0 "国家调控经济：发展矿业"
+  NIE_law_branch_4_id_5_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_5_value_8_idea:0 "国家调控经济：发展高新科技"
+  NIE_law_branch_4_id_5_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_6_laws:0 "外资态度"
+  NIE_law_branch_4_id_6_value_1_idea:0 "外资态度：完全依赖外资"
+  NIE_law_branch_4_id_6_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_6_value_2_idea:0 "外资态度：依赖外资"
+  NIE_law_branch_4_id_6_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_6_value_3_idea:0 "外资态度：鼓励外资"
+  NIE_law_branch_4_id_6_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_6_value_4_idea:0 "外资态度：一视同仁"
+  NIE_law_branch_4_id_6_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_6_value_5_idea:0 "外资态度：额外条款"
+  NIE_law_branch_4_id_6_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_6_value_6_idea:0 "外资态度：打压外资"
+  NIE_law_branch_4_id_6_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_6_value_7_idea:0 "外资态度：禁止外资"
+  NIE_law_branch_4_id_6_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_6_value_8_idea:0 "外资态度：收割外资"
+  NIE_law_branch_4_id_6_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_7_laws:0 "军工补贴"
+  NIE_law_branch_4_id_7_value_1_idea:0 "军工补贴：难以为继"
+  NIE_law_branch_4_id_7_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_7_value_2_idea:0 "军工补贴：无补贴"
+  NIE_law_branch_4_id_7_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_7_value_3_idea:0 "军工补贴：少量补贴"
+  NIE_law_branch_4_id_7_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_7_value_4_idea:0 "军工补贴：可观补贴"
+  NIE_law_branch_4_id_7_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_7_value_5_idea:0 "军工补贴：大量补贴"
+  NIE_law_branch_4_id_7_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_7_value_6_idea:0 "军工补贴：无条件支持"
+  NIE_law_branch_4_id_7_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_8_laws:0 "出口政策"
+  NIE_law_branch_4_id_8_value_1_idea:0 "出口政策：外国控制"
+  NIE_law_branch_4_id_8_value_1_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_8_value_2_idea:0 "出口政策：全面出口"
+  NIE_law_branch_4_id_8_value_2_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_8_value_3_idea:0 "出口政策：大规模出口"
+  NIE_law_branch_4_id_8_value_3_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_8_value_4_idea:0 "出口政策：正常出口"
+  NIE_law_branch_4_id_8_value_4_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_8_value_5_idea:0 "出口政策：出口管制"
+  NIE_law_branch_4_id_8_value_5_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_8_value_6_idea:0 "出口政策：有限出口"
+  NIE_law_branch_4_id_8_value_6_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_8_value_7_idea:0 "出口政策：微量出口"
+  NIE_law_branch_4_id_8_value_7_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_4_id_8_value_8_idea:0 "出口政策：禁止出口"
+  NIE_law_branch_4_id_8_value_8_idea_desc:0 "" # TODO: To be written
+  NIE_law_branch_5:0 "国家权力及其政策"
+  NIE_law_branch_5_id_1_laws:0 "国家体制"
+  NIE_law_branch_5_id_2_laws:0 "投票权"
+  NIE_law_branch_5_id_3_laws:0 "社会监管程度"
+  NIE_law_branch_5_id_4_laws:0 "激进公民诉求"
+  NIE_law_branch_5_id_5_laws:0 "国家宣传项目"
+  NIE_law_branch_5_id_6_laws:0 "主要社会矛盾"
+  NIE_law_branch_5_id_7_laws:0 "移民政策"
+  NIE_law_branch_5_id_8_laws:0 "国家工程"
+  NIE_law_branch_6:0 "其他国家政策"
+  NIE_law_branch_6_id_1_laws:0 "殖民地事务"
+  NIE_law_branch_6_id_2_laws:0 "占领区政策"
+  NIE_law_branch_6_id_3_laws:0 "少数族裔政策"
+  NIE_law_branch_6_id_4_laws:0 "刑罚偏好"
+  NIE_law_branch_6_id_5_laws:0 "外交姿态"
+  NIE_law_branch_6_id_6_laws:0 "女性地位"
+  NIE_law_branch_6_id_7_laws:0 "科研预算"
+  NIE_law_branch_6_id_8_laws:0 "国防预算"
+  NIE_law_branch_7:0 "战时政策"
+  NIE_law_branch_7_id_1_laws:0 "生活状态"
+  NIE_law_branch_7_id_2_laws:0 "军队约束"
+  NIE_law_branch_7_id_3_laws:0 "盟国协调"
+  NIE_law_branch_7_id_4_laws:0 "军队激励"
+  NIE_law_branch_7_id_5_laws:0 "战争宣传"
+  NIE_law_branch_7_id_6_laws:0 "志愿军支持"
+  NIE_law_branch_7_id_7_laws:0 "战俘政策"
+  NIE_law_branch_7_id_8_laws:0 "战争进程"

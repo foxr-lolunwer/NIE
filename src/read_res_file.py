@@ -11,6 +11,7 @@ logger = log_manager.init_logger(level=logging.DEBUG, log_folder="pdx_logs")
 class MetaImporter:
     def __init__(self, workspace_folder):
         self.workspace_folder = workspace_folder
+        self.meta_data = {}
         # 匹配正则: 前缀_ID_类型 = { # 名称
         # 组1: 前缀, 组2: v_full_id, 组3: type, 组4: v_name
         self.header_pattern = re.compile(
@@ -30,6 +31,7 @@ class MetaImporter:
 
     def parse_file(self, file_path):
         """解析单个文件内的所有条目"""
+        log_tail = " (MetaImporter: parse_file)"
         extracted_data = []
         if not os.path.exists(file_path):
             return extracted_data
@@ -57,9 +59,10 @@ class MetaImporter:
                     "type": header_match.group(3),
                     "v_name": raw_name.strip() if raw_name else "None",
                     "source_file": file_path,
+                    "changed": False
                 }
                 if current_item["v_name"] == "None" or not current_item["v_name"]:
-                    logger.warning(f"MetaImporter: {file_path}: {current_item['v_full_id']}没有标记名称")
+                    logger.warning(f"{file_path}: {current_item['v_full_id']}没有标记名称{log_tail}")
                 block_lines = []
                 brace_level = 1
                 continue
@@ -82,6 +85,7 @@ class MetaImporter:
 
     def run_import(self):
         """核心导入逻辑"""
+        log_tail = " (MetaImporter: run_import)"
         all_meta_results = {
             "effect": [],
             "modifier": [],
@@ -94,31 +98,35 @@ class MetaImporter:
         for folder in sub_folders:
             folder_path = os.path.join(self.workspace_folder, folder)
             if not os.path.exists(folder_path):
-                print(f"跳过不存在的文件夹: {folder}")
+                logger.info(f"跳过不存在的文件夹: {folder}{log_tail}")
                 continue
 
             for filename in os.listdir(folder_path):
                 if filename.endswith(".txt"):
                     full_path = os.path.join(folder_path, filename)
-                    print(f"正在解析: {full_path}")
+                    logger.info(f"正在解析: {full_path}{log_tail}")
                     file_data = self.parse_file(full_path)
                     all_meta_results[folder].extend(file_data)
 
-        return all_meta_results
+        self.meta_data = all_meta_results
 
-    def update_meta_files(self, meta_data_dict):
+    def update_meta_files(self):
         """
         将同步后的 v_name 写回到物理文件中
-        :param meta_data_dict: 经过 LawParser 自检修正后的 self._meta_data
         """
-        logger.info("MetaImporter: 开始执行元数据物理写回...")
+        log_tail = " (MetaImporter: update_meta_files)"
+        logger.info(f"开始执行元数据物理写回...{log_tail}")
         update_count = 0
 
-        for category, items in meta_data_dict.items():
+        for category, items in self.meta_data.items():
             # 按文件归类，减少开关文件的次数
             file_map = {}
-            for item in items:
-                f_path = item.get('source_file')  # 需在 parse_file 时记录源路径
+            for i in range(len(items)):
+                item = items[i]
+                if not item["changed"]:
+                    continue
+                self.meta_data[category][i]["changed"] = False
+                f_path = item.get('source_file')
                 if f_path:
                     file_map.setdefault(f_path, []).append(item)
 
@@ -126,10 +134,11 @@ class MetaImporter:
                 if self._update_single_file(file_path, file_items):
                     update_count += 1
 
-        logger.info(f"MetaImporter: 写回完成，共更新 {update_count} 个元数据文件。")
+        logger.info(f"写回完成，共更新 {update_count} 个元数据文件。{log_tail}")
 
     def _update_single_file(self, file_path, items):
         """更新单个文件中的 header 注释"""
+        log_tail = " (MetaImporter: update_single_file)"
         if not os.path.exists(file_path):
             return False
 
@@ -162,7 +171,7 @@ class MetaImporter:
                     # 保持原行的缩进（如果有的话）
                     indent = line[:line.find(header_match.group(1))]
                     new_line = f"{indent}{prefix}_{v_id}_{m_type} = {{{comment_part}\n"
-
+                    logger.info(f"id: v_id 已更改{log_tail}")
                     if new_line != line:
                         new_lines.append(new_line)
                         modified = True
@@ -181,12 +190,11 @@ class MetaImporter:
 if __name__ == "__main__":
     WORKSPACE = r"meta_files"
     importer = MetaImporter(WORKSPACE)
-    results = importer.run_import()
 
     # 打印提取结果示例
-    for key in results:
+    for key in importer.meta_data:
         print(f"--- {key} ---")
-        for data in results[key][:5]:  # 仅展示前两条
+        for data in importer.meta_data[key][:5]:  # 仅展示前两条
             print("--- Entry Found ---")
             print(f"ID:   {data['v_full_id']}")
             print(f"Type: {data['type']}")

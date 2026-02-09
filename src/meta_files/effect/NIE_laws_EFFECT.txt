@@ -1,8 +1,8 @@
-EFFECT_NIE_law_branch_1_id_1_value_1_idea_on_add = { # 征兵法案：去军事化国家
+﻿EFFECT_NIE_law_branch_1_id_1_value_1_idea_on_add = { # 征兵法案：§R去军事化国家§!
 
 }
 
-EFFECT_NIE_law_branch_1_id_1_value_1_idea_on_remove = { # 征兵法案：去军事化国家
+EFFECT_NIE_law_branch_1_id_1_value_1_idea_on_remove = { # 征兵法案：§R去军事化国家§!
 
 }
 

@@ -1035,33 +1035,312 @@
         name: "经济政策",
         id_1: {
             name: "经济体制",
+            value_1: {
+                name: "以物换物",
+                desc: "",
+            },
+            value_2: {
+                name: "自由放任",
+                desc: "",
+            },
+            value_3: {
+                name: "有限监管",
+                desc: "",
+                default: true
+            },
+            value_4: {
+                name: "强力监管",
+                desc: "",
+            },
+            value_5: {
+                name: "完全计划经济",
+                desc: "",
+            },
+            value_6: {
+                name: "§R去经济化§!",
+                desc: "",
+            }
         },
         id_2: {
             name: "企业税率",
+            value_1: {
+                name: "极高税率",
+                desc: "",
+                level: 1
+            },
+            value_2: {
+                name: "高税率",
+                desc: "",
+                level: 2
+            },
+            value_3: {
+                name: "中等税率",
+                desc: "",
+                level: 3,
+                default: true
+            },
+            value_4: {
+                name: "低税率",
+                desc: "",
+                level: 4
+            },
+            value_5: {
+                name: "极低税率",
+                desc: "",
+                level: 5
+            },
+            value_6: {
+                name: "免税",
+                desc: "",
+                level: 6
+            }
         },
         id_3: {
             name: "公民税率",
+            value_1: {
+                name: "极高税率",
+                desc: "",
+                level: 1
+            },
+            value_2: {
+                name: "高税率",
+                desc: "",
+                level: 2
+            },
+            value_3: {
+                name: "中等税率",
+                desc: "",
+                level: 3,
+                default: true
+            },
+            value_4: {
+                name: "低税率",
+                desc: "",
+                level: 4
+            },
+            value_5: {
+                name: "极低税率",
+                desc: "",
+                level: 5
+            },
+            value_6: {
+                name: "免税",
+                desc: "",
+                level: 6
+            }
         },
         id_4: {
             name: "国有化",
+            value_1: {
+                name: "禁止国有化",
+                desc: "",
+                level: 1
+            },
+            value_2: {
+                name: "仅战略资源",
+                desc: "",
+                level: 2,
+                default: true
+            },
+            value_3: {
+                name: "公共服务机构",
+                desc: "",
+                level: 3,
+            },
+            value_4: {
+                name: "军工企业",
+                desc: "",
+                level: 3
+            },
+            value_5: {
+                name: "公共服务机构及军工企业",
+                desc: "",
+                level: 4
+            },
+            value_6: {
+                name: "普遍国有化",
+                desc: "",
+                level: 5
+            },
+            value_7: {
+                name: "全部国有化",
+                desc: "",
+                level: 6
+            }
         },
         id_5: {
-            name: "市场刺激",
+            name: "国家调控经济",
+            value_1: {
+                name: "禁止调控",
+                desc: "",
+                level: 1,
+                remove_cost: 300
+            },
+            value_2: {
+                name: "无计划",
+                desc: "",
+                level: 2,
+                default: true
+            },
+            value_3: {
+                name: "发展基建",
+                desc: "",
+                level: 3,
+            },
+            value_4: {
+                name: "发展民生工业",
+                desc: "",
+                level: 3
+            },
+            value_5: {
+                name: "发展军工企业",
+                desc: "",
+                level: 3
+            },
+            value_6: {
+                name: "发展造船业",
+                desc: "",
+                level: 3
+            },
+            value_7: {
+                name: "发展矿业",
+                desc: "",
+                level: 3
+            },
+            value_8: {
+                name: "发展高新科技",
+                desc: "",
+                level: 3
+            }
         },
         id_6: {
             name: "外资态度",
+            value_1: {
+                name: "完全依赖外资",
+                desc: "",
+                level: 1
+            },
+            value_2: {
+                name: "依赖外资",
+                desc: "",
+                level: 2,
+            },
+            value_3: {
+                name: "鼓励外资",
+                desc: "",
+                level: 3,
+            },
+            value_4: {
+                name: "一视同仁",
+                desc: "",
+                level: 4,
+                default: true
+            },
+            value_5: {
+                name: "额外条款",
+                desc: "",
+                level: 5
+            },
+            value_6: {
+                name: "打压外资",
+                desc: "",
+                level: 6
+            },
+            value_7: {
+                name: "禁止外资",
+                desc: "",
+                level: 7
+            },
+            value_8: {
+                name: "收割外资",
+                desc: "",
+                level: 8
+            }
         },
         id_7: {
             name: "军工补贴",
+            value_1: {
+                name: "难以为继",
+                desc: "",
+                level: 1
+            },
+            value_2: {
+                name: "无补贴",
+                desc: "",
+                level: 2,
+                default: true
+            },
+            value_3: {
+                name: "少量补贴",
+                desc: "",
+                level: 3,
+            },
+            value_4: {
+                name: "可观补贴",
+                desc: "",
+                level: 4,
+            },
+            value_5: {
+                name: "大量补贴",
+                desc: "",
+                level: 5
+            },
+            value_6: {
+                name: "无条件支持",
+                desc: "",
+                level: 6
+            }
         },
         id_8: {
             name: "出口政策",
+            value_1: {
+                name: "外国控制",
+                desc: "",
+                level: 1
+            },
+            value_2: {
+                name: "全面出口",
+                desc: "",
+                level: 2
+            },
+            value_3: {
+                name: "大规模出口",
+                desc: "",
+                level: 3,
+            },
+            value_4: {
+                name: "正常出口",
+                desc: "",
+                level: 4,
+                default: true
+            },
+            value_5: {
+                name: "出口管制",
+                desc: "",
+                level: 5,
+            },
+            value_6: {
+                name: "有限出口",
+                desc: "",
+                level: 6
+            },
+            value_7: {
+                name: "微量出口",
+                desc: "",
+                level: 7
+            },
+            value_8: {
+                name: "禁止出口",
+                desc: "",
+                level: 8
+            }
         }
     },
     branch_5: {
         name: "国家权力及其政策",
         id_1: {
             name: "国家体制",
+
         },
         id_2: {
             name: "投票权",

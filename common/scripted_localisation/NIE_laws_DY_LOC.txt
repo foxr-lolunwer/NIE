@@ -1,0 +1,1525 @@
+defined_text = { # 最小服役年龄：22岁
+    name = get_NIE_law_branch_1_id_2_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最小服役年龄：20岁
+    name = get_NIE_law_branch_1_id_2_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最小服役年龄：18岁
+    name = get_NIE_law_branch_1_id_2_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最小服役年龄：16岁
+    name = get_NIE_law_branch_1_id_2_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最小服役年龄：14岁
+    name = get_NIE_law_branch_1_id_2_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最小服役年龄：12岁
+    name = get_NIE_law_branch_1_id_2_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最小服役年龄：§R8岁§!
+    name = get_NIE_law_branch_1_id_2_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最小服役年龄：§R4岁§!
+    name = get_NIE_law_branch_1_id_2_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最大服役年龄：35岁
+    name = get_NIE_law_branch_1_id_3_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最大服役年龄：40岁
+    name = get_NIE_law_branch_1_id_3_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最大服役年龄：45岁
+    name = get_NIE_law_branch_1_id_3_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最大服役年龄：50岁
+    name = get_NIE_law_branch_1_id_3_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最大服役年龄：55岁
+    name = get_NIE_law_branch_1_id_3_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最大服役年龄：60岁
+    name = get_NIE_law_branch_1_id_3_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最大服役年龄：70岁
+    name = get_NIE_law_branch_1_id_3_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 最大服役年龄：§R无限制§!
+    name = get_NIE_law_branch_1_id_3_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 女性服役政策：同等服役
+    name = get_NIE_law_branch_1_id_4_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 女性服役政策：鼓励服役
+    name = get_NIE_law_branch_1_id_4_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 女性服役政策：志愿服役
+    name = get_NIE_law_branch_1_id_4_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 女性服役政策：仅医护服务
+    name = get_NIE_law_branch_1_id_4_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 女性服役政策：禁止服役
+    name = get_NIE_law_branch_1_id_4_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 女性服役政策：歧视性禁止
+    name = get_NIE_law_branch_1_id_4_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 女性服役政策：§R“慰安”妇§!
+    name = get_NIE_law_branch_1_id_4_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 非核心人力资源：禁服兵役
+    name = get_NIE_law_branch_1_id_5_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 非核心人力资源：征召兵役
+    name = get_NIE_law_branch_1_id_5_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 非核心人力资源：强制兵役
+    name = get_NIE_law_branch_1_id_5_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 非核心人力资源：为独立而战
+    name = get_NIE_law_branch_1_id_5_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 非核心人力资源：前线敢死队
+    name = get_NIE_law_branch_1_id_5_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 非核心人力资源：前线炮灰
+    name = get_NIE_law_branch_1_id_5_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 参军福利：义务参军
+    name = get_NIE_law_branch_1_id_6_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 参军福利：少量津贴
+    name = get_NIE_law_branch_1_id_6_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 参军福利：服役津贴
+    name = get_NIE_law_branch_1_id_6_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 参军福利：高额抚恤
+    name = get_NIE_law_branch_1_id_6_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 参军福利：体面退休金
+    name = get_NIE_law_branch_1_id_6_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 参军福利：医疗与家属保障
+    name = get_NIE_law_branch_1_id_6_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 参军福利：优先安置政策
+    name = get_NIE_law_branch_1_id_6_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 参军福利：广泛社会福利
+    name = get_NIE_law_branch_1_id_6_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 兵役豁免：无豁免
+    name = get_NIE_law_branch_1_id_7_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 兵役豁免：仅公职人员
+    name = get_NIE_law_branch_1_id_7_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 兵役豁免：公职和宗教人员
+    name = get_NIE_law_branch_1_id_7_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 兵役豁免：公职，宗教和受教育人员
+    name = get_NIE_law_branch_1_id_7_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 兵役豁免：严格申报制度
+    name = get_NIE_law_branch_1_id_7_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 兵役豁免：宽松申报制度
+    name = get_NIE_law_branch_1_id_7_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家状态：全力发展
+    name = get_NIE_law_branch_1_id_8_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家状态：正常发展
+    name = get_NIE_law_branch_1_id_8_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家状态：警惕状态
+    name = get_NIE_law_branch_1_id_8_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家状态：局部动员
+    name = get_NIE_law_branch_1_id_8_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家状态：广泛动员
+    name = get_NIE_law_branch_1_id_8_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家状态：总动员
+    name = get_NIE_law_branch_1_id_8_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家状态：战时经济
+    name = get_NIE_law_branch_1_id_8_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家状态：总体战
+    name = get_NIE_law_branch_1_id_8_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 劳动保障：§R人形耗材§!
+    name = get_NIE_law_branch_2_id_1_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 劳动保障：实物工资制
+    name = get_NIE_law_branch_2_id_1_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 劳动保障：无工时限制
+    name = get_NIE_law_branch_2_id_1_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 劳动保障：十二小时工作制
+    name = get_NIE_law_branch_2_id_1_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 劳动保障：十小时工作制
+    name = get_NIE_law_branch_2_id_1_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 劳动保障：八小时工作制
+    name = get_NIE_law_branch_2_id_1_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共医疗：无公共医疗
+    name = get_NIE_law_branch_2_id_2_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共医疗：§R全面瘫痪§!
+    name = get_NIE_law_branch_2_id_2_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共医疗：无医疗补贴
+    name = get_NIE_law_branch_2_id_2_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共医疗：最低医疗补贴
+    name = get_NIE_law_branch_2_id_2_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共医疗：医疗补贴
+    name = get_NIE_law_branch_2_id_2_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共医疗：可观医疗补贴
+    name = get_NIE_law_branch_2_id_2_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共医疗：免费基础医疗
+    name = get_NIE_law_branch_2_id_2_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共医疗：全民免费医疗
+    name = get_NIE_law_branch_2_id_2_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共教育：无公共教育
+    name = get_NIE_law_branch_2_id_3_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共教育：§R全面瘫痪§!
+    name = get_NIE_law_branch_2_id_3_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共教育：无义务教育
+    name = get_NIE_law_branch_2_id_3_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共教育：三年义务教育
+    name = get_NIE_law_branch_2_id_3_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共教育：六年义务教育
+    name = get_NIE_law_branch_2_id_3_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共教育：九年义务教育
+    name = get_NIE_law_branch_2_id_3_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共教育：十二年义务教育
+    name = get_NIE_law_branch_2_id_3_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公共教育：十五年义务教育
+    name = get_NIE_law_branch_2_id_3_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 创业激励政策：财团收割
+    name = get_NIE_law_branch_2_id_4_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 创业激励政策：外资主导
+    name = get_NIE_law_branch_2_id_4_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 创业激励政策：无补贴
+    name = get_NIE_law_branch_2_id_4_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 创业激励政策：优先贷款
+    name = get_NIE_law_branch_2_id_4_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 创业激励政策：政策帮扶
+    name = get_NIE_law_branch_2_id_4_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 创业激励政策：全力支持
+    name = get_NIE_law_branch_2_id_4_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 老年福利：§R优胜劣汰§!
+    name = get_NIE_law_branch_2_id_5_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 老年福利：无福利
+    name = get_NIE_law_branch_2_id_5_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 老年福利：少量补助
+    name = get_NIE_law_branch_2_id_5_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 老年福利：可观补助
+    name = get_NIE_law_branch_2_id_5_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 老年福利：基础社区保障服务
+    name = get_NIE_law_branch_2_id_5_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 老年福利：发达社区保障服务
+    name = get_NIE_law_branch_2_id_5_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 社会救济：§R优胜劣汰§!
+    name = get_NIE_law_branch_2_id_6_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 社会救济：无救济
+    name = get_NIE_law_branch_2_id_6_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 社会救济：少量补助
+    name = get_NIE_law_branch_2_id_6_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 社会救济：廉价兵源
+    name = get_NIE_law_branch_2_id_6_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 社会救济：基本生活补助
+    name = get_NIE_law_branch_2_id_6_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 社会救济：基本生活保障
+    name = get_NIE_law_branch_2_id_6_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 社会救济：就业保障
+    name = get_NIE_law_branch_2_id_6_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 社会救济：可观生活保障
+    name = get_NIE_law_branch_2_id_6_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 生育政策：§R达尔文主义§!
+    name = get_NIE_law_branch_2_id_7_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 生育政策：避免生育
+    name = get_NIE_law_branch_2_id_7_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 生育政策：独生子女政策
+    name = get_NIE_law_branch_2_id_7_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 生育政策：二胎政策
+    name = get_NIE_law_branch_2_id_7_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 生育政策：无引导
+    name = get_NIE_law_branch_2_id_7_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 生育政策：鼓励生育
+    name = get_NIE_law_branch_2_id_7_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 生育政策：强制生育
+    name = get_NIE_law_branch_2_id_7_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 生育政策：§R榨干女性§!
+    name = get_NIE_law_branch_2_id_7_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 工业化：§R失败国家§!
+    name = get_NIE_law_branch_2_id_8_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 工业化：前工业化国家
+    name = get_NIE_law_branch_2_id_8_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 工业化：初步工业化国家
+    name = get_NIE_law_branch_2_id_8_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 工业化：工业化国家
+    name = get_NIE_law_branch_2_id_8_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 工业化：后工业化国家
+    name = get_NIE_law_branch_2_id_8_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 工业化：超工业化国家
+    name = get_NIE_law_branch_2_id_8_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队主要问题：论资排辈
+    name = get_NIE_law_branch_3_id_1_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队主要问题：长官至上
+    name = get_NIE_law_branch_3_id_1_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队主要问题：狂热信徒
+    name = get_NIE_law_branch_3_id_1_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队主要问题：民族狂热
+    name = get_NIE_law_branch_3_id_1_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队主要问题：强盗军队
+    name = get_NIE_law_branch_3_id_1_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队主要问题：质疑长官
+    name = get_NIE_law_branch_3_id_1_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队主要问题：强者至上
+    name = get_NIE_law_branch_3_id_1_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队主要问题：政委督军
+    name = get_NIE_law_branch_3_id_1_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队思想宣传：为了家国
+    name = get_NIE_law_branch_3_id_2_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队思想宣传：为了民族
+    name = get_NIE_law_branch_3_id_2_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队思想宣传：为了正义
+    name = get_NIE_law_branch_3_id_2_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队思想宣传：为了信仰
+    name = get_NIE_law_branch_3_id_2_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队思想宣传：为了领袖
+    name = get_NIE_law_branch_3_id_2_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队思想宣传：为了国王/皇帝
+    name = get_NIE_law_branch_3_id_2_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队思想宣传：为了赏赐
+    name = get_NIE_law_branch_3_id_2_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军官选拔：战场晋升
+    name = get_NIE_law_branch_3_id_3_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军官选拔：贵族主导
+    name = get_NIE_law_branch_3_id_3_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军官选拔：系统性腐败
+    name = get_NIE_law_branch_3_id_3_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军官选拔：快速培养
+    name = get_NIE_law_branch_3_id_3_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军官选拔：职业军校
+    name = get_NIE_law_branch_3_id_3_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军官选拔：领袖裙带
+    name = get_NIE_law_branch_3_id_3_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军官选拔：政委领军
+    name = get_NIE_law_branch_3_id_3_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军官选拔：§R禁止军官§!
+    name = get_NIE_law_branch_3_id_3_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 士兵训练：无训练
+    name = get_NIE_law_branch_3_id_4_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 士兵训练：快速训练
+    name = get_NIE_law_branch_3_id_4_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 士兵训练：标准训练
+    name = get_NIE_law_branch_3_id_4_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 士兵训练：先进训练
+    name = get_NIE_law_branch_3_id_4_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 士兵训练：严苛训练
+    name = get_NIE_law_branch_3_id_4_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 士兵训练：老兵教导
+    name = get_NIE_law_branch_3_id_4_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 士兵训练：士官训练
+    name = get_NIE_law_branch_3_id_4_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 士兵训练：仪式训练
+    name = get_NIE_law_branch_3_id_4_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 预备役体制：无预备役
+    name = get_NIE_law_branch_3_id_5_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 预备役体制：登记退伍军官
+    name = get_NIE_law_branch_3_id_5_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 预备役体制：社区民兵
+    name = get_NIE_law_branch_3_id_5_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 预备役体制：国家民兵
+    name = get_NIE_law_branch_3_id_5_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 预备役体制：公民预备役义务
+    name = get_NIE_law_branch_3_id_5_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 预备役体制：国民警备队
+    name = get_NIE_law_branch_3_id_5_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队归属：国家
+    name = get_NIE_law_branch_3_id_6_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队归属：组成国家的实体
+    name = get_NIE_law_branch_3_id_6_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队归属：国王/皇帝
+    name = get_NIE_law_branch_3_id_6_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队归属：党派
+    name = get_NIE_law_branch_3_id_6_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队归属：执政家族
+    name = get_NIE_law_branch_3_id_6_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队归属：独立军部
+    name = get_NIE_law_branch_3_id_6_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队监管：无监管
+    name = get_NIE_law_branch_3_id_7_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队监管：有限监管
+    name = get_NIE_law_branch_3_id_7_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队监管：内部监管
+    name = get_NIE_law_branch_3_id_7_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队监管：独立监管
+    name = get_NIE_law_branch_3_id_7_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队监管：严格监管
+    name = get_NIE_law_branch_3_id_7_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队监管：大清洗
+    name = get_NIE_law_branch_3_id_7_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队偏好：陆军部队
+    name = get_NIE_law_branch_3_id_8_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队偏好：海军部队
+    name = get_NIE_law_branch_3_id_8_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队偏好：航空力量
+    name = get_NIE_law_branch_3_id_8_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队偏好：导弹与战略打击部队
+    name = get_NIE_law_branch_3_id_8_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队偏好：后勤保障部队
+    name = get_NIE_law_branch_3_id_8_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队偏好：情报作战部门
+    name = get_NIE_law_branch_3_id_8_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军队偏好：占领区维持部队
+    name = get_NIE_law_branch_3_id_8_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 经济体制：以物换物
+    name = get_NIE_law_branch_4_id_1_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 经济体制：自由放任
+    name = get_NIE_law_branch_4_id_1_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 经济体制：有限监管
+    name = get_NIE_law_branch_4_id_1_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 经济体制：强力监管
+    name = get_NIE_law_branch_4_id_1_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 经济体制：完全计划经济
+    name = get_NIE_law_branch_4_id_1_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 经济体制：§R去经济化§!
+    name = get_NIE_law_branch_4_id_1_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 企业税率：极高税率
+    name = get_NIE_law_branch_4_id_2_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 企业税率：高税率
+    name = get_NIE_law_branch_4_id_2_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 企业税率：中等税率
+    name = get_NIE_law_branch_4_id_2_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 企业税率：低税率
+    name = get_NIE_law_branch_4_id_2_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 企业税率：极低税率
+    name = get_NIE_law_branch_4_id_2_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 企业税率：免税
+    name = get_NIE_law_branch_4_id_2_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公民税率：极高税率
+    name = get_NIE_law_branch_4_id_3_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公民税率：高税率
+    name = get_NIE_law_branch_4_id_3_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公民税率：中等税率
+    name = get_NIE_law_branch_4_id_3_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公民税率：低税率
+    name = get_NIE_law_branch_4_id_3_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公民税率：极低税率
+    name = get_NIE_law_branch_4_id_3_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 公民税率：免税
+    name = get_NIE_law_branch_4_id_3_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国有化：禁止国有化
+    name = get_NIE_law_branch_4_id_4_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国有化：仅战略资源
+    name = get_NIE_law_branch_4_id_4_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国有化：公共服务机构
+    name = get_NIE_law_branch_4_id_4_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国有化：军工企业
+    name = get_NIE_law_branch_4_id_4_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国有化：公共服务机构及军工企业
+    name = get_NIE_law_branch_4_id_4_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国有化：普遍国有化
+    name = get_NIE_law_branch_4_id_4_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国有化：全部国有化
+    name = get_NIE_law_branch_4_id_4_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家调控经济：禁止调控
+    name = get_NIE_law_branch_4_id_5_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家调控经济：无计划
+    name = get_NIE_law_branch_4_id_5_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家调控经济：发展基建
+    name = get_NIE_law_branch_4_id_5_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家调控经济：发展民生工业
+    name = get_NIE_law_branch_4_id_5_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家调控经济：发展军工企业
+    name = get_NIE_law_branch_4_id_5_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家调控经济：发展造船业
+    name = get_NIE_law_branch_4_id_5_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家调控经济：发展矿业
+    name = get_NIE_law_branch_4_id_5_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 国家调控经济：发展高新科技
+    name = get_NIE_law_branch_4_id_5_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 外资态度：完全依赖外资
+    name = get_NIE_law_branch_4_id_6_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 外资态度：依赖外资
+    name = get_NIE_law_branch_4_id_6_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 外资态度：鼓励外资
+    name = get_NIE_law_branch_4_id_6_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 外资态度：一视同仁
+    name = get_NIE_law_branch_4_id_6_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 外资态度：额外条款
+    name = get_NIE_law_branch_4_id_6_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 外资态度：打压外资
+    name = get_NIE_law_branch_4_id_6_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 外资态度：禁止外资
+    name = get_NIE_law_branch_4_id_6_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 外资态度：收割外资
+    name = get_NIE_law_branch_4_id_6_value_8_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军工补贴：难以为继
+    name = get_NIE_law_branch_4_id_7_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军工补贴：无补贴
+    name = get_NIE_law_branch_4_id_7_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军工补贴：少量补贴
+    name = get_NIE_law_branch_4_id_7_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军工补贴：可观补贴
+    name = get_NIE_law_branch_4_id_7_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军工补贴：大量补贴
+    name = get_NIE_law_branch_4_id_7_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 军工补贴：无条件支持
+    name = get_NIE_law_branch_4_id_7_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 出口政策：外国控制
+    name = get_NIE_law_branch_4_id_8_value_1_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 出口政策：全面出口
+    name = get_NIE_law_branch_4_id_8_value_2_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 出口政策：大规模出口
+    name = get_NIE_law_branch_4_id_8_value_3_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 出口政策：正常出口
+    name = get_NIE_law_branch_4_id_8_value_4_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 出口政策：出口管制
+    name = get_NIE_law_branch_4_id_8_value_5_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 出口政策：有限出口
+    name = get_NIE_law_branch_4_id_8_value_6_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 出口政策：微量出口
+    name = get_NIE_law_branch_4_id_8_value_7_idea_desc
+    text = {
+
+    }
+}
+
+defined_text = { # 出口政策：禁止出口
+    name = get_NIE_law_branch_4_id_8_value_8_idea_desc
+    text = {
+
+    }
+}

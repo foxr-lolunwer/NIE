@@ -1,176 +1,179 @@
-@default_min_political_power = 100
-TRIGGER_NIE_law_branch_1_id_1_value_1_idea_available = { # 征兵法案：去军事化国家
-	# has_country_flag = NIE_non_militarized_country_flag
-	always = no
+TRIGGER_NIE_law_branch_1_id_1_value_1_idea_available = { # 征兵法案：§R去军事化国家§!
+    # has_country_flag = NIE_non_militarized_country_flag
+    always = no
 }
 
 TRIGGER_NIE_law_branch_1_id_1_value_2_idea_available = { # 征兵法案：非军事化国家
-	always = yes
+    always = yes
 }
 
 TRIGGER_NIE_law_branch_1_id_1_value_3_idea_available = { # 征兵法案：志愿参军
-	always = yes
+    always = yes
 }
 
 TRIGGER_NIE_law_branch_1_id_1_value_4_idea_available = { # 征兵法案：有限征兵
-	OR = {
-		has_idea = NIE_law_branch_1_id_8_value_5_idea
-		has_idea = NIE_law_branch_1_id_8_value_6_idea
-		has_idea = NIE_law_branch_1_id_8_value_7_idea
-		has_idea = NIE_law_branch_1_id_8_value_8_idea
-	}
+    OR = {
+    	has_idea = NIE_law_branch_1_id_8_value_5_idea
+    	has_idea = NIE_law_branch_1_id_8_value_6_idea
+    	has_idea = NIE_law_branch_1_id_8_value_7_idea
+    	has_idea = NIE_law_branch_1_id_8_value_8_idea
+    }
 }
 
 TRIGGER_NIE_law_branch_1_id_1_value_5_idea_available = { # 征兵法案：大范围征兵
-	OR = {
-		has_idea = NIE_law_branch_1_id_8_value_6_idea
-		has_idea = NIE_law_branch_1_id_8_value_7_idea
-		has_idea = NIE_law_branch_1_id_8_value_8_idea
-	}
+    OR = {
+    	has_idea = NIE_law_branch_1_id_8_value_6_idea
+    	has_idea = NIE_law_branch_1_id_8_value_7_idea
+    	has_idea = NIE_law_branch_1_id_8_value_8_idea
+    }
 }
 
 TRIGGER_NIE_law_branch_1_id_1_value_6_idea_available = { # 征兵法案：全面征兵
-	has_idea = NIE_law_branch_1_id_8_value_8_idea
+    has_idea = NIE_law_branch_1_id_8_value_8_idea
 }
 
 TRIGGER_NIE_law_branch_1_id_2_value_1_idea_available = { # 最小服役年龄：22岁
-	always = yes
+    always = yes
 }
 
 TRIGGER_NIE_law_branch_1_id_2_value_2_idea_available = { # 最小服役年龄：20岁
-	always = yes
+    always = yes
 }
 
 TRIGGER_NIE_law_branch_1_id_2_value_3_idea_available = { # 最小服役年龄：18岁
-	always = yes
+    always = yes
 }
 
 TRIGGER_NIE_law_branch_1_id_2_value_4_idea_available = { # 最小服役年龄：16岁
-	OR = {
-		has_idea = NIE_law_branch_1_id_8_value_6_idea
-		has_idea = NIE_law_branch_1_id_8_value_7_idea
-		has_idea = NIE_law_branch_1_id_8_value_8_idea
-	}
+    OR = {
+    	has_idea = NIE_law_branch_1_id_8_value_6_idea
+    	has_idea = NIE_law_branch_1_id_8_value_7_idea
+    	has_idea = NIE_law_branch_1_id_8_value_8_idea
+    }
 }
 
 TRIGGER_NIE_law_branch_1_id_2_value_5_idea_available = { # 最小服役年龄：14岁
-	OR = {
-		has_idea = NIE_law_branch_1_id_8_value_7_idea
-		has_idea = NIE_law_branch_1_id_8_value_8_idea
-	}
-	surrender_progress > 0
+    OR = {
+    	has_idea = NIE_law_branch_1_id_8_value_7_idea
+    	has_idea = NIE_law_branch_1_id_8_value_8_idea
+    }
+    surrender_progress > 0
 }
 
 TRIGGER_NIE_law_branch_1_id_2_value_6_idea_available = { # 最小服役年龄：12岁
-	has_idea = NIE_law_branch_1_id_8_value_8_idea
-	surrender_progress > 0.1
-	has_war_support > 0.3
+    has_idea = NIE_law_branch_1_id_8_value_8_idea
+    surrender_progress > 0.1
+    has_war_support > 0.3
 }
 
-TRIGGER_NIE_law_branch_1_id_2_value_7_idea_available = { # 最小服役年龄：8岁
-	has_idea = NIE_law_branch_1_id_8_value_8_idea
-	surrender_progress > 0.3
-	has_war_support > 0.5
+TRIGGER_NIE_law_branch_1_id_2_value_7_idea_available = { # 最小服役年龄：§R8岁§!
+    has_idea = NIE_law_branch_1_id_8_value_8_idea
+    surrender_progress > 0.3
+    has_war_support > 0.5
 }
 
-TRIGGER_NIE_law_branch_1_id_2_value_8_idea_available = { # 最小服役年龄：4岁
-	has_idea = NIE_law_branch_1_id_8_value_8_idea
-	surrender_progress > 0.5
-	has_war_support > 0.8
+TRIGGER_NIE_law_branch_1_id_2_value_8_idea_available = { # 最小服役年龄：§R4岁§!
+    has_idea = NIE_law_branch_1_id_8_value_8_idea
+    surrender_progress > 0.5
+    has_war_support > 0.8
 }
 
 TRIGGER_NIE_law_branch_1_id_3_value_1_idea_available = { # 最大服役年龄：35岁
-	always = yes
+    always = yes
 }
 
 TRIGGER_NIE_law_branch_1_id_3_value_2_idea_available = { # 最大服役年龄：40岁
-	always = yes
+    always = yes
 }
 
 TRIGGER_NIE_law_branch_1_id_3_value_3_idea_available = { # 最大服役年龄：45岁
-	always = yes
+    always = yes
 }
 
 TRIGGER_NIE_law_branch_1_id_3_value_4_idea_available = { # 最大服役年龄：50岁
-	OR = {
-		has_idea = NIE_law_branch_1_id_8_value_4_idea
-		has_idea = NIE_law_branch_1_id_8_value_5_idea
-		has_idea = NIE_law_branch_1_id_8_value_6_idea
-		has_idea = NIE_law_branch_1_id_8_value_7_idea
-		has_idea = NIE_law_branch_1_id_8_value_8_idea
-	}
+    OR = {
+    	has_idea = NIE_law_branch_1_id_8_value_4_idea
+    	has_idea = NIE_law_branch_1_id_8_value_5_idea
+    	has_idea = NIE_law_branch_1_id_8_value_6_idea
+    	has_idea = NIE_law_branch_1_id_8_value_7_idea
+    	has_idea = NIE_law_branch_1_id_8_value_8_idea
+    }
 }
 
 TRIGGER_NIE_law_branch_1_id_3_value_5_idea_available = { # 最大服役年龄：55岁
-	OR = {
-		has_idea = NIE_law_branch_1_id_8_value_5_idea
-		has_idea = NIE_law_branch_1_id_8_value_6_idea
-		has_idea = NIE_law_branch_1_id_8_value_7_idea
-		has_idea = NIE_law_branch_1_id_8_value_8_idea
-	}
+    OR = {
+    	has_idea = NIE_law_branch_1_id_8_value_5_idea
+    	has_idea = NIE_law_branch_1_id_8_value_6_idea
+    	has_idea = NIE_law_branch_1_id_8_value_7_idea
+    	has_idea = NIE_law_branch_1_id_8_value_8_idea
+    }
 }
 
 TRIGGER_NIE_law_branch_1_id_3_value_6_idea_available = { # 最大服役年龄：60岁
-	OR = {
-		has_idea = NIE_law_branch_1_id_8_value_7_idea
-		has_idea = NIE_law_branch_1_id_8_value_8_idea
-	}
-	surrender_progress > 0
-	has_war_support > 0.3
+    OR = {
+    	has_idea = NIE_law_branch_1_id_8_value_7_idea
+    	has_idea = NIE_law_branch_1_id_8_value_8_idea
+    }
+    surrender_progress > 0
+    has_war_support > 0.3
 }
 
 TRIGGER_NIE_law_branch_1_id_3_value_7_idea_available = { # 最大服役年龄：70岁
-	OR = {
-		has_idea = NIE_law_branch_1_id_8_value_7_idea
-		has_idea = NIE_law_branch_1_id_8_value_8_idea
-	}
-	surrender_progress > 0.1
-	has_war_support > 0.5
+    OR = {
+    	has_idea = NIE_law_branch_1_id_8_value_7_idea
+    	has_idea = NIE_law_branch_1_id_8_value_8_idea
+    }
+    surrender_progress > 0.1
+    has_war_support > 0.5
 }
 
-TRIGGER_NIE_law_branch_1_id_3_value_8_idea_available = { # 最大服役年龄：无限制
-	has_idea = NIE_law_branch_1_id_8_value_8_idea
-	surrender_progress > 0.3
-	has_war_support > 0.8
+TRIGGER_NIE_law_branch_1_id_3_value_8_idea_available = { # 最大服役年龄：§R无限制§!
+    has_idea = NIE_law_branch_1_id_8_value_8_idea
+    surrender_progress > 0.3
+    has_war_support > 0.8
 }
 
 TRIGGER_NIE_law_branch_1_id_4_value_1_idea_available = { # 女性服役政策：同等服役
-	NOT = { has_country_flag = NIE_women_ban_military }
-	has_idea = NIE_law_branch_1_id_8_value_8_idea
-	OR = {
-		surrender_progress > 0.3
-		has_war_support > 0.6
-	}
+    NOT = { has_country_flag = NIE_women_ban_military }
+    has_idea = NIE_law_branch_1_id_8_value_8_idea
+    OR = {
+    	surrender_progress > 0.3
+    	has_war_support > 0.6
+    }
 }
 
 TRIGGER_NIE_law_branch_1_id_4_value_2_idea_available = { # 女性服役政策：鼓励服役
-	NOT = { has_country_flag = NIE_women_ban_military }
-	OR = {
-		has_war_support > 0.8
-		AND = {
-			OR = {
-				has_idea = NIE_law_branch_1_id_8_value_7_idea
-				has_idea = NIE_law_branch_1_id_8_value_8_idea
-			}
-			has_war_support > 0.6
-		}
-	}
+    NOT = { has_country_flag = NIE_women_ban_military }
+    OR = {
+    	has_war_support > 0.8
+    	AND = {
+    		OR = {
+    			has_idea = NIE_law_branch_1_id_8_value_7_idea
+    			has_idea = NIE_law_branch_1_id_8_value_8_idea
+    		}
+    		has_war_support > 0.6
+    	}
+    }
 }
 
 TRIGGER_NIE_law_branch_1_id_4_value_3_idea_available = { # 女性服役政策：志愿服役
-	NOT = { has_country_flag = NIE_women_ban_military }
+    NOT = { has_country_flag = NIE_women_ban_military }
 }
 
 TRIGGER_NIE_law_branch_1_id_4_value_4_idea_available = { # 女性服役政策：仅医护服务
-	NOT = { has_country_flag = NIE_women_ban_military }
+    NOT = { has_country_flag = NIE_women_ban_military }
 }
 
 TRIGGER_NIE_law_branch_1_id_4_value_5_idea_available = { # 女性服役政策：禁止服役
-	always = yes
+    always = yes
 }
 
 TRIGGER_NIE_law_branch_1_id_4_value_6_idea_available = { # 女性服役政策：歧视性禁止
-	TRIGGER_NIE_is_government_discriminate_against_women = yes
+    TRIGGER_NIE_is_government_discriminate_against_women = yes
+}
+
+TRIGGER_NIE_law_branch_1_id_4_value_7_idea_available = { # 女性服役政策：§R“慰安”妇§!
+
 }
 
 TRIGGER_NIE_law_branch_1_id_5_value_1_idea_available = { # 非核心人力资源：禁服兵役
@@ -253,6 +256,18 @@ TRIGGER_NIE_law_branch_1_id_7_value_6_idea_available = { # 兵役豁免：宽松
 
 }
 
+TRIGGER_NIE_law_branch_1_id_8_value_1_idea_available = { # 国家状态：全力发展
+
+}
+
+TRIGGER_NIE_law_branch_1_id_8_value_2_idea_available = { # 国家状态：正常发展
+
+}
+
+TRIGGER_NIE_law_branch_1_id_8_value_3_idea_available = { # 国家状态：警惕状态
+
+}
+
 TRIGGER_NIE_law_branch_1_id_8_value_4_idea_available = { # 国家状态：局部动员
 
 }
@@ -262,5 +277,681 @@ TRIGGER_NIE_law_branch_1_id_8_value_5_idea_available = { # 国家状态：广泛
 }
 
 TRIGGER_NIE_law_branch_1_id_8_value_6_idea_available = { # 国家状态：总动员
+
+}
+
+TRIGGER_NIE_law_branch_1_id_8_value_7_idea_available = { # 国家状态：战时经济
+
+}
+
+TRIGGER_NIE_law_branch_1_id_8_value_8_idea_available = { # 国家状态：总体战
+
+}
+
+TRIGGER_NIE_law_branch_2_id_1_value_1_idea_available = { # 劳动保障：§R人形耗材§!
+
+}
+
+TRIGGER_NIE_law_branch_2_id_1_value_2_idea_available = { # 劳动保障：实物工资制
+
+}
+
+TRIGGER_NIE_law_branch_2_id_1_value_3_idea_available = { # 劳动保障：无工时限制
+
+}
+
+TRIGGER_NIE_law_branch_2_id_1_value_4_idea_available = { # 劳动保障：十二小时工作制
+
+}
+
+TRIGGER_NIE_law_branch_2_id_1_value_5_idea_available = { # 劳动保障：十小时工作制
+
+}
+
+TRIGGER_NIE_law_branch_2_id_1_value_6_idea_available = { # 劳动保障：八小时工作制
+
+}
+
+TRIGGER_NIE_law_branch_2_id_2_value_1_idea_available = { # 公共医疗：无公共医疗
+
+}
+
+TRIGGER_NIE_law_branch_2_id_2_value_2_idea_available = { # 公共医疗：§R全面瘫痪§!
+
+}
+
+TRIGGER_NIE_law_branch_2_id_2_value_3_idea_available = { # 公共医疗：无医疗补贴
+
+}
+
+TRIGGER_NIE_law_branch_2_id_2_value_4_idea_available = { # 公共医疗：最低医疗补贴
+
+}
+
+TRIGGER_NIE_law_branch_2_id_2_value_5_idea_available = { # 公共医疗：医疗补贴
+
+}
+
+TRIGGER_NIE_law_branch_2_id_2_value_6_idea_available = { # 公共医疗：可观医疗补贴
+
+}
+
+TRIGGER_NIE_law_branch_2_id_2_value_7_idea_available = { # 公共医疗：免费基础医疗
+
+}
+
+TRIGGER_NIE_law_branch_2_id_2_value_8_idea_available = { # 公共医疗：全民免费医疗
+
+}
+
+TRIGGER_NIE_law_branch_2_id_3_value_1_idea_available = { # 公共教育：无公共教育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_3_value_2_idea_available = { # 公共教育：§R全面瘫痪§!
+
+}
+
+TRIGGER_NIE_law_branch_2_id_3_value_3_idea_available = { # 公共教育：无义务教育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_3_value_4_idea_available = { # 公共教育：三年义务教育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_3_value_5_idea_available = { # 公共教育：六年义务教育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_3_value_6_idea_available = { # 公共教育：九年义务教育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_3_value_7_idea_available = { # 公共教育：十二年义务教育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_3_value_8_idea_available = { # 公共教育：十五年义务教育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_4_value_1_idea_available = { # 创业激励政策：财团收割
+
+}
+
+TRIGGER_NIE_law_branch_2_id_4_value_2_idea_available = { # 创业激励政策：外资主导
+
+}
+
+TRIGGER_NIE_law_branch_2_id_4_value_3_idea_available = { # 创业激励政策：无补贴
+
+}
+
+TRIGGER_NIE_law_branch_2_id_4_value_4_idea_available = { # 创业激励政策：优先贷款
+
+}
+
+TRIGGER_NIE_law_branch_2_id_4_value_5_idea_available = { # 创业激励政策：政策帮扶
+
+}
+
+TRIGGER_NIE_law_branch_2_id_4_value_6_idea_available = { # 创业激励政策：全力支持
+
+}
+
+TRIGGER_NIE_law_branch_2_id_5_value_1_idea_available = { # 老年福利：§R优胜劣汰§!
+
+}
+
+TRIGGER_NIE_law_branch_2_id_5_value_2_idea_available = { # 老年福利：无福利
+
+}
+
+TRIGGER_NIE_law_branch_2_id_5_value_3_idea_available = { # 老年福利：少量补助
+
+}
+
+TRIGGER_NIE_law_branch_2_id_5_value_4_idea_available = { # 老年福利：可观补助
+
+}
+
+TRIGGER_NIE_law_branch_2_id_5_value_5_idea_available = { # 老年福利：基础社区保障服务
+
+}
+
+TRIGGER_NIE_law_branch_2_id_5_value_6_idea_available = { # 老年福利：发达社区保障服务
+
+}
+
+TRIGGER_NIE_law_branch_2_id_6_value_1_idea_available = { # 社会救济：§R优胜劣汰§!
+
+}
+
+TRIGGER_NIE_law_branch_2_id_6_value_2_idea_available = { # 社会救济：无救济
+
+}
+
+TRIGGER_NIE_law_branch_2_id_6_value_3_idea_available = { # 社会救济：少量补助
+
+}
+
+TRIGGER_NIE_law_branch_2_id_6_value_4_idea_available = { # 社会救济：廉价兵源
+
+}
+
+TRIGGER_NIE_law_branch_2_id_6_value_5_idea_available = { # 社会救济：基本生活补助
+
+}
+
+TRIGGER_NIE_law_branch_2_id_6_value_6_idea_available = { # 社会救济：基本生活保障
+
+}
+
+TRIGGER_NIE_law_branch_2_id_6_value_7_idea_available = { # 社会救济：就业保障
+
+}
+
+TRIGGER_NIE_law_branch_2_id_6_value_8_idea_available = { # 社会救济：可观生活保障
+
+}
+
+TRIGGER_NIE_law_branch_2_id_7_value_1_idea_available = { # 生育政策：§R达尔文主义§!
+
+}
+
+TRIGGER_NIE_law_branch_2_id_7_value_2_idea_available = { # 生育政策：避免生育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_7_value_3_idea_available = { # 生育政策：独生子女政策
+
+}
+
+TRIGGER_NIE_law_branch_2_id_7_value_4_idea_available = { # 生育政策：二胎政策
+
+}
+
+TRIGGER_NIE_law_branch_2_id_7_value_5_idea_available = { # 生育政策：无引导
+
+}
+
+TRIGGER_NIE_law_branch_2_id_7_value_6_idea_available = { # 生育政策：鼓励生育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_7_value_7_idea_available = { # 生育政策：强制生育
+
+}
+
+TRIGGER_NIE_law_branch_2_id_7_value_8_idea_available = { # 生育政策：§R榨干女性§!
+
+}
+
+TRIGGER_NIE_law_branch_2_id_8_value_1_idea_available = { # 工业化：§R失败国家§!
+
+}
+
+TRIGGER_NIE_law_branch_2_id_8_value_2_idea_available = { # 工业化：前工业化国家
+
+}
+
+TRIGGER_NIE_law_branch_2_id_8_value_3_idea_available = { # 工业化：初步工业化国家
+
+}
+
+TRIGGER_NIE_law_branch_2_id_8_value_4_idea_available = { # 工业化：工业化国家
+
+}
+
+TRIGGER_NIE_law_branch_2_id_8_value_5_idea_available = { # 工业化：后工业化国家
+
+}
+
+TRIGGER_NIE_law_branch_2_id_8_value_6_idea_available = { # 工业化：超工业化国家
+
+}
+
+TRIGGER_NIE_law_branch_3_id_1_value_1_idea_available = { # 军队主要问题：论资排辈
+
+}
+
+TRIGGER_NIE_law_branch_3_id_1_value_2_idea_available = { # 军队主要问题：长官至上
+
+}
+
+TRIGGER_NIE_law_branch_3_id_1_value_3_idea_available = { # 军队主要问题：狂热信徒
+
+}
+
+TRIGGER_NIE_law_branch_3_id_1_value_4_idea_available = { # 军队主要问题：民族狂热
+
+}
+
+TRIGGER_NIE_law_branch_3_id_1_value_5_idea_available = { # 军队主要问题：强盗军队
+
+}
+
+TRIGGER_NIE_law_branch_3_id_1_value_6_idea_available = { # 军队主要问题：质疑长官
+
+}
+
+TRIGGER_NIE_law_branch_3_id_1_value_7_idea_available = { # 军队主要问题：强者至上
+
+}
+
+TRIGGER_NIE_law_branch_3_id_1_value_8_idea_available = { # 军队主要问题：政委督军
+
+}
+
+TRIGGER_NIE_law_branch_3_id_2_value_1_idea_available = { # 军队思想宣传：为了家国
+
+}
+
+TRIGGER_NIE_law_branch_3_id_2_value_2_idea_available = { # 军队思想宣传：为了民族
+
+}
+
+TRIGGER_NIE_law_branch_3_id_2_value_3_idea_available = { # 军队思想宣传：为了正义
+
+}
+
+TRIGGER_NIE_law_branch_3_id_2_value_4_idea_available = { # 军队思想宣传：为了信仰
+
+}
+
+TRIGGER_NIE_law_branch_3_id_2_value_5_idea_available = { # 军队思想宣传：为了领袖
+
+}
+
+TRIGGER_NIE_law_branch_3_id_2_value_6_idea_available = { # 军队思想宣传：为了国王/皇帝
+
+}
+
+TRIGGER_NIE_law_branch_3_id_2_value_7_idea_available = { # 军队思想宣传：为了赏赐
+
+}
+
+TRIGGER_NIE_law_branch_3_id_3_value_1_idea_available = { # 军官选拔：战场晋升
+
+}
+
+TRIGGER_NIE_law_branch_3_id_3_value_2_idea_available = { # 军官选拔：贵族主导
+
+}
+
+TRIGGER_NIE_law_branch_3_id_3_value_3_idea_available = { # 军官选拔：系统性腐败
+
+}
+
+TRIGGER_NIE_law_branch_3_id_3_value_4_idea_available = { # 军官选拔：快速培养
+
+}
+
+TRIGGER_NIE_law_branch_3_id_3_value_5_idea_available = { # 军官选拔：职业军校
+
+}
+
+TRIGGER_NIE_law_branch_3_id_3_value_6_idea_available = { # 军官选拔：领袖裙带
+
+}
+
+TRIGGER_NIE_law_branch_3_id_3_value_7_idea_available = { # 军官选拔：政委领军
+
+}
+
+TRIGGER_NIE_law_branch_3_id_3_value_8_idea_available = { # 军官选拔：§R禁止军官§!
+
+}
+
+TRIGGER_NIE_law_branch_3_id_4_value_1_idea_available = { # 士兵训练：无训练
+
+}
+
+TRIGGER_NIE_law_branch_3_id_4_value_2_idea_available = { # 士兵训练：快速训练
+
+}
+
+TRIGGER_NIE_law_branch_3_id_4_value_3_idea_available = { # 士兵训练：标准训练
+
+}
+
+TRIGGER_NIE_law_branch_3_id_4_value_4_idea_available = { # 士兵训练：先进训练
+
+}
+
+TRIGGER_NIE_law_branch_3_id_4_value_5_idea_available = { # 士兵训练：严苛训练
+
+}
+
+TRIGGER_NIE_law_branch_3_id_4_value_6_idea_available = { # 士兵训练：老兵教导
+
+}
+
+TRIGGER_NIE_law_branch_3_id_4_value_7_idea_available = { # 士兵训练：士官训练
+
+}
+
+TRIGGER_NIE_law_branch_3_id_4_value_8_idea_available = { # 士兵训练：仪式训练
+
+}
+
+TRIGGER_NIE_law_branch_3_id_5_value_1_idea_available = { # 预备役体制：无预备役
+
+}
+
+TRIGGER_NIE_law_branch_3_id_5_value_2_idea_available = { # 预备役体制：登记退伍军官
+
+}
+
+TRIGGER_NIE_law_branch_3_id_5_value_3_idea_available = { # 预备役体制：社区民兵
+
+}
+
+TRIGGER_NIE_law_branch_3_id_5_value_4_idea_available = { # 预备役体制：国家民兵
+
+}
+
+TRIGGER_NIE_law_branch_3_id_5_value_5_idea_available = { # 预备役体制：公民预备役义务
+
+}
+
+TRIGGER_NIE_law_branch_3_id_5_value_6_idea_available = { # 预备役体制：国民警备队
+
+}
+
+TRIGGER_NIE_law_branch_3_id_6_value_1_idea_available = { # 军队归属：国家
+
+}
+
+TRIGGER_NIE_law_branch_3_id_6_value_2_idea_available = { # 军队归属：组成国家的实体
+
+}
+
+TRIGGER_NIE_law_branch_3_id_6_value_3_idea_available = { # 军队归属：国王/皇帝
+
+}
+
+TRIGGER_NIE_law_branch_3_id_6_value_4_idea_available = { # 军队归属：党派
+
+}
+
+TRIGGER_NIE_law_branch_3_id_6_value_5_idea_available = { # 军队归属：执政家族
+
+}
+
+TRIGGER_NIE_law_branch_3_id_6_value_6_idea_available = { # 军队归属：独立军部
+
+}
+
+TRIGGER_NIE_law_branch_3_id_7_value_1_idea_available = { # 军队监管：无监管
+
+}
+
+TRIGGER_NIE_law_branch_3_id_7_value_2_idea_available = { # 军队监管：有限监管
+
+}
+
+TRIGGER_NIE_law_branch_3_id_7_value_3_idea_available = { # 军队监管：内部监管
+
+}
+
+TRIGGER_NIE_law_branch_3_id_7_value_4_idea_available = { # 军队监管：独立监管
+
+}
+
+TRIGGER_NIE_law_branch_3_id_7_value_5_idea_available = { # 军队监管：严格监管
+
+}
+
+TRIGGER_NIE_law_branch_3_id_7_value_6_idea_available = { # 军队监管：大清洗
+
+}
+
+TRIGGER_NIE_law_branch_3_id_8_value_1_idea_available = { # 军队偏好：陆军部队
+
+}
+
+TRIGGER_NIE_law_branch_3_id_8_value_2_idea_available = { # 军队偏好：海军部队
+
+}
+
+TRIGGER_NIE_law_branch_3_id_8_value_3_idea_available = { # 军队偏好：航空力量
+
+}
+
+TRIGGER_NIE_law_branch_3_id_8_value_4_idea_available = { # 军队偏好：导弹与战略打击部队
+
+}
+
+TRIGGER_NIE_law_branch_3_id_8_value_5_idea_available = { # 军队偏好：后勤保障部队
+
+}
+
+TRIGGER_NIE_law_branch_3_id_8_value_6_idea_available = { # 军队偏好：情报作战部门
+
+}
+
+TRIGGER_NIE_law_branch_3_id_8_value_7_idea_available = { # 军队偏好：占领区维持部队
+
+}
+
+TRIGGER_NIE_law_branch_4_id_1_value_1_idea_available = { # 经济体制：以物换物
+
+}
+
+TRIGGER_NIE_law_branch_4_id_1_value_2_idea_available = { # 经济体制：自由放任
+
+}
+
+TRIGGER_NIE_law_branch_4_id_1_value_3_idea_available = { # 经济体制：有限监管
+
+}
+
+TRIGGER_NIE_law_branch_4_id_1_value_4_idea_available = { # 经济体制：强力监管
+
+}
+
+TRIGGER_NIE_law_branch_4_id_1_value_5_idea_available = { # 经济体制：完全计划经济
+
+}
+
+TRIGGER_NIE_law_branch_4_id_1_value_6_idea_available = { # 经济体制：§R去经济化§!
+
+}
+
+TRIGGER_NIE_law_branch_4_id_2_value_1_idea_available = { # 企业税率：极高税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_2_value_2_idea_available = { # 企业税率：高税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_2_value_3_idea_available = { # 企业税率：中等税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_2_value_4_idea_available = { # 企业税率：低税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_2_value_5_idea_available = { # 企业税率：极低税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_2_value_6_idea_available = { # 企业税率：免税
+
+}
+
+TRIGGER_NIE_law_branch_4_id_3_value_1_idea_available = { # 公民税率：极高税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_3_value_2_idea_available = { # 公民税率：高税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_3_value_3_idea_available = { # 公民税率：中等税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_3_value_4_idea_available = { # 公民税率：低税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_3_value_5_idea_available = { # 公民税率：极低税率
+
+}
+
+TRIGGER_NIE_law_branch_4_id_3_value_6_idea_available = { # 公民税率：免税
+
+}
+
+TRIGGER_NIE_law_branch_4_id_4_value_1_idea_available = { # 国有化：禁止国有化
+
+}
+
+TRIGGER_NIE_law_branch_4_id_4_value_2_idea_available = { # 国有化：仅战略资源
+
+}
+
+TRIGGER_NIE_law_branch_4_id_4_value_3_idea_available = { # 国有化：公共服务机构
+
+}
+
+TRIGGER_NIE_law_branch_4_id_4_value_4_idea_available = { # 国有化：军工企业
+
+}
+
+TRIGGER_NIE_law_branch_4_id_4_value_5_idea_available = { # 国有化：公共服务机构及军工企业
+
+}
+
+TRIGGER_NIE_law_branch_4_id_4_value_6_idea_available = { # 国有化：普遍国有化
+
+}
+
+TRIGGER_NIE_law_branch_4_id_4_value_7_idea_available = { # 国有化：全部国有化
+
+}
+
+TRIGGER_NIE_law_branch_4_id_5_value_1_idea_available = { # 国家调控经济：禁止调控
+
+}
+
+TRIGGER_NIE_law_branch_4_id_5_value_2_idea_available = { # 国家调控经济：无计划
+
+}
+
+TRIGGER_NIE_law_branch_4_id_5_value_3_idea_available = { # 国家调控经济：发展基建
+
+}
+
+TRIGGER_NIE_law_branch_4_id_5_value_4_idea_available = { # 国家调控经济：发展民生工业
+
+}
+
+TRIGGER_NIE_law_branch_4_id_5_value_5_idea_available = { # 国家调控经济：发展军工企业
+
+}
+
+TRIGGER_NIE_law_branch_4_id_5_value_6_idea_available = { # 国家调控经济：发展造船业
+
+}
+
+TRIGGER_NIE_law_branch_4_id_5_value_7_idea_available = { # 国家调控经济：发展矿业
+
+}
+
+TRIGGER_NIE_law_branch_4_id_5_value_8_idea_available = { # 国家调控经济：发展高新科技
+
+}
+
+TRIGGER_NIE_law_branch_4_id_6_value_1_idea_available = { # 外资态度：完全依赖外资
+
+}
+
+TRIGGER_NIE_law_branch_4_id_6_value_2_idea_available = { # 外资态度：依赖外资
+
+}
+
+TRIGGER_NIE_law_branch_4_id_6_value_3_idea_available = { # 外资态度：鼓励外资
+
+}
+
+TRIGGER_NIE_law_branch_4_id_6_value_4_idea_available = { # 外资态度：一视同仁
+
+}
+
+TRIGGER_NIE_law_branch_4_id_6_value_5_idea_available = { # 外资态度：额外条款
+
+}
+
+TRIGGER_NIE_law_branch_4_id_6_value_6_idea_available = { # 外资态度：打压外资
+
+}
+
+TRIGGER_NIE_law_branch_4_id_6_value_7_idea_available = { # 外资态度：禁止外资
+
+}
+
+TRIGGER_NIE_law_branch_4_id_6_value_8_idea_available = { # 外资态度：收割外资
+
+}
+
+TRIGGER_NIE_law_branch_4_id_7_value_1_idea_available = { # 军工补贴：难以为继
+
+}
+
+TRIGGER_NIE_law_branch_4_id_7_value_2_idea_available = { # 军工补贴：无补贴
+
+}
+
+TRIGGER_NIE_law_branch_4_id_7_value_3_idea_available = { # 军工补贴：少量补贴
+
+}
+
+TRIGGER_NIE_law_branch_4_id_7_value_4_idea_available = { # 军工补贴：可观补贴
+
+}
+
+TRIGGER_NIE_law_branch_4_id_7_value_5_idea_available = { # 军工补贴：大量补贴
+
+}
+
+TRIGGER_NIE_law_branch_4_id_7_value_6_idea_available = { # 军工补贴：无条件支持
+
+}
+
+TRIGGER_NIE_law_branch_4_id_8_value_1_idea_available = { # 出口政策：外国控制
+
+}
+
+TRIGGER_NIE_law_branch_4_id_8_value_2_idea_available = { # 出口政策：全面出口
+
+}
+
+TRIGGER_NIE_law_branch_4_id_8_value_3_idea_available = { # 出口政策：大规模出口
+
+}
+
+TRIGGER_NIE_law_branch_4_id_8_value_4_idea_available = { # 出口政策：正常出口
+
+}
+
+TRIGGER_NIE_law_branch_4_id_8_value_5_idea_available = { # 出口政策：出口管制
+
+}
+
+TRIGGER_NIE_law_branch_4_id_8_value_6_idea_available = { # 出口政策：有限出口
+
+}
+
+TRIGGER_NIE_law_branch_4_id_8_value_7_idea_available = { # 出口政策：微量出口
+
+}
+
+TRIGGER_NIE_law_branch_4_id_8_value_8_idea_available = { # 出口政策：禁止出口
 
 }
